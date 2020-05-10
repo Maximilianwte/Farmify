@@ -11,8 +11,6 @@ export default new Vuex.Store({
       asked: false,
       accepted: false
     },
-    location: "16 Palga Cres, Perth, Australia",
-    geoCode: [115.866786, -31.925272],
     profile: {
       data: {
         Name: "",
@@ -21,7 +19,9 @@ export default new Vuex.Store({
         Email: "",
         Country: "",
         Password: "",
-        savedFarms: [1, 3]
+        savedFarms: [1, 3],
+        location: "16 Palga Cres, Perth, Australia",
+        geoCode: [115.866786, -31.925272],
       }
     },
     farms: {

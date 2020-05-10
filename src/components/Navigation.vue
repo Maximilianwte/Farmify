@@ -18,7 +18,7 @@
             <router-link to="/database">
                 <h6 class="px-4">Database</h6>
             </router-link>
-            <router-link v-if="getAuth == true" to="/saved">
+            <router-link to="/saved">
                 <h6 class="px-4">Saved Farms</h6>
             </router-link>
             <router-link v-if="getAuth == false" to="/signin">

@@ -3,7 +3,7 @@
         <h1 class="text-4xl mt-32">Farms Around Me</h1>
         <div id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
             <div id="filter" class="flex-row md:flex mt-8 justify-between w-5/6 lg:w-2/3 px-2 py-2 border-2 rounded-sm">
-                <div class="location flex">
+                <div class="location flex-col md:flex-row">
                     <div id="icon">
                         <svg viewBox="0 0 512 512" class="svg-md mx-1 svg-dark" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -13,9 +13,9 @@
                     </div>
                     <div id="filter_location" class="px-2">My Location: </div>
                     <div id="location" class="px-4"> <input @change="getGeoCode(location)" type="text" placeholder="Location" v-model="location"
-                            class="bg-main_primary w-90 cursor-pointer text-bg_primary px-2"></div>
+                            class="bg-main_primary w-64 border-b-2 md:w-90 cursor-pointer text-bg_primary px-2"></div>
                 </div>
-                <div class="sortby mt-2 md:mt-0 flex">
+                <div class="sortby mt-4 md:mt-0 flex-col md:flex-row">
                     <div class="icon">
                         <svg class="svg-md mx-1 svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -47,7 +47,7 @@
         data() {
             return {
                 list_item: store.state.farms.data,
-                location: store.state.location,
+                location: store.state.profile.data.location,
                 filter: {
                     options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"]
                 }

@@ -92,6 +92,16 @@ svg:hover {
     fill: var(--bg-secondary);
 }
 
+.svg-passive {
+    stroke: var(--bg-secondary);
+    fill: var(--bg-secondary);
+}
+
+.svg-passive:hover {
+    stroke: var(--bg-secondary);
+    fill: var(--bg-secondary);
+}
+
 .svg-light {
     stroke: none;
   }
