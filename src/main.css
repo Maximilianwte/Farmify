@@ -155,14 +155,3 @@ svg:hover {
     border-right: 10px solid transparent;
     border-top: 10px solid var(--main-secondary);
   }
-
-  .tooltip {
-      background: #f5efe0af;
-      color: #413b36;
-      border-radius: 0.3rem;
-      width: 12rem;
-      text-align: center;
-      padding: .5rem 1rem .5rem 1rem;
-      margin-bottom: 1rem;
-      z-index: 50;
-  }
