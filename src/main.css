@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    --green: rgb(94, 138, 68);
+    --green_active: rgb(126, 175, 97);
+    --blue: #6F89C4;
+    --blue_active: rgb(148, 170, 223);
+    --red: #FF4365;
+    --red_active: rgb(255, 125, 149);
+    --yellow: #FFE569;
+    --yellow_active: rgb(255, 244, 187);
+}
+
+.theme_light {
+    --bg-primary: #7b9c74;
+    --main-primary: #f5efe0;
+    --bg-secondary: #7b8b64;
+    --main-secondary: #a0b189;
+    --main-focus: #cc6355;
+    --main-focus-secondary: #aa5348;
+}
+
+.theme_dark {
+    --bg-primary: #413b36;
+    --main-primary: #f5efe0;
+    --bg-secondary: #8d837b;;
+    --main-secondary: #e6ddc8;
+    --main-focus: #cc6355;
+    --main-focus-secondary: #aa5348;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600&display=swap');
+
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: var(--main-secondary);
+}
+
+li {
+    list-style: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+svg {
+    stroke: var(--main-primary);
+    fill: var(--main-primary);
+    width: 3rem;
+    transition: 0.3s;
+}
+
+svg:hover {
+    stroke: var(--main-secondary);
+    fill: var(--main-secondary);
+    transition: 0.3s;
+}
+
+.svg-dark {
+    stroke: var(--bg-primary);
+    fill: var(--bg-primary);
+}
+
+.svg-dark:hover {
+    stroke: var(--bg-secondary);
+    fill: var(--bg-secondary);
+}
+
+.svg-light {
+    stroke: none;
+  }
+
+.svg-3xl {
+    width: 10rem;
+}
+
+.svg-2xl {
+    width: 6rem;
+}
+
+.svg-xl {
+    width: 4rem;
+}
+
+.svg-lg {
+    width: 2.3rem;
+}
+
+.svg-md {
+    width: 1.5rem;
+}
+
+.svg-mds {
+    width: 1rem;
+}
+
+.svg-sm {
+    width: .7rem;
+}
+
+.img-sm {
+    width: 3rem;
+}
+
+.img-xl {
+    width: 9rem;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--bg-primary);
+  }
+
+  .arrow-down-small {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--bg-primary);
+  }
+
+  .arrow-downSignupAlert {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--main-secondary);
+  }
+

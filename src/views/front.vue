@@ -1,0 +1,178 @@
+<template>
+  <div class="w-full flex-col justify-around">
+    <div id="header" class="mt-40 text-center w-full flex-col">
+      <router-link class="mr-4 flex items-center" to="/"><svg class="svg-3xl svg-light"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M363.6 262.3a10 10 0 0 0-6.1-6.6c-.6-.2-5.6-2-13.2-3.1a85 85 0 0 0 19.3-83.4 10 10 0 0 0-6.1-6.6 86 86 0 0 0-53.8.6 89.8 89.8 0 0 0 2.5-21.4 85 85 0 0 0-45.3-75.7 10 10 0 0 0-9-.3c-2 1-46 22-46 76 0 7.8 1 15 2.5 21.4a86 86 0 0 0-53.9-.6 10 10 0 0 0-6.1 6.6 85 85 0 0 0 19.3 83.4 71.1 71.1 0 0 0-13.2 3 10 10 0 0 0-6.1 6.7 85 85 0 0 0 21.4 85.5 83 83 0 0 0 76.1 23.9V437a10 10 0 0 0 20 0v-65.5a83 83 0 0 0 76.3-23.8 85 85 0 0 0 21.4-85.5zM246 340.5c-.2 4.5-.8 8.3-1.4 11a64.5 64.5 0 0 1-60.5-17.8 64.5 64.5 0 0 1-17.9-60.5 67 67 0 0 1 37.2 2.6c7.7 3 15.7 7.7 23.3 15.3a63.8 63.8 0 0 1 19.3 42.7v6.7zm0-93c-.2 4.4-.8 8.3-1.4 11a66.5 66.5 0 0 1-38-2.9 66 66 0 0 1-22.5-15 64.5 64.5 0 0 1-17.9-60.5c10.7-2.3 37.5-5 60.5 17.9l.4.4 2.6 2.9c12 13.5 15.8 27.9 16.3 39.4v6.7zm10.2-50.3a68 68 0 0 1-13.7-11.6 63.8 63.8 0 0 1-16.5-43.8A64.6 64.6 0 0 1 256 86.4a64.5 64.5 0 0 1 30.2 55.4 63.8 63.8 0 0 1-30.1 55.4zm9.9 47a63.3 63.3 0 0 1 19.9-46.6 64.5 64.5 0 0 1 60-17.5c2.5 11.5 4.9 37.8-17.9 60.5a66 66 0 0 1-26.8 16.6 66.4 66.4 0 0 1-33.7 1.3c-.7-3.3-1.5-8.2-1.5-14v-.3zm62 89.5a64.5 64.5 0 0 1-60.4 17.9 64.9 64.9 0 0 1 17.8-60.5 66 66 0 0 1 26.9-16.6c14.2-4.4 27-2.8 33.6-1.3 2.5 11.4 4.9 37.8-17.9 60.5z" />
+          <path
+            d="M309.4 5.6A254.3 254.3 0 0 0 75 75 254.3 254.3 0 0 0 0 256c0 57 19.2 112.6 54.1 157.4a37.7 37.7 0 0 0 5 47.4 37.8 37.8 0 0 0 53.8 0 37.7 37.7 0 0 0 0-53.7A37.7 37.7 0 0 0 69 400 236.3 236.3 0 0 1 305.2 25.2a10 10 0 1 0 4.2-19.6zm-236 415.6a18 18 0 0 1 25.4 0 17.9 17.9 0 0 1 0 25.5 18 18 0 0 1-25.5-25.5zM457.9 98.6a37.7 37.7 0 0 0-5-47.4 37.7 37.7 0 0 0-53.8 0 37.8 37.8 0 0 0 0 53.7A37.7 37.7 0 0 0 443 112a236.3 236.3 0 0 1-228.7 376.3 10 10 0 0 0-3.5 19.7A254.3 254.3 0 0 0 437 437a254.3 254.3 0 0 0 75-181c0-57-19.2-112.6-54.1-157.4zm-19.2-7.8a17.9 17.9 0 0 1-25.5 0 18 18 0 1 1 25.5 0zM168.1 475.1l-3.7 9.3 3.7-9.3a10 10 0 0 0-7.5 18.5l.3.2a10 10 0 0 0 7.2-18.7zM351.8 18.5h-.2a10 10 0 0 0-7.4 18.5h.1a10 10 0 0 0 13-5.4c2.1-5.2-.4-11-5.5-13z" />
+        </svg>
+      </router-link>
+      <h1 class="text-4xl w-2/3 md:w-1/3 mt-12">Welcome To Your Australian Farm Experience.</h1>
+    </div>
+    <div id="symbols"
+      class="text-2xl mt-32 py-8 mb-12 flex-row md:flex justify-around text-bg_primary bg-main_primary text-center w-full">
+      <div id="database" class="w-full md:w-1/3 flex-col justify-around">
+        <div class="icon mb-8"><svg class="svg-2xl svg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <circle cx="502" cy="274.2" r="10" />
+            <path
+              d="M509.6 163.5l-95-110a10 10 0 00-4.5-3l-151-50a10 10 0 00-6.3 0l-151 50a10 10 0 00-4.4 3l-95 110A10 10 0 000 170v332c0 2.6 1 5.2 3 7s4.4 3 7 3h492a10 10 0 0010-10V319.2a10 10 0 00-20 0V432h-96V227a10 10 0 00-10-10H126a10 10 0 00-10 10v205H20V173.7l90.8-105L256 20.4l145.2 48.1L492 173.7v55.5a10 10 0 0020 0V170a10 10 0 00-2.4-6.5zM492 452v40h-96v-40zm-116 40H266V237h110zM136 237h110v255H136zm-20 215v40H20v-40z" />
+            <path
+              d="M201 125a55 55 0 10110.1-.1 55 55 0 00-110.1 0zm90 0a35 35 0 11-70 0 35 35 0 0170 0zM296 394.5a10 10 0 0010-10v-40a10 10 0 00-20 0v40a10 10 0 0010 10zM216 394.5a10 10 0 0010-10v-40a10 10 0 00-20 0v40a10 10 0 0010 10z" />
+          </svg>
+        </div>
+        <h4 class="w-2/3 lg:w-1/2">We have more than 3000+ farms included in our Database.</h4>
+      </div>
+      <div id="fruits" class="w-full md:w-1/3 flex-col mt-12 md:mt-0 justify-around">
+        <svg class="svg-2xl mb-8 svg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.1 512.1">
+          <path
+            d="M493.6 105.1c33.6-33.5 14.1-70.7-.9-85.7s-52.1-34.5-85.7-.9c-9.3 9.4-31.8 6.3-60.2 2.5C284.6 12.5 190.5-.2 95.1 95S12.5 284.6 21 346.8c3.8 28.4 6.9 50.9-2.5 60.2-33.5 33.6-14.1 70.8.9 85.7 12 12 28 18.9 44.8 19.4a57 57 0 0041-18.5c9.3-9.3 31.7-6.3 60.1-2.4 62.3 8.4 156.3 21.2 251.7-74.2 95.4-95.4 82.6-189.4 74.2-251.7-3.9-28.4-7-50.8 2.4-60.2zm-19.3 62.5c8.4 62.4 20 148-69.4 237.3-89.4 89.4-174.9 77.8-237.3 69.4-33-4.5-59.2-8-74.6 7.2-29.3 29.4-58.4 2.3-61.5-.8-3.2-3.2-30.2-32.3-1-61.6 15.4-15.3 11.9-41.5 7.4-74.6-8.5-62.4-20.1-147.9 69.3-237.3 61-61 120.3-75 171.6-75 22 .4 44 2.3 65.7 5.7 33.1 4.5 59.3 8 74.6-7.3 29.3-29.3 58.4-2.3 61.6.8 3.1 3.2 30.1 32.3.8 61.6-15.3 15.4-11.7 41.5-7.2 74.6z" />
+          <path
+            d="M293.7 49.9a294.3 294.3 0 00-26.6-.1 8.5 8.5 0 10.9 17 252.7 252.7 0 0125.2.1 8.5 8.5 0 00.5-17zM235.3 62.1A8.5 8.5 0 00225 56a194.1 194.1 0 00-44.3 17.3 219.6 219.6 0 00-30.4 19.3 269.6 269.6 0 00-30.8 27 308.2 308.2 0 00-26.8 30.7 242.3 242.3 0 00-19.4 30.4 8.5 8.5 0 1015 8 208.5 208.5 0 0118-28.2 245.7 245.7 0 0125.3-29 289.2 289.2 0 0129-25.2 223.4 223.4 0 0128-18 194.9 194.9 0 0140.7-15.7 8.5 8.5 0 006.1-10.4zM219.5 438a9 9 0 00-12.2 0 8 8 0 00-1.8 2.8 8.5 8.5 0 001.8 9.3 10 10 0 002.9 1.8c3.1 1.4 6.8.7 9.3-1.8a10 10 0 001.7-2.8c1-2 1-4.4 0-6.5-.3-1-1-2-1.7-2.8zM255.8 425.9a8.6 8.6 0 00-2.7-1.9 8.8 8.8 0 00-6.6 0c-1 .4-2 1-2.7 1.9-.8.8-1.5 1.7-1.9 2.7a8.9 8.9 0 001.9 9.3c.7.8 1.7 1.5 2.7 1.9a9 9 0 003.3.7c2.3 0 4.5-1 6-2.6a8.3 8.3 0 000-12zM225.5 407.7a8.5 8.5 0 10-2.8 14 8.8 8.8 0 004.7-4.7 8.9 8.9 0 00-1.9-9.3zM189 419.8a15 15 0 00-1.2-1l-1.5-.9-1.6-.4c-2.8-.6-5.6.3-7.7 2.3a8.9 8.9 0 00-2.6 6c0 2.3 1 4.5 2.6 6a8.6 8.6 0 006 2.6 8.6 8.6 0 006-2.6c.9-.7 1.5-1.7 2-2.7.4-1 .6-2.2.5-3.3 0-1.1-.1-2.2-.5-3.3-.5-1-1.1-1.9-2-2.7zM247 397.3c1-.4 2-1 2.7-1.9a8.4 8.4 0 000-12 8.6 8.6 0 00-13.9 2.7 8.9 8.9 0 002 9.3c.7.8 1.6 1.5 2.6 1.9 1.1.4 2.2.7 3.4.7 1 0 2.2-.3 3.2-.7zM280.1 401.6l-1.3-1a6 6 0 00-1.4-.8c-.5-.3-1-.5-1.6-.5-1.1-.3-2.3-.3-3.4 0-.5 0-1 .2-1.6.5a8.4 8.4 0 00-2.7 14 8.2 8.2 0 006 2.3 8.6 8.6 0 007.9-11.7c-.5-1-1.1-2-1.9-2.8z" />
+        </svg>
+        <h4 class="w-2/3 lg:w-1/2">We have more than 150+ fruits and vegetables included.</h4>
+      </div>
+      <div id="functions" class="w-full md:w-1/3 flex-col mt-12 md:mt-0 justify-around">
+        <div class="icon">
+          <svg class="svg-2xl mb-8 svg-dark svg-light" viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">
+            <g fill-rule="nonzero">
+              <path
+                d="M7 60h34a4 4 0 003.9-3c6.7-.6 9.6-7.2 10-13.2.7-.4 1.1-1 1.1-1.8V31a2 2 0 00-1.3-1.9c-.3-3-1.8-5.8-4-7.8a9.5 9.5 0 00-5.8-2.3 4 4 0 00-2.2-2.6A9.6 9.6 0 0046 9c0-5-3.4-9-7.5-9h-31C3.4 0 0 4 0 9a9.3 9.3 0 004.3 8.1A4 4 0 003 20v17s0 4.4-2 6.7A2 2 0 002.5 47H3v9a4 4 0 004 4zm-2-4v-9h6a2 2 0 001 1.7V53a1 1 0 002 0v-4h2v4a1 1 0 002 0v-4.3c.6-.3 1-1 1-1.7h8.4a6 6 0 003.6-2.7V56c0 .7.2 1.4.6 2H7a2 2 0 01-2-2zm8-9v-2h4v2zm28 11h-6a2 2 0 01-2-2V25h10v31a2 2 0 01-2 2zm13-27v11h-4V31zm-5.1 12.7c-.3 2.4-1.1 6.4-3.9 7.1V25c.6.1 1.1.3 1.6.7a6 6 0 012 3.8A2 2 0 0048 31v11c0 .7.3 1.3.9 1.7zM45 54.9v-2c3.2-.5 5.3-3.7 5.9-8.9h2c-.5 5-2.8 10.3-7.9 11zM52.7 29h-2a8 8 0 00-3-5c-.8-.5-1.7-.9-2.7-1v-2c1.6.1 3.1.7 4.4 1.8 1.8 1.6 3 3.8 3.2 6.2zM43 23H33v-3c0-1.1.9-2 2-2h6a2 2 0 012 2zm1-14c0 3.9-2.5 7-5.5 7S33 12.9 33 9s2.5-7 5.5-7S44 5.1 44 9zM33.8 2A9.7 9.7 0 0031 9c0 2.6 1 5.1 2.8 7h-3.3c-3 0-5.5-3.1-5.5-7s2.5-7 5.5-7zm-8 0A9.7 9.7 0 0023 9c0 2.6 1 5.1 2.8 7H15.5c-3 0-5.5-3.1-5.5-7s2.5-7 5.5-7zM2 9c0-3.9 2.5-7 5.5-7h3.3A9.7 9.7 0 008 9c0 2.6 1 5.1 2.8 7H7.5C4.5 16 2 12.9 2 9zm3 28V20c0-1.1.9-2 2-2h24.6a4 4 0 00-.6 2v17s0 7-4.1 8H19a2 2 0 00-2-2h-4a2 2 0 00-2 2H2.5C5 42.1 5 37.2 5 37z" />
+              <path
+                d="M35 9c-.1 2 1.4 3.9 3.5 4 2-.1 3.6-2 3.5-4 .1-2-1.4-3.9-3.5-4-2 .1-3.6 2-3.5 4zm5 0c0 1-.7 2-1.5 2S37 10 37 9s.7-2 1.5-2S40 8 40 9zM17.5 33.6l7 3.3a1 1 0 101-1.8l-5.6-2.6 5.5-2.6a1 1 0 000-1.8L20 25.5l5.5-2.6a1 1 0 00-.8-1.8l-7.1 3.3-7-3.3a1 1 0 00-1 1.8l5.6 2.6-5.5 2.6a1 1 0 000 1.8l5.5 2.6-5.5 2.6a1 1 0 10.8 1.8zM12.4 29l5.1-2.4 5.1 2.4-5.1 2.4z" />
+            </g>
+          </svg>
+
+        </div>
+        <h4 class="w-2/3 lg:w-1/2">Map, Database, Tons of Filters & Your Best Places to go. Perfectly fitted for
+          Backpackers.</h4>
+      </div>
+    </div>
+    <div id="addingFarmsBanner" class="mt-20 mb-20 w-5/6 md:w-3/5 px-6 py-12 rounded-sm border-2 text-3xl text-center">
+      <h4 class="">Hey Mate, we're adding 200 new farms to our coverage every week! We
+        want to cover all farms in Australia.</h4>
+      <div class="svg mt-6 mb-4 flex justify-around">
+        <svg class="svg-2xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M509 448.3L353.3 292.6l-.1-.1-32.2-32.2c-4-4-10.5-4-14.4 0l-16 16-19-19.2a155.2 155.2 0 00-7-211.8 155.2 155.2 0 00-219.3 0 155.2 155.2 0 000 219.3c30.3 30.2 70 45.3 109.7 45.3 36.5 0 73-12.8 102.1-38.3l19.1 19-15.9 16c-4 4-4 10.4 0 14.4l32.2 32.2.3.3L448.3 509a10.2 10.2 0 0014.5 0l46.2-46.2c2-2 3-4.5 3-7.3s-1-5.3-3-7.2zM250.1 250.1a134.8 134.8 0 01-190.3 0A134.8 134.8 0 01155 20.4a134.8 134.8 0 0195.2 229.7zm31.9 63.7l31.8-31.8 17.8 17.8-31.8 31.8-17.8-17.8zm173.5 173.5L314.2 346l31.8-31.8 141.3 141.3-31.8 31.8z" />
+          <path
+            d="M232.4 77.5a109.6 109.6 0 00-154.9 0 109.6 109.6 0 0077.4 187c29.3 0 56.8-11.5 77.5-32.1 20.6-20.7 32-48.2 32-77.5 0-29.2-11.4-56.7-32-77.4zM217.9 218a88.4 88.4 0 01-63 26.1 89.2 89.2 0 1163-152 88.5 88.5 0 0126.1 63c0 23.7-9.3 46-26 63z" />
+          <path
+            d="M219.8 146a10.2 10.2 0 10-20.3 2.8c2 14-2.7 28-12.7 38a10.2 10.2 0 0014.4 14.4 65 65 0 0018.6-55.2zM198.4 109.5c-13.1 0-13.1 20.5 0 20.5 13.2 0 13.2-20.5 0-20.5z" />
+        </svg>
+      </div>
+    </div>
+    <div id="faq" class="text-xl mt-24 mb-24 flex-col justify-around w-full md:w-2/3">
+      <h4 class="text-2xl">FAQ</h4>
+      <div id="list" class="w-full px-6 md:px-16 mt-12">
+        <ul v-for="item in faq" :key="item.id" class="mt-2 border border-bg_secondary py-4 px-6">
+          <div v-on:click="pushQ('q' + item.id)" class="question cursor-pointer">
+            {{item.q}}
+          </div>
+          <div :class="get_height('q' + item.id)" class="answer text-justify mt-2">
+            {{item.a}}</div>
+        </ul>
+      </div>
+    </div>
+    <div id="pricingBanner"
+      class="mt-20 flex-col md:flex-row justify-between mb-8 w-5/6 md:w-3/5 px-6 py-12 rounded-sm border-2 text-2xl md:text-3xl text-center">
+      <div class="svg px-8 flex justify-around">
+        <svg class="svg-2xl" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M456.8 0H338.4c-26 0-60.8 14.4-79.2 32.8l-243 243a54.8 54.8 0 00-16.2 39c0 14.8 5.7 28.7 16.1 39l142 142a54.8 54.8 0 0039 16.2c14.8 0 28.6-5.7 39-16.1l243.1-243a126.7 126.7 0 0032.8-79.3V55.2A55.2 55.2 0 00456.8 0zM482 173.6c0 18.1-11.2 45.2-24 58l-243 243c-4.8 4.8-11.1 7.4-17.9 7.4s-13-2.6-17.8-7.3l-142-142a25 25 0 01-7.3-17.8 25 25 0 017.3-17.8l243-243a97.4 97.4 0 0158-24.1h118.5A25.2 25.2 0 01482 55.2zm0 0" />
+          <path
+            d="M139.3 331.5c-5.4-5.5-4-13.4 4-21.6 9.6-9.5 16.6-7.8 20-11.4 4.2-4 .8-11-1.8-13.7-7.5-7.5-24 5.8-30.7 12.5-13 13-21.8 33.4-4.9 50.3 27 27 58.2-14.7 75.2 2.3 6.8 6.8 4 15.8-2.8 22.6-11.6 11.6-23.4 6-28 10.6-3.6 3.5-1.8 11.2 1.4 14.4 6.6 6.6 25.4 2.7 40.3-12.2 15.7-15.6 18.7-35.4 2.4-51.6-29.4-29.5-61 11.9-75-2.2zm0 0M298.1 282.6l-93.4-49.5c-4.4-2.4-10.2.2-14.5 4.6-4.2 4.2-6.8 10-4.4 14.4l49.5 93.4c.3.5.7 1.1 1 1.3 3.6 3.7 11.4.8 15.4-3.1 2.5-2.5 3.6-5.3 2-8L243 316.3l26-26 19.5 10.8c2.7 1.5 5.4.4 8-2 3.9-4 6.6-12 3.1-15.5-.3-.4-.8-.6-1.4-1zm-63.7 19l-25-44.7 44.8 25zm0 0M343 226.4l-27.7 27.7-65.6-65.5c-3.2-3.2-8.3-.8-11.9 2.8-3.7 3.8-6 8.8-2.8 12l73.8 73.8c3 3 7.8 1.5 11.1-1.8l36-36c3-3 1.2-7.8-2-11-3.3-3.2-8-5-10.9-2zm0 0M402.4 167L370.3 199l-22.9-22.8 17.3-17.3c3.2-3.1 1.6-7.7-1-10.3-3-3-7.6-4.2-10.6-1.2l-17.3 17.2-22.7-22.7 32.2-32.2c3-3 1.6-7.7-2-11.2-3-3-7.8-4.9-11-1.7L292 137.3c-3.3 3.3-5 8.1-1.8 11.2l73.7 73.7c3 3 7.8 1.5 11.1-1.8l40.5-40.5c3.2-3.1 1.3-8-1.7-11-3.5-3.5-8.3-4.9-11.3-2zm0 0M417.5 80.4a15.1 15.1 0 00-15 15 15 15 0 0015 15 15 15 0 0015-15 15 15 0 00-15-15zm0 0" />
+        </svg>
+      </div>
+      <h4 class="mt-4 md:mt-0">We want to keep things simple! We're charging you a low membership fee of 19.99 $AUD to cover our
+        database costs and finding all the relevant data.</h4>
+    </div>
+    <div id="signUpHeader" class="mt-4 mb-4 text-2xl w-4/5 text-center">
+      <h6>Hooked? We're happy to sign you up here mate.</h6>
+    </div>
+    <div id="signUp" class="mb-20">
+      <router-link v-if="getAuth == false" to="/signup">
+        <p
+          class="button text-3xl bg-main_focus hover:bg-main_focus_active text-main_primary py-2 px-4 lg:px-12 mx-2 cursor-pointer">
+          Sign up</p>
+      </router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+  import store from "../store";
+  export default {
+    name: 'home',
+    data() {
+      return {
+        faq: {
+          "q1": {
+            "id": "1",
+            "q": "What is Farmify?",
+            "a": "Farmify is the most user-friendly app to help you find Farm work in Australia within seconds!"
+          },
+          "q2": {
+            "id": "2",
+            "q": "What features are included?",
+            "a": "Everything you will need to find a job on a farm! Our web-app includes map, database, saving farm options, tons of filters to personalize your search and much more!"
+          },
+          "q3": {
+            "id": "3",
+            "q": "How is it different from services that also help you find farms in Australia?",
+            "a": "Simple Answer: We have more data and we provide a better user experience! We did the research, our database includes more possible places to work than all the services that already exist. And we think the way we designed our web-app will give you a much better experience looking for work."
+          },
+          "q4": {
+            "id": "4",
+            "q": "I have used similar services like yours and the data provided wasn’t right. Is your data always up-to-date?",
+            "a": "Yes, it is! We check our data weekly to ensure that all information provided on the map and in the database is still valid. Since we want you to have the best user experience possible, this is our promise to you!"
+          },
+          "q5": {
+            "id": "5",
+            "q": "Will the app be available for iPhones and Android Phones?",
+            "a": "Currently our app is available as a web-app service using your mobile phone browser or your notebook browser. However there will be an app available for Apple and Android devices in the near future."
+          },
+          "q6": {
+            "id": "6",
+            "q": "Do I need to pay to use your service?",
+            "a": "Right now we don’t take any money for using our service. Sign up at the end of the page and get a free lifetime membership for testing the app. After official launch of the service we will take a small one time fee to cover our hosting and development expenditures."
+          },
+          "q7": {
+            "id": "7",
+            "q": "When will the web-app be launched?",
+            "a": "We are still keen to improve our web-app wherever we can to provide you with the best user experience possible. We don’t have a specific date yet but official launching will be somewhere around July 2020."
+          }
+        },
+        highlightedA: "",
+        activeQ: ""
+      }
+    },
+    computed: {
+      getAuth() {
+        return store.state.auth
+      }
+    },
+    methods: {
+      pushQ(id) {
+        this.highlightedA = this.faq[id]["a"];
+        this.activeQ = id;
+        return 0;
+      },
+      get_class(id) {
+        if (this.activeQ == id) {
+          return "text-main_focus"
+        } else {
+          return "text-main_primary"
+        }
+      },
+      get_height(id) {
+        if (this.activeQ == id) {
+          return "italic"
+        } else {
+          return "hidden"
+        }
+      }
+    }
+  }
+</script>
