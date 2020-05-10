@@ -8,7 +8,8 @@
         <h5 class="px-4 text-lg text-bg_secondary">- {{item.category}} -</h5>
         <h6 class="px-4 text-base text-bg_secondary">{{getDistance()}} km from your location</h6>
         <div class="below w-full flex items-center justify-end mt-12 py-1 relative cursor-pointer">
-            <div v-if="item.phone != undefined" id="call" title="Phone" alt="Phone" class="cursor-pointer px-1">
+            <div v-tooltip="tooltip" v-if="item.phone != undefined" id="call" title="Phone"
+                alt="Phone" class="cursor-pointer px-1">
                 <div @click="handleButtonClick('phone', item)" class="button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
@@ -16,7 +17,7 @@
                     </svg>
                 </div>
             </div>
-            <div v-if="item.website != undefined" id="website" title="Website" alt="Website"
+            <div v-if="item.website != undefined" id="website" v-tooltip="tooltip" title="Website" alt="Website"
                 class="cursor-pointer relative px-1">
                 <div @click="handleButtonClick('website', item)" class="button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124">
@@ -28,7 +29,7 @@
                     </svg>
                 </div>
             </div>
-            <div v-if="item.email != undefined" id="mail" title="Email" alt="Email"
+            <div v-if="item.email != undefined" id="mail" v-tooltip="tooltip" title="Email" alt="Email"
                 class="cursor-pointer relative px-1">
                 <div @click="handleButtonClick('mail', item)" class="button">
                     <svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
@@ -39,19 +40,19 @@
                     </svg>
                 </div>
             </div>
-            <div @click="handleSavedFarm(item.id)" class="relative" v-if="item.email != undefined" id="easyContact">
+            <div @click="getEasyApply(item.id)" class="relative" v-tooltip="tooltip" v-if="item.email != undefined" id="easyContact">
                 <button
                     class="bg-main_primary cursor-pointer hover:bg-main_secondary text-bg_primary rounded-sm px-4 py-2 ml-2 mr-2">Easy
                     Apply</button>
             </div>
-        </div>
-        <div class="saveFarm ml-4 mt-3 md:absolute md:bottom-0 md:mb-4">
-            <svg @click="getEasyApply()" alt="Save Farm" title="Save Farm" :style="getFill(item.id)"
-                style="z-index: 30" class="svg-mds cursor-pointer" viewBox="0 -10 512 511"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M114.6 491.1A27.1 27.1 0 0188 458l33-145.1-111.8-98a27.2 27.2 0 0115.4-47.6l147.8-13.4L231 17a27.2 27.2 0 0150 0l58.4 136.8 147.8 13.4a27.2 27.2 0 0115.5 47.6l-111.7 98 33 145a27.2 27.2 0 01-40.6 29.4L256 411.1l-127.5 76.2a27.3 27.3 0 01-14 3.8zM256 378.3c4.8 0 9.6 1.3 14 3.8l120.2 72-31-137c-2.3-9.7 1-19.9 8.6-26.5l105.4-92.5-139.5-12.7c-10-.9-18.7-7.2-22.6-16.5L256 40l-55.2 129a27.1 27.1 0 01-22.5 16.5L38.7 198l105.5 92.5a27.2 27.2 0 018.6 26.5l-31 137L242 382c4.3-2.5 9.1-3.8 14-3.8zm-84.6-221.9zm169.1 0zm0 0" />
-            </svg>
+            <div  class="saveFarm ml-4 mt-3 absolute bottom-0 left-0 md:mb-2">
+                <svg @click="handleSavedFarm()" alt="Save Farm" title="Save Farm" v-tooltip="'Saved farms can be stored after login'" :style="getFill(item.id)"
+                    style="z-index: 30" class="svg-mds cursor-pointer" viewBox="0 -10 512 511"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M114.6 491.1A27.1 27.1 0 0188 458l33-145.1-111.8-98a27.2 27.2 0 0115.4-47.6l147.8-13.4L231 17a27.2 27.2 0 0150 0l58.4 136.8 147.8 13.4a27.2 27.2 0 0115.5 47.6l-111.7 98 33 145a27.2 27.2 0 01-40.6 29.4L256 411.1l-127.5 76.2a27.3 27.3 0 01-14 3.8zM256 378.3c4.8 0 9.6 1.3 14 3.8l120.2 72-31-137c-2.3-9.7 1-19.9 8.6-26.5l105.4-92.5-139.5-12.7c-10-.9-18.7-7.2-22.6-16.5L256 40l-55.2 129a27.1 27.1 0 01-22.5 16.5L38.7 198l105.5 92.5a27.2 27.2 0 018.6 26.5l-31 137L242 382c4.3-2.5 9.1-3.8 14-3.8zm-84.6-221.9zm169.1 0zm0 0" />
+                </svg>
+            </div>
         </div>
     </div>
 </template>
@@ -67,6 +68,7 @@
         },
         data() {
             return {
+                tooltip: 'Please login to use this feature',
                 auth: store.state.auth,
                 easyApplyActive: false,
                 phoneActive: false,

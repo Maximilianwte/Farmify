@@ -28,6 +28,10 @@ import 'vuelayers/lib/style.css' // needs css-loader
 
 Vue.use(VueLayers)
 
+import VTooltip from "v-tooltip";
+Vue.use(VTooltip);
+Vue.config.productionTip = false;
+
 Vue.use(VueTouch);
 
 new Vue({
