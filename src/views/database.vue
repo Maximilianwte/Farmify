@@ -24,7 +24,8 @@
                     </div>
                     <div id="filter_sortby" class="px-4">Filter:</div>
                     <div id="sortBy" class="px-4 cursor-pointer">
-                        <Dropdown v-bind:items="filter" />
+                        <!-- Is this working? How to put in the data from the child? -->
+                        <Dropdown @selectOption="filterFarms()" v-bind:items="filter"/>
                     </div>
                 </div>
             </div>
@@ -38,6 +39,7 @@
     import ListItem from "../components/ListItem";
     import Dropdown from "../components/Dropdown";
     import data_functions from "../data/data_functions";
+    import farm_functions from "../data/farm_functions";
     import store from "../store";
     export default {
         components: {
@@ -49,7 +51,7 @@
                 list_item: store.state.farms.data,
                 location: store.state.profile.data.location,
                 filter: {
-                    options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"]
+                    options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
                 }
             }
         },
@@ -58,6 +60,9 @@
                 data_functions.get_geoCodeOpenCage(adress).then(geoCode => {
                     store.commit("updateGeoCode", geoCode);
                 });
+            },
+            filterFarms(farms, id) {
+
             }
         }
     }

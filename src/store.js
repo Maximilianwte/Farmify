@@ -128,7 +128,7 @@ export default new Vuex.Store({
       state.groups.data = payload;
     },
     updateGeoCode(state, payload) {
-      state.geoCode = payload;
+      state.profile.data.geoCode = payload;
     },
     handleSavedFarm(state, payload) {
       var savedFarms = state.profile.data.savedFarms

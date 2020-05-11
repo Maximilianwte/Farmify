@@ -3,9 +3,9 @@
     <div id="testButtonGroup">
     </div>
     <div id="header" class="hidden md:block text-4xl mt-32">
-      <h1 class="">Map</h1>
+      <h1 class="mb-4">Map</h1>
     </div>
-    <MapContainer class="w-full h-screen md:h-600px md:mt-6" />
+    <MapContainer class="w-full h-screen md:h-600px" />
   </div>
 </template>
 

@@ -40,6 +40,25 @@ let map_functions = {
 
         return farms_to_show;
     },
+    filterFarms(farms, filterValue) {
+        var farms_to_show = farms;
+        // does that way of filtering work?
+        switch (filterValue) {
+            case 'Below 200km':
+                
+                break;
+            case 'Farm with Website':
+                farms_to_show = deleteObject(farms_to_show, 'website', undefined);
+                break;
+            case 'Animal Free Work (V)':
+                farms_to_show = deleteObject(farms_to_show, 'category', 'Cattle Farm');
+                break;
+            default: 
+                break;
+
+            return farms_to_show
+        }
+    },
     calculateDistance(geoCode1, geoCode2) {
         var lat1 = geoCode1[1];
         var lon1 = geoCode1[0];

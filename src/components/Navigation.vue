@@ -1,6 +1,6 @@
 <template>
     <div id="Navigation">
-        <div id="mobile" title="Menu" class="block z-20 md:hidden">
+        <div id="mobile" title="Menu" class="block md:hidden">
             <button @click="pushMenu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-lg" viewBox="0 0 512 512">
                     <path

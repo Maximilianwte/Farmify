@@ -11,6 +11,7 @@ html {
     --red_active: rgb(255, 125, 149);
     --yellow: #FFE569;
     --yellow_active: rgb(255, 244, 187);
+    overflow-x: hidden;
 }
 
 .theme_light {
@@ -73,13 +74,13 @@ svg {
     stroke: var(--main-primary);
     fill: var(--main-primary);
     width: 3rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 svg:hover {
     stroke: var(--main-secondary);
     fill: var(--main-secondary);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .svg-dark {

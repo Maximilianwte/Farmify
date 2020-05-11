@@ -1,8 +1,7 @@
 // https://jackwhiting.co.uk/posts/using-firebase-admin-sdk-with-netlify-lambda-functions/
 const express = require("express");
 const serverless = require("serverless-http");
-const cors = require('cors');
-const jwt = require('jsonwebtoken');
+//const jwt = require('jsonwebtoken');
 
 // Firestore
 
@@ -139,12 +138,6 @@ router.post('/read_user', function (req, res) {
       snapshot.forEach(doc => {
         var DatabaseData = doc.data();
         if (data.Password == DatabaseData.Password) {
-          jwt.sign({
-            DatabaseData
-          }, 'secretKey', (error, token) => {
-            // Check how the DatabaseData looks? Is it next to email etc.?
-            DatabaseData["Token"] = token
-          })
           DatabaseData = JSON.stringify(DatabaseData);
           res.send(DatabaseData);
         }
@@ -191,8 +184,6 @@ app.get('/auth/facebook/callback',
   }));
 
 app.use('/.netlify/functions/user_functions', router);
-
-app.use(cors())
 
 module.exports.handler = serverless(app);
 
