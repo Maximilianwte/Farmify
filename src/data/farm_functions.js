@@ -53,7 +53,7 @@ let map_functions = {
             case 'Farms with Website':
                 farms_to_show = filterObjectByKey(farms_to_show, 'website');
                 break;
-            case 'Animal Free Work (V)':
+            case 'Animal free work (V)':
                 farms_to_show = deleteObjectByValue(farms_to_show, 'category', 'Cattle Farm');
                 break;
             case 'Animal related work':

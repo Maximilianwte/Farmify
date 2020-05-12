@@ -30,7 +30,8 @@
                 </div>
             </div>
             <div class="container flex-col md:w-3/4 w-full">
-                <ListItem class="mt-8" v-for="item in list_item" v-bind:key="item.id" v-bind:item="item" />
+                <p class="mt-4 text-lg text-bg_secondary">{{getNumberItems}}</p>
+                <ListItem class="mt-4" v-for="item in list_item" v-bind:key="item.id" v-bind:item="item" />
             </div>
         </div>
     </div>
@@ -55,6 +56,9 @@
             store.commit("updateFarmsToShow", store.state.farms.data);
         },
         computed: {
+            getNumberItems() {
+                return store.state.farms.active.length > 0 ? store.state.farms.active.length + ' Farms found.' : 'No Farms found.'
+            },
             list_item() {
                 return store.state.farms.active
             }
