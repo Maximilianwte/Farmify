@@ -12,7 +12,8 @@
                         </svg>
                     </div>
                     <div id="filter_location" class="px-2">My Location: </div>
-                    <div id="location" class="px-4"> <input @change="getGeoCode(location)" type="text" placeholder="Location" v-model="location"
+                    <div id="location" class="px-4"> <input @change="getGeoCode(location)" type="text"
+                            placeholder="Location" v-model="location"
                             class="bg-main_primary w-64 border-b-2 md:w-90 cursor-pointer text-bg_primary px-2"></div>
                 </div>
                 <div class="sortby mt-4 md:mt-0 flex-col md:flex-row">
@@ -24,8 +25,7 @@
                     </div>
                     <div id="filter_sortby" class="px-4">Filter:</div>
                     <div id="sortBy" class="px-4 cursor-pointer">
-                        <!-- Is this working? How to put in the data from the child? -->
-                        <Dropdown @selectOption="filterFarms()" v-bind:items="filter"/>
+                        <TheFilterComponent />
                     </div>
                 </div>
             </div>
@@ -37,22 +37,26 @@
 </template>
 <script>
     import ListItem from "../components/ListItem";
-    import Dropdown from "../components/Dropdown";
+    import TheFilterComponent from "../components/TheFilterComponent";
     import data_functions from "../data/data_functions";
     import farm_functions from "../data/farm_functions";
     import store from "../store";
     export default {
         components: {
             ListItem,
-            Dropdown
+            TheFilterComponent
         },
         data() {
             return {
-                list_item: store.state.farms.data,
                 location: store.state.profile.data.location,
-                filter: {
-                    options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
-                }
+            }
+        },
+        mounted() {
+            store.commit("updateFarmsToShow", store.state.farms.data);
+        },
+        computed: {
+            list_item() {
+                return store.state.farms.active
             }
         },
         methods: {
@@ -60,9 +64,6 @@
                 data_functions.get_geoCodeOpenCage(adress).then(geoCode => {
                     store.commit("updateGeoCode", geoCode);
                 });
-            },
-            filterFarms(farms, id) {
-
             }
         }
     }

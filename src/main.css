@@ -15,10 +15,10 @@ html {
 }
 
 .theme_light {
-    --bg-primary: #7b9c74;
+    --bg-primary: #67915f;
     --main-primary: #f5efe0;
-    --bg-secondary: #7b8b64;
-    --main-secondary: #a0b189;
+    --bg-secondary: #96c08d;
+    --main-secondary: #d6e0c7;
     --main-focus: #cc6355;
     --main-focus-secondary: #aa5348;
 }

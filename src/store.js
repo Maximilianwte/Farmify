@@ -80,7 +80,8 @@ export default new Vuex.Store({
           category: "Cattle Farm",
           location: [114.866686, -22.965272]
         }
-      ]
+      ],
+      active: []
     },
     groups: {
       data: [{
@@ -95,7 +96,8 @@ export default new Vuex.Store({
           numberInGroup: 2,
           location: [115.866686, -23.965272]
         }
-      ]
+      ],
+      active: []
     }
   },
   mutations: {
@@ -129,6 +131,9 @@ export default new Vuex.Store({
     },
     updateGeoCode(state, payload) {
       state.profile.data.geoCode = payload;
+    },
+    updateFarmsToShow(state, payload) {
+      state.farms.active = payload;
     },
     handleSavedFarm(state, payload) {
       var savedFarms = state.profile.data.savedFarms

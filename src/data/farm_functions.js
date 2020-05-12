@@ -8,7 +8,7 @@ let map_functions = {
         for (var index in groups) {
             for (var farmIndex in groups[index].farmsIncluded) {
                 var farmID = groups[index].farmsIncluded[farmIndex]
-                farms_to_show = deleteObject(farms_to_show, 'id', farmID);
+                farms_to_show = deleteObjectByValue(farms_to_show, 'id', farmID);
             }
         }
         return farms_to_show;
@@ -42,22 +42,30 @@ let map_functions = {
     },
     filterFarms(farms, filterValue) {
         var farms_to_show = farms;
-        // does that way of filtering work?
         switch (filterValue) {
-            case 'Below 200km':
-                
+            case 'Less than 200km from me':
+                for (var index in farms) {
+                    if (this.calculateDistance(store.state.profile.data.geoCode, farms.data.location) < 200) {
+                        farms_to_show = findObject(farms, 'id', farms[index]['id'])
+                    }
+                }
                 break;
-            case 'Farm with Website':
-                farms_to_show = deleteObject(farms_to_show, 'website', undefined);
+            case 'Farms with Website':
+                farms_to_show = filterObjectByKey(farms_to_show, 'website');
                 break;
             case 'Animal Free Work (V)':
-                farms_to_show = deleteObject(farms_to_show, 'category', 'Cattle Farm');
+                farms_to_show = deleteObjectByValue(farms_to_show, 'category', 'Cattle Farm');
                 break;
-            default: 
+            case 'Animal related work':
+                farms_to_show = findObject(farms_to_show, 'category', 'Cattle Farm');
                 break;
-
-            return farms_to_show
+            case 'Vineyards':
+                farms_to_show = findObject(farms_to_show, 'category', 'Vineyard');
+                break;
+            default:
+                break;
         }
+        return farms_to_show
     },
     calculateDistance(geoCode1, geoCode2) {
         var lat1 = geoCode1[1];
@@ -83,13 +91,23 @@ let map_functions = {
 
 export default map_functions
 
-let deleteObject = (array, key, value) => {
+let deleteObjectByValue = (array, key, value) => {
     return array.filter((e) => {
         if (e && e.hasOwnProperty(key) && e[key] === value) {
             return false;
         }
 
         return true;
+    });
+};
+
+let filterObjectByKey = (array, key) => {
+    return array.filter((e) => {
+        if (e && e.hasOwnProperty(key)) {
+            return true;
+        }
+
+        return false;
     });
 };
 
