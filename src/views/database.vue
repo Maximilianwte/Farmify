@@ -1,5 +1,5 @@
 <template>
-    <div id="database" class="w-full flex-col">
+    <div @click="handleCloseFilter()" id="database" class="w-full flex-col">
         <h1 class="text-4xl mt-32">Farms Around Me</h1>
         <div id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
             <div id="filter" class="flex-row md:flex mt-8 justify-between w-5/6 lg:w-2/3 px-2 py-2 border-2 rounded-sm">
@@ -25,7 +25,7 @@
                     </div>
                     <div id="filter_sortby" class="px-4">Filter:</div>
                     <div id="sortBy" class="px-4 cursor-pointer">
-                        <TheFilterComponent />
+                        <TheFilterComponent :closeFilter="closeFilter" />
                     </div>
                 </div>
             </div>
@@ -50,6 +50,7 @@
         data() {
             return {
                 location: store.state.profile.data.location,
+                closeFilter: false
             }
         },
         mounted() {
@@ -57,10 +58,11 @@
         },
         computed: {
             getNumberItems() {
-                return store.state.farms.active.length > 0 ? store.state.farms.active.length + ' Farms found.' : 'No Farms found.'
+                return store.state.farms.active.length > 0 ? store.state.farms.active.length + ' Farms found.' :
+                    'No Farms found.'
             },
             list_item() {
-                return store.state.farms.active
+                return store.state.farms.active;
             }
         },
         methods: {
@@ -68,6 +70,9 @@
                 data_functions.get_geoCodeOpenCage(adress).then(geoCode => {
                     store.commit("updateGeoCode", geoCode);
                 });
+            },
+            handleCloseFilter() {
+                this.closeFilter = true;
             }
         }
     }

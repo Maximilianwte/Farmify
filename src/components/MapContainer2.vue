@@ -6,7 +6,7 @@
         :rotation.sync="rotation" />
 
       <!-- Mobile Menu -->
-      <div id="mobile" title="Menu" class="absolute w-full h-16 top-0 left-0 md:hidden text-bg_primary bg-main_primary">
+      <div id="mobile" title="Menu" style="z-index: 300" class="absolute w-full h-16 top-0 left-0 md:hidden text-bg_primary bg-main_primary">
         <div class="sortby mt-4 md:mt-0 w-64 flex">
           <div class="icon pl-2">
             <svg class="svg-md svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@
 
       <!-- Tablet & Desktop Menu -->
       <div id="menu" style="z-index: 200" title="Menu"
-        class="absolute w-64 h-12 rounded-sm border-2 border-main_secondary top-0 right-0 mt-64 mr-4 text-bg_primary bg-main_primary">
+        class="hidden md:block absolute w-64 h-12 rounded-sm border-2 border-main_secondary top-0 right-0 mt-56 mr-6 text-bg_primary bg-main_primary">
         <div class="sortby mt-3 ml-2 w-64 flex">
           <div class="icon pl-2">
             <svg class="svg-md svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
