@@ -21,7 +21,6 @@ let map_functions = {
         for (var index in farmsInGroup) {
             farms_to_show.push(findObject(all_farms, 'id', farmsInGroup[index])[0]);
         }
-
         return farms_to_show;
     },
     findFarm(id, value) {

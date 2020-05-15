@@ -5,8 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    theme: "theme_dark",
+    theme: "theme_light",
     auth: false,
+    signupPageCode: 0,
     cookies: {
       asked: false,
       accepted: false
@@ -142,6 +143,9 @@ export default new Vuex.Store({
       } else {
         savedFarms.splice(savedFarms.indexOf(payload), 1);
       }
+    },
+    pushSignUpPageCode(state, payload) {
+      state.signupPageCode = payload;
     }
   },
   actions: {

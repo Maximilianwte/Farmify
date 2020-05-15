@@ -32,7 +32,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import( /* webpackChunkName: "about" */ './views/postbuy.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/profile/postbuy.vue')
     },
     {
       path: '/imprint',
@@ -50,32 +50,33 @@ export default new Router({
     {
       path: '/database',
       name: 'database',
-      component: () => import('./views/database.vue')
+      component: () => import('./views/database/database.vue')
     },
     {
       path: '/saved',
       name: 'savedfarms',
-      component: () => import('./views/savedfarms.vue')
+      component: () => import('./views/database/savedfarms.vue')
     },
     {
       path: '/profile',
       name: 'profile',
-      component: () => import( /* webpackChunkName: "about" */ './views/profile.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/profile/profile.vue')
     },
     {
-      path: '/signup',
+      path: '/signup/:page',
       name: 'signup',
-      component: () => import( /* webpackChunkName: "about" */ './views/signup.vue')
+      props: true,
+      component: () => import( /* webpackChunkName: "about" */ './views/profile/signup.vue')
     },
     {
       path: '/signin',
       name: 'signin',
-      component: () => import( /* webpackChunkName: "about" */ './views/signin.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/profile/signin.vue')
     },
     {
       path: '/forgot',
       name: 'forgotpassword',
-      component: () => import( /* webpackChunkName: "about" */ './views/forgotPassword.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/profile/forgotPassword.vue')
     },
   ]
 })

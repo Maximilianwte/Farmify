@@ -1,31 +1,44 @@
 <template>
   <div>
-    <vl-map @click="activeMarkerValue = 0" :load-tiles-while-animating="false" :load-tiles-while-interacting="true" :logo="false"
-      data-projection="EPSG:4326" class="h-full bg-main_primary">
-      <vl-view :zoom.sync="zoom" :min-zoom="4" :center.sync="center" :enable-rotation="false"
+    <vl-map @click="activeMarkerValue = 0" :load-tiles-while-animating="false" :load-tiles-while-interacting="true"
+      :logo="false" data-projection="EPSG:4326" class="h-full bg-main_primary">
+      <vl-view :zoom.sync="zoom" :min-zoom="3.5" :center.sync="center" :enable-rotation="false"
         :rotation.sync="rotation" />
 
       <!-- Mobile Menu -->
-      <div id="mobile" title="Menu" style="z-index: 300" class="absolute w-full h-16 top-0 left-0 md:hidden text-bg_primary bg-main_primary">
-        <div class="sortby mt-4 md:mt-0 w-64 flex">
-          <div class="icon pl-2">
-            <svg class="svg-md svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
+      <div id="mobile" title="Menu" style="z-index: 300"
+        class="absolute w-full h-12 top-0 left-0 md:hidden text-bg_primary bg-main_primary">
+        <div id="header" class="mt-1 ml-2">
+          <router-link class="mr-4 flex items-center" to="/"><svg class="svg-lg svg-dark"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
-                d="M367.8 0H16.6c-6.2 0-12 3.4-14.8 9a16.7 16.7 0 001.3 17.4l128.7 181.3.2.1c4.6 6.4 7.2 14 7.2 21.9v147.8a16.4 16.4 0 0022.9 15.2l72.3-27.6c6.5-2 10.8-8 10.8-15.4v-120c0-7.9 2.5-15.5 7.2-21.9l.1-.1L381.2 26.4A16.7 16.7 0 00382.5 9c-2.8-5.6-8.5-9-14.7-9zm0 0" />
+                d="M363.6 262.3a10 10 0 0 0-6.1-6.6c-.6-.2-5.6-2-13.2-3.1a85 85 0 0 0 19.3-83.4 10 10 0 0 0-6.1-6.6 86 86 0 0 0-53.8.6 89.8 89.8 0 0 0 2.5-21.4 85 85 0 0 0-45.3-75.7 10 10 0 0 0-9-.3c-2 1-46 22-46 76 0 7.8 1 15 2.5 21.4a86 86 0 0 0-53.9-.6 10 10 0 0 0-6.1 6.6 85 85 0 0 0 19.3 83.4 71.1 71.1 0 0 0-13.2 3 10 10 0 0 0-6.1 6.7 85 85 0 0 0 21.4 85.5 83 83 0 0 0 76.1 23.9V437a10 10 0 0 0 20 0v-65.5a83 83 0 0 0 76.3-23.8 85 85 0 0 0 21.4-85.5zM246 340.5c-.2 4.5-.8 8.3-1.4 11a64.5 64.5 0 0 1-60.5-17.8 64.5 64.5 0 0 1-17.9-60.5 67 67 0 0 1 37.2 2.6c7.7 3 15.7 7.7 23.3 15.3a63.8 63.8 0 0 1 19.3 42.7v6.7zm0-93c-.2 4.4-.8 8.3-1.4 11a66.5 66.5 0 0 1-38-2.9 66 66 0 0 1-22.5-15 64.5 64.5 0 0 1-17.9-60.5c10.7-2.3 37.5-5 60.5 17.9l.4.4 2.6 2.9c12 13.5 15.8 27.9 16.3 39.4v6.7zm10.2-50.3a68 68 0 0 1-13.7-11.6 63.8 63.8 0 0 1-16.5-43.8A64.6 64.6 0 0 1 256 86.4a64.5 64.5 0 0 1 30.2 55.4 63.8 63.8 0 0 1-30.1 55.4zm9.9 47a63.3 63.3 0 0 1 19.9-46.6 64.5 64.5 0 0 1 60-17.5c2.5 11.5 4.9 37.8-17.9 60.5a66 66 0 0 1-26.8 16.6 66.4 66.4 0 0 1-33.7 1.3c-.7-3.3-1.5-8.2-1.5-14v-.3zm62 89.5a64.5 64.5 0 0 1-60.4 17.9 64.9 64.9 0 0 1 17.8-60.5 66 66 0 0 1 26.9-16.6c14.2-4.4 27-2.8 33.6-1.3 2.5 11.4 4.9 37.8-17.9 60.5z" />
+              <path
+                d="M309.4 5.6A254.3 254.3 0 0 0 75 75 254.3 254.3 0 0 0 0 256c0 57 19.2 112.6 54.1 157.4a37.7 37.7 0 0 0 5 47.4 37.8 37.8 0 0 0 53.8 0 37.7 37.7 0 0 0 0-53.7A37.7 37.7 0 0 0 69 400 236.3 236.3 0 0 1 305.2 25.2a10 10 0 1 0 4.2-19.6zm-236 415.6a18 18 0 0 1 25.4 0 17.9 17.9 0 0 1 0 25.5 18 18 0 0 1-25.5-25.5zM457.9 98.6a37.7 37.7 0 0 0-5-47.4 37.7 37.7 0 0 0-53.8 0 37.8 37.8 0 0 0 0 53.7A37.7 37.7 0 0 0 443 112a236.3 236.3 0 0 1-228.7 376.3 10 10 0 0 0-3.5 19.7A254.3 254.3 0 0 0 437 437a254.3 254.3 0 0 0 75-181c0-57-19.2-112.6-54.1-157.4zm-19.2-7.8a17.9 17.9 0 0 1-25.5 0 18 18 0 1 1 25.5 0zM168.1 475.1l-3.7 9.3 3.7-9.3a10 10 0 0 0-7.5 18.5l.3.2a10 10 0 0 0 7.2-18.7zM351.8 18.5h-.2a10 10 0 0 0-7.4 18.5h.1a10 10 0 0 0 13-5.4c2.1-5.2-.4-11-5.5-13z" />
             </svg>
-          </div>
-          <div id="filter_sortby" class="pl-4 pr-2">Filter:</div>
-          <div id="sortBy" class="px-2 cursor-pointer">
-            <!-- Is this working? How to put in the data from the child? -->
-            <Dropdown @selectOption="filterFarms()" v-bind:items="filter" />
-          </div>
+            <h1 class="px-4 text-xl hover:text-main_secondary">Farmify</h1>
+          </router-link>
         </div>
-        <button @click="pushMenu" class="absolute top-0 right-0 mt-3 mr-3">
+        <button @click="pushMenu" class="absolute top-0 right-0 mt-1 mr-3">
           <svg xmlns="http://www.w3.org/2000/svg" class="svg-lg svg-dark" viewBox="0 0 512 512">
             <path
               d="M176.8 0H59.2A59.3 59.3 0 000 59.2v117.6A59.3 59.3 0 0059.2 236h117.6a59.3 59.3 0 0059.2-59.2V59.2A59.3 59.3 0 00176.8 0zM196 176.8c0 10.6-8.6 19.2-19.2 19.2H59.2A19.2 19.2 0 0140 176.8V59.2C40 48.6 48.6 40 59.2 40h117.6c10.6 0 19.2 8.6 19.2 19.2v117.6zM452 0H336c-33 0-60 27-60 60v116c0 33 27 60 60 60h116c33 0 60-27 60-60V60c0-33-27-60-60-60zm20 176c0 11-9 20-20 20H336c-11 0-20-9-20-20V60c0-11 9-20 20-20h116c11 0 20 9 20 20v116zM176.8 276H59.2A59.3 59.3 0 000 335.2v117.6A59.3 59.3 0 0059.2 512h117.6a59.3 59.3 0 0059.2-59.2V335.2a59.3 59.3 0 00-59.2-59.2zM196 452.8c0 10.6-8.6 19.2-19.2 19.2H59.2A19.2 19.2 0 0140 452.8V335.2c0-10.6 8.6-19.2 19.2-19.2h117.6c10.6 0 19.2 8.6 19.2 19.2v117.6zM452 276H336c-33 0-60 27-60 60v116c0 33 27 60 60 60h116c33 0 60-27 60-60V336c0-33-27-60-60-60zm20 176c0 11-9 20-20 20H336c-11 0-20-9-20-20V336c0-11 9-20 20-20h116c11 0 20 9 20 20v116z" />
           </svg>
         </button>
+      </div>
+
+      <div
+        class="sortby absolute top-0 border-2 border-main_secondary left-0 md:hidden mt-16 ml-4 md:mt-0 w-48 flex bg-main_primary px-2 py-2 rounded-sm text-bg_primary"
+        style="z-index: 300">
+        <div class="icon pl-2">
+          <svg class="svg-md svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M367.8 0H16.6c-6.2 0-12 3.4-14.8 9a16.7 16.7 0 001.3 17.4l128.7 181.3.2.1c4.6 6.4 7.2 14 7.2 21.9v147.8a16.4 16.4 0 0022.9 15.2l72.3-27.6c6.5-2 10.8-8 10.8-15.4v-120c0-7.9 2.5-15.5 7.2-21.9l.1-.1L381.2 26.4A16.7 16.7 0 00382.5 9c-2.8-5.6-8.5-9-14.7-9zm0 0" />
+          </svg>
+        </div>
+        <div id="sortBy" class="px-2 ml-2 cursor-pointer">
+          <TheFilterComponent :LocationFilter="false" />
+        </div>
       </div>
 
       <!-- Tablet & Desktop Menu -->
@@ -38,14 +51,12 @@
                 d="M367.8 0H16.6c-6.2 0-12 3.4-14.8 9a16.7 16.7 0 001.3 17.4l128.7 181.3.2.1c4.6 6.4 7.2 14 7.2 21.9v147.8a16.4 16.4 0 0022.9 15.2l72.3-27.6c6.5-2 10.8-8 10.8-15.4v-120c0-7.9 2.5-15.5 7.2-21.9l.1-.1L381.2 26.4A16.7 16.7 0 00382.5 9c-2.8-5.6-8.5-9-14.7-9zm0 0" />
             </svg>
           </div>
-          <div id="filter_sortby" class="pl-4 pr-2">Filter:</div>
-          <div id="sortBy" class="px-2 cursor-pointer">
-            <!-- Is this working? How to put in the data from the child? -->
-            <Dropdown @selectOption="filterFarms()" v-bind:items="filter" />
+          <div id="sortBy" class="ml-2 px-2 cursor-pointer">
+            <TheFilterComponent :LocationFilter="false" />
           </div>
         </div>
       </div>
-      
+
       <!-- <vl-geoloc @update:position="geolocPosition = $event">
         <template slot-scope="geoloc">
           <vl-feature v-if="geoloc.position" id="position-feature">
@@ -58,14 +69,13 @@
       </vl-geoloc> -->
 
       <!-- Groups -->
-      <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.location"
-        >
+      <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.location">
         <button @click="setActiveGroup(item)" :class="{'hidden': activeGroup == item.id}"
           class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{item.numberInGroup}}</button>
       </vl-overlay>
       <!-- Small Marker items -->
       <vl-overlay v-for="item in markerData" :key="item.id" :id="item.id" :position="item.location"
-         :offset="handleOffset(item.id)">
+        :offset="handleOffset(item.id)">
         <template v-if="activeMarker != item.id">
           <div @click="setActiveMarker(item)" style="width: 60px; height: 50px"
             class="icon front flex cursor-pointer justify-around rounded-sm relative bg-bg_primary px-4 py-0"
@@ -213,12 +223,12 @@
   import store from "../store";
   import FarmIconHandler from "../components/FarmIconHandler";
   import Tooltip from "../components/Tooltip";
-  import Dropdown from "../components/Dropdown";
+  import TheFilterComponent from "../components/TheFilterComponent";
 
   export default {
     components: {
       FarmIconHandler,
-      Dropdown,
+      TheFilterComponent,
       Tooltip
     },
     data() {
@@ -227,8 +237,8 @@
         filter: {
           options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
         },
-        markerData: store.state.farms.data,
-        zoom: 4.8,
+        markerData: this.farms_data,
+        zoom: 3.7,
         center: [134.75096, -26.77611],
         rotation: 0,
         geolocPosition: undefined,
@@ -243,6 +253,9 @@
       },
       groupData() {
         return store.state.groups.data
+      },
+      farms_data() {
+        return store.state.farms.active;
       }
     },
     mounted() {
@@ -260,15 +273,13 @@
         }
       },
       setActiveGroup(item) {
-        this.markerData = farm_functions.renderMarkers();
-        // test
-        view.animate({zoom: 10})
+        var markerData = farm_functions.renderMarkers();
 
         // thats why the map jumps.
-        this.markerData = farm_functions.handleMarkersInGroup(this.markerData, item.id);
+        this.markerData = farm_functions.handleMarkersInGroup(markerData, item.id);
         if (this.activeGroup != item.id) {
           this.activeGroup = item.id;
-          this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 3)];
+          //this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 3)];
         } else {
           this.activeGroup = 0;
         }

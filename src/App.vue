@@ -20,14 +20,10 @@
       <p class="px-6">Copywright 2020.</p>
     </div>
     <div v-if="cookiesAccepted == false" id="cookieQ" style="z-index: 100"
-      class="text-2xl fixed bottom-0 right-0 mb-4 mr-4 bg-bg_primary border-4 border-main_focus rounded-sm">
-      <h6 class="px-8 py-4">Do you accept cookies?</h6>
-      <div id="cookieButtons" class="w-full mb-4 flex justify-between px-8">
+      class="text-lg fixed bottom-0 right-0 mb-4 mr-4 bg-bg_primary border-4 border-main_focus rounded-sm flex">
+      <h6 class="px-4 py-4">We use cookies for our services.</h6>
         <button @click="answerCookies(true)"
-          class="px-8 rounded-sm py-2 bg-main_focus hover:bg-main_focus_active">Yes</button>
-        <button @click="answerCookies(false)"
-          class="px-8 rounded-sm py-2 bg-main_focus hover:bg-main_focus_active">No</button>
-      </div>
+          class="px-8 rounded-sm py-2 mb-2 mt-2 mr-2 bg-main_focus hover:bg-main_focus_active">Accept</button>
     </div>
     <router-view />
   </div>

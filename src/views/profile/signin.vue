@@ -87,15 +87,15 @@
         </div>
         <div id="signup" class="w-full mb-24 flex-col text-center justify-around">
             <h2>Haven't got an account yet? Sign up here:</h2>
-            <router-link to="/signup"
+            <router-link :to="{name: 'signup', params: { page: 0 }}"
                 class="mt-8 button text-center border-4 border-main_focus hover:border-main_focus_active text-main_focus hover:text-main_focus_active py-2 px-12 lg:px-24 rounded mx-2 cursor-pointer">
                 Signup</router-link>
         </div>
     </div>
 </template>
 <script>
-    import store from "../store";
-    import data_functions from "../data/data_functions";
+    import store from "../../store";
+    import data_functions from "../../data/data_functions";
     export default {
         data() {
             return {

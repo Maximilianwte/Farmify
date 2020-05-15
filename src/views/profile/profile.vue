@@ -4,8 +4,8 @@
     </div>
 </template>
 <script>
-import ProfileItem from "../components/ProfileItem";
-import store from "../store";
+import ProfileItem from "../../components/ProfileItem";
+import store from "../../store";
 
 export default {
     components: {
