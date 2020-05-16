@@ -74,10 +74,6 @@ router.get('/read_allGroups', function (req, res) {
 
 app.use('/.netlify/functions/farm_functions', router);
 
-app.use(cors({
-  origin: 'https://farmify.netlify.app'
-}));
-
 module.exports.handler = serverless(app);
 
 /* function verifyToken(req, res, next) {
@@ -98,4 +94,3 @@ function checkHost(req, res, next) {
   } else {
     res.sendStatus(403);
   } */
-}

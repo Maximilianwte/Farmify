@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    theme: "theme_light",
+    theme: "theme_dark",
     auth: false,
     signupPageCode: 0,
     cookies: {
