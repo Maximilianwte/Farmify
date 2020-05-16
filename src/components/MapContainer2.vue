@@ -37,7 +37,7 @@
           </svg>
         </div>
         <div id="sortBy" class="px-2 ml-2 cursor-pointer">
-          <TheFilterComponent :LocationFilter="false" :Type="'Map'"/>
+          <TheFilterComponent :LocationFilter="false" :Type="'Map'" />
         </div>
       </div>
 
@@ -52,7 +52,7 @@
             </svg>
           </div>
           <div id="sortBy" class="ml-2 px-2 cursor-pointer">
-            <TheFilterComponent :LocationFilter="false" :Type="'Map'"/>
+            <TheFilterComponent :LocationFilter="false" :Type="'Map'" />
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@
         filter: {
           options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
         },
-        markerData: store.state.farms.active_ids,
+        markerData: store.state.farms.data,
         groupData: store.state.groups.data,
         zoom: 3.7,
         center: [134.75096, -26.77611],
@@ -260,6 +260,9 @@
     computed: {
       activeMarker() {
         return this.activeMarkerValue;
+      },
+      farmsFiltered() {
+        return store.state.farms.active_ids;
       }
     },
     mounted() {
@@ -299,7 +302,7 @@
         if (this.activeMarker == item.id) {
           return false
         } else {
-          if (this.farms_in_groups.includes(item.id) == false) {
+          if (this.farms_in_groups.includes(item.id) == false && this.farmsFiltered.includes(item.id) == true) {
             return true;
           } else {
             return false;
@@ -332,27 +335,6 @@
           if (Number(this.zoom) >= 4.5) {
             this.zoom--;
           }
-        }
-      },
-      handleButtonClick(id) {
-        switch (id) {
-          case "phone": {
-            this.handleActiveButton(1);
-            break;
-          }
-          case "website": {
-            this.handleActiveButton(2);
-            break;
-          }
-          case "mail": {
-            this.handleActiveButton(3);
-            break;
-          }
-          case "easyapply": {
-            this.handleActiveButton(4);
-            break;
-          }
-
         }
       },
       handleActiveButton(id) {

@@ -37,7 +37,7 @@
 <script>
   import store from "./store";
   import Navigation from "./components/Navigation";
-  import cookie_functions from "./utilities/cookie_functions";
+  import cookie_functions from "./data/cookie_functions";
   import data_functions from "./data/data_functions";
 
   export default {
@@ -62,6 +62,11 @@
       if (result == "true") {
         store.commit("cookiesAnswered", true);
       };
+      let loginEmail = cookie_functions.getCookie("email");
+      let loginPassword = cookie_functions.getCookie("password");
+      if (loginEmail != "" && loginPassword != "") {
+        this.pushSendSignin(loginEmail, loginPassword);
+      }
       // toggle get_groups off. So that we dont consume firestore on mass.
       /* data_functions.get_groups().then(groups => {
         store.commit("setFarmGroups", groups)
@@ -71,7 +76,26 @@
       answerCookies(answer) {
         store.commit("cookiesAnswered", answer);
         if (answer == true) {
-          cookie_functions.setCookie("acceptCookies", "true", 90);
+          cookie_functions.setCookie("acceptCookies", "true", 5);
+        }
+      },
+      pushSendSignin(email, password) {
+        var reqObject = {
+          Email: email,
+          Password: password
+        }
+
+        if (reqObject.Email.length > 5 && reqObject.Email.includes("@") && reqObject.Email.includes(".") &&
+          reqObject.Password.length > 7) {
+          data_functions.send_login(reqObject).then(profile => {
+            store.commit("updateProfile", profile);
+            cookie_functions.setCookie("email", reqObject.Email, 5);
+            cookie_functions.setCookie("password", reqObject.Password, 5);
+            this.$router.push({
+              path: '/'
+            });
+            store.commit("setAuth", true);
+          })
         }
       }
     }

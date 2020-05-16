@@ -114,16 +114,19 @@
                     </a>
                 </div>
             </div>
-            <div @click="handleButtonClick('easyapply')" class="relative" v-if="item.email != undefined" id="easyContact">
+            <div @click="EasyApplyActive = true" class="relative" v-if="item.email != undefined" id="easyContact">
                 <button
                     class="bg-main_primary cursor-pointer hover:bg-main_secondary text-bg_primary rounded-sm px-4 py-2 ml-2 mr-2">Easy
                     Apply</button>
             </div>
+            <EasyApply :active="EasyApplyActive" />
         </div>
     </div>
 </template>
 <script>
     import FarmIconHandler from "../components/FarmIconHandler";
+    import BeginEasyApply from "../components/BeginEasyApply";
+    import EasyApply from "../components/EasyApply";
     import Tooltip from "../components/Tooltip";
     import store from "../store";
     import farm_functions from "../data/farm_functions";
@@ -132,10 +135,13 @@
         props: ['item'],
         components: {
             FarmIconHandler,
-            Tooltip
+            Tooltip,
+            EasyApply,
+            BeginEasyApply
         },
         data() {
             return {
+                EasyApplyActive: false,
                 auth: store.state.auth,
                 activeButton: 0
             }

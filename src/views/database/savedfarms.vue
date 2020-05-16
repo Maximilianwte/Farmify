@@ -27,19 +27,16 @@
                 </div>
             </div>
         </div>
-        <BeginEasyApply />
     </div>
 </template>
 <script>
     import store from "../../store";
     import farm_functions from "../../data/farm_functions";
     import ListItem from "../../components/ListItem";
-    import BeginEasyApply from "../../components/BeginEasyApply";
 
     export default {
         components: {
-            ListItem,
-            BeginEasyApply
+            ListItem
         },
         data() {
             return {

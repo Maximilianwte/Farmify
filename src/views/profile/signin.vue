@@ -96,6 +96,7 @@
 <script>
     import store from "../../store";
     import data_functions from "../../data/data_functions";
+    import cookie_functions from "../../data/cookie_functions";
     export default {
         data() {
             return {
@@ -122,6 +123,8 @@
                     reqObject.Password.length > 7) {
                     data_functions.send_login(reqObject).then(profile => {
                         store.commit("updateProfile", profile);
+                        cookie_functions.setCookie("email", reqObject.Email, 5);
+                        cookie_functions.setCookie("password", reqObject.Password, 5);
                         this.$router.push({
                             path: '/'
                         });
