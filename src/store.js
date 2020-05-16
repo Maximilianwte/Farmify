@@ -82,7 +82,8 @@ export default new Vuex.Store({
           location: [114.866686, -22.965272]
         }
       ],
-      active: []
+      active: [],
+      active_ids: []
     },
     groups: {
       data: [{
@@ -135,6 +136,9 @@ export default new Vuex.Store({
     },
     updateFarmsToShow(state, payload) {
       state.farms.active = payload;
+    },
+    updateFarmIDSToShow(state, payload) {
+      state.farms.active_ids = payload;
     },
     handleSavedFarm(state, payload) {
       var savedFarms = state.profile.data.savedFarms

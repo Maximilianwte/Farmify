@@ -37,7 +37,7 @@
           </svg>
         </div>
         <div id="sortBy" class="px-2 ml-2 cursor-pointer">
-          <TheFilterComponent :LocationFilter="false" />
+          <TheFilterComponent :LocationFilter="false" :Type="'Map'"/>
         </div>
       </div>
 
@@ -52,7 +52,7 @@
             </svg>
           </div>
           <div id="sortBy" class="ml-2 px-2 cursor-pointer">
-            <TheFilterComponent :LocationFilter="false" />
+            <TheFilterComponent :LocationFilter="false" :Type="'Map'"/>
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@
         filter: {
           options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
         },
-        markerData: store.state.farms.data,
+        markerData: store.state.farms.active_ids,
         groupData: store.state.groups.data,
         zoom: 3.7,
         center: [134.75096, -26.77611],

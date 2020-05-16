@@ -80,6 +80,15 @@ let map_functions = {
         }
         return farms_to_show
     },
+    filterFarms2(farms, filterValue) {
+        farms = this.filterFarms(farms, filterValue);
+        var farms_to_show = new Array;
+        for (var index in farms) {
+            farms_to_show.push(farms[index].id);
+        }
+
+        return farms_to_show;
+    },
     calculateDistance(geoCode1, geoCode2) {
         var lat1 = geoCode1[1];
         var lon1 = geoCode1[0];

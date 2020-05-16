@@ -21,8 +21,9 @@
                         v-bind:item="getFarm('id', savedFarmID)" />
                 </div>
                 <div id="myList" class="w-full flex-col" v-else>
-                    <ListItem class="mt-8" v-for="savedFarmID in storedFarms" v-bind:key="savedFarmID"
-                        v-bind:item="getFarm('id', savedFarmID)" />
+                    <!-- <ListItem class="mt-8" v-for="savedFarmID in storedFarms" v-bind:key="savedFarmID"
+                        v-bind:item="getFarm('id', savedFarmID)" /> -->
+                    <h5 class="mt-12">This feature is coming soon.</h5>
                 </div>
             </div>
         </div>

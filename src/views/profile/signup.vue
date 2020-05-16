@@ -38,8 +38,9 @@
             </div>
         </div>
 
-        <signup_contactInfo v-if="this.page == 0"/>
-        <signup_groups v-if="this.page == 1"/>
+        <signup_contactInfo v-if="this.page == 0" />
+        <signup_groups v-if="this.page == 1" />
+        <signup_payment v-if="this.page == 2" />
 
         <div id="payment" class="text-center mb-24 flex-col">
             <h4>Payment</h4>
@@ -77,11 +78,14 @@
     import data_functions from "../../data/data_functions";
     import signup_contactInfo from "./signup_contactInfo";
     import signup_groups from "./signup_groups";
+    import signup_payment from "./signup_payment";
+
     export default {
         props: ['page'],
         components: {
             signup_contactInfo,
-            signup_groups
+            signup_groups,
+            signup_payment
         },
         data() {
             return {

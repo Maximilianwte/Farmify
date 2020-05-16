@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "functions": "cd functions/user_functions && npm install --s && cd ../ && cd farm_functions && npm install --s"
+    "functions": "cd functions/user_functions && npm install --s && cd ../ && cd farm_functions && npm install --s && cd ../ && cd app_functions && npm install --s"
   },
   "dependencies": {
     "axios": "^0.19.2",
