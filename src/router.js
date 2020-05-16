@@ -78,5 +78,10 @@ export default new Router({
       name: 'forgotpassword',
       component: () => import( /* webpackChunkName: "about" */ './views/profile/forgotPassword.vue')
     },
+    {
+      path: '/faq',
+      name: 'faq',
+      component: () => import( /* webpackChunkName: "about" */ './views/faq.vue')
+    },
   ]
 })

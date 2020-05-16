@@ -14,16 +14,21 @@
     <Navigation class="absolute right-0 mt-4 mr-2" />
     <div id="footer"
       class="absolute bottom-0 flex justify-between items-center text-md hover:text-main_secondary h-8 w-screen bg-bg_primary text-main_primary">
-      <router-link to="/imprint">
-        <h5 class="px-4">Imprint</h5>
-      </router-link>
+      <div class="left flex">
+        <router-link to="/imprint">
+          <h5 class="px-4">Imprint</h5>
+        </router-link>
+        <router-link to="/faq">
+          <h5 class="px-4">FAQ</h5>
+        </router-link>
+      </div>
       <p class="px-6">Copywright 2020.</p>
     </div>
     <div v-if="cookiesAccepted == false" id="cookieQ" style="z-index: 100"
       class="text-lg fixed bottom-0 right-0 mb-4 mr-4 bg-bg_primary border-4 border-main_focus rounded-sm flex">
       <h6 class="px-4 py-4">We use cookies for our services.</h6>
-        <button @click="answerCookies(true)"
-          class="px-8 rounded-sm py-2 mb-2 mt-2 mr-2 bg-main_focus hover:bg-main_focus_active">Accept</button>
+      <button @click="answerCookies(true)"
+        class="px-8 rounded-sm py-2 mb-2 mt-2 mr-2 bg-main_focus hover:bg-main_focus_active">Accept</button>
     </div>
     <router-view />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <vl-map @click="activeMarkerValue = 0" :load-tiles-while-animating="false" :load-tiles-while-interacting="true"
-      :logo="false" data-projection="EPSG:4326" class="h-full bg-main_primary">
+      data-projection="EPSG:4326" class="h-full bg-main_primary">
       <vl-view :zoom.sync="zoom" :min-zoom="3.5" :center.sync="center" :enable-rotation="false"
         :rotation.sync="rotation" />
 
@@ -57,6 +57,13 @@
         </div>
       </div>
 
+      <div class="buttons absolute bottom-0 left-0 mb-12 ml-4 flex text-xl cursor-pointer" style="z-index: 300">
+        <div @click="handleZoom('in')" id="zoomIn"
+          class="px-4 py-2 bg-bg_primary hover:bg-bg_secondary text-main_primary rounded-l-sm">+</div>
+        <div @click="handleZoom('out')" id="zoomIn"
+          class="px-4 py-2 bg-bg_primary hover:bg-bg_secondary text-main_primary rounded-r-sm">-</div>
+      </div>
+
       <!-- <vl-geoloc @update:position="geolocPosition = $event">
         <template slot-scope="geoloc">
           <vl-feature v-if="geoloc.position" id="position-feature">
@@ -73,10 +80,11 @@
         <button @click="setActiveGroup(item)" :class="{'hidden': activeGroup == item.id}"
           class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{item.numberInGroup}}</button>
       </vl-overlay>
+
       <!-- Small Marker items -->
       <vl-overlay v-for="item in markerData" :key="item.id" :id="item.id" :position="item.location"
         :offset="handleOffset(item.id)">
-        <template v-if="activeMarker != item.id">
+        <template v-if="getActiveMarker(item)">
           <div @click="setActiveMarker(item)" style="width: 60px; height: 50px"
             class="icon front flex cursor-pointer justify-around rounded-sm relative bg-bg_primary px-4 py-0"
             id="activeBox">
@@ -237,12 +245,14 @@
         filter: {
           options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
         },
-        markerData: this.farms_data,
+        markerData: store.state.farms.data,
+        groupData: store.state.groups.data,
         zoom: 3.7,
         center: [134.75096, -26.77611],
         rotation: 0,
         geolocPosition: undefined,
         activeMarkerValue: 0,
+        farms_in_groups: [],
         activeGroup: 0,
         activeButton: 0
       }
@@ -250,16 +260,10 @@
     computed: {
       activeMarker() {
         return this.activeMarkerValue;
-      },
-      groupData() {
-        return store.state.groups.data
-      },
-      farms_data() {
-        return store.state.farms.active;
       }
     },
     mounted() {
-      this.markerData = farm_functions.renderMarkers()
+      this.farms_in_groups = farm_functions.renderMarkers2();
     },
     methods: {
       zoomUpdated(zoom) {
@@ -275,8 +279,7 @@
       setActiveGroup(item) {
         var markerData = farm_functions.renderMarkers();
 
-        // thats why the map jumps.
-        this.markerData = farm_functions.handleMarkersInGroup(markerData, item.id);
+        this.farms_in_groups = farm_functions.renderMarkers2(item.id);
         if (this.activeGroup != item.id) {
           this.activeGroup = item.id;
           //this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 3)];
@@ -290,6 +293,17 @@
           //this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 4)];
         } else {
           this.activeMarkerValue = 0;
+        }
+      },
+      getActiveMarker(item) {
+        if (this.activeMarker == item.id) {
+          return false
+        } else {
+          if (this.farms_in_groups.includes(item.id) == false) {
+            return true;
+          } else {
+            return false;
+          }
         }
       },
       pushMenu() {
@@ -309,6 +323,15 @@
         var savedFarms = store.state.profile.data.savedFarms;
         if (savedFarms.includes(id)) {
           return "fill: #cc6355"
+        }
+      },
+      handleZoom(id) {
+        if (id == "in") {
+          this.zoom++;
+        } else {
+          if (Number(this.zoom) >= 4.5) {
+            this.zoom--;
+          }
         }
       },
       handleButtonClick(id) {

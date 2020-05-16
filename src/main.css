@@ -166,3 +166,7 @@ svg:hover {
     border-right: 10px solid transparent;
     border-top: 10px solid var(--main-secondary);
   }
+
+  .ol-zoom {
+      display: none;
+  }

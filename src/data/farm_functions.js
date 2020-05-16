@@ -23,6 +23,20 @@ let map_functions = {
         }
         return farms_to_show;
     },
+    renderMarkers2(id) {
+        var groups = store.state.groups.data;
+        var farms_in_groups = [];
+
+        for (var index in groups) {
+            if (groups[index].id != id) {
+                for (var farmIndex in groups[index].farmsIncluded) {
+                    var farmID = groups[index].farmsIncluded[farmIndex];
+                    farms_in_groups.push(farmID);         
+                }
+            }
+        }
+        return farms_in_groups;
+    },
     findFarm(id, value) {
         var all_farms = store.state.farms.data;
         return findObject(all_farms, id, value)[0];
