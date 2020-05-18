@@ -149,7 +149,7 @@
         computed: {},
         methods: {
             getFill(id) {
-                var savedFarms = store.state.profile.data.savedFarms;
+                var savedFarms = store.state.profile.data.SavedFarms;
                 if (savedFarms.includes(id)) {
                     return "fill: #cc6355"
                 }
@@ -159,7 +159,7 @@
                 this.handleActiveButton(5);
             },
             getDistance() {
-                var distance = farm_functions.calculateDistance(store.state.profile.data.geoCode, this.item.location);
+                var distance = farm_functions.calculateDistance(store.state.profile.data.Geo, this.item.location);
                 return distance
             },
             handleActiveButton(id) {

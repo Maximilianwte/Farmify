@@ -20,9 +20,9 @@ export default new Vuex.Store({
         Email: "",
         Country: "",
         Password: "",
-        savedFarms: [1, 3],
-        location: "16 Palga Cres, Perth, Australia",
-        geoCode: [115.866786, -31.925272],
+        SavedFarms: [1, 3],
+        Location: "16 Palga Cres, Perth, Australia",
+        Geo: [115.866786, -31.925272],
       }
     },
     farms: {
@@ -83,7 +83,7 @@ export default new Vuex.Store({
         }
       ],
       active: [],
-      active_ids: [0,1,2,3,4,5,6]
+      active_ids: [0, 1, 2, 3, 4, 5, 6]
     },
     groups: {
       data: [{
@@ -114,31 +114,16 @@ export default new Vuex.Store({
       state.cookies.accepted = payload;
     },
     updateProfile(state, payload) {
-      state.profile.data.Name = payload.Name;
-      state.profile.data.FamilyName = payload.FamilyName;
-      state.profile.data.Email = payload.Email;
-      state.profile.data.Joined = payload.Joined;
-      state.profile.data.Country = payload.Country;
-      state.profile.data.Password = payload.Password;
-    },
-    updateUserAccess(state, payload) {
-      if (payload.valueID == "email") {
-        state.profile.data.Email = payload.value
-      } else {
-        state.profile.data.Password = payload.value
+      for (var key in payload) {
+        try {
+          state.profile.data[key] = payload[key];
+        } catch (e) {
+          console.log(e)
+        }
       }
     },
-    setFarmGroups(state, payload) {
-      state.groups.data = payload;
-    },
-    updateGeoCode(state, payload) {
-      state.profile.data.geoCode = payload;
-    },
-    updateFarmsToShow(state, payload) {
-      state.farms.active = payload;
-    },
-    updateFarmIDSToShow(state, payload) {
-      state.farms.active_ids = payload;
+    pushSignUpPageCode(state, payload) {
+      state.signupPageCode = payload;
     },
     handleSavedFarm(state, payload) {
       var savedFarms = state.profile.data.savedFarms
@@ -148,9 +133,15 @@ export default new Vuex.Store({
         savedFarms.splice(savedFarms.indexOf(payload), 1);
       }
     },
-    pushSignUpPageCode(state, payload) {
-      state.signupPageCode = payload;
-    }
+    setFarmGroups(state, payload) {
+      state.groups.data = payload;
+    },
+    updateFarmsToShow(state, payload) {
+      state.farms.active = payload;
+    },
+    updateFarmIDSToShow(state, payload) {
+      state.farms.active_ids = payload;
+    },
   },
   actions: {
 

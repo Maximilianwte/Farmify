@@ -80,9 +80,9 @@
                     <p>Signin</p>
                 </div>
                 <div id="forgot" class="text-sm flex-col mt-4 text-bg_secondary">
-                <router-link to="/forgot" class="button cursor-pointer">
-                    Forgot Password</router-link>
-            </div>
+                    <router-link to="/forgot" class="button cursor-pointer">
+                        Forgot Password</router-link>
+                </div>
             </div>
         </div>
         <div id="signup" class="w-full mb-24 flex-col text-center justify-around">
@@ -102,7 +102,7 @@
             return {
                 input: {
                     email: "Peter.Dinklage@mail.com",
-                    password: "Peter1000"
+                    password: "Peter10000"
                 },
                 soonMessage: ""
             }
@@ -123,8 +123,12 @@
                     reqObject.Password.length > 7) {
                     data_functions.send_login(reqObject).then(profile => {
                         store.commit("updateProfile", profile);
-                        cookie_functions.setCookie("email", reqObject.Email, 5);
-                        cookie_functions.setCookie("password", reqObject.Password, 5);
+
+                        if (store.state.cookies.accepted == true) {
+                            cookie_functions.setCookie("email", reqObject.Email, 5);
+                            cookie_functions.setCookie("password", reqObject.Password, 5);
+                        }
+
                         this.$router.push({
                             path: '/'
                         });

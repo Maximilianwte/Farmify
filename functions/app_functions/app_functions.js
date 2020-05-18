@@ -10,13 +10,21 @@ var nodemailer = require('nodemailer');
 // Also remember when you put that in a function to make it ajax conform again
 
 var transport = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'lightstrategies@gmail.com',
+    pass: 'pushing40inthe?zone'
+  }
+});
+
+/* var transport = nodemailer.createTransport({
   host: "smtp.mailtrap.io",
   port: 2525,
   auth: {
     user: "5dd0d2010ebc38",
     pass: "03c47dd456f3a6"
   }
-});
+}); */
 
 // Routes
 
@@ -31,7 +39,7 @@ router.get("/send_mail", (req, res) => {
     Email: "Karin.Backpack@outlook.de",
     Country: "Austria",
     FarmName: "Tims Apple Farm",
-    FarmMail: "Tims@farmerslonely.co.au"
+    FarmMail: "maximilianwitte@outlook.de"
   }
 
   var mailOptions = {

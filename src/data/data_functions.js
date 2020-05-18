@@ -7,19 +7,19 @@ let activeURL = localURL;
 
 let logic_functions = {
     create_user(in_file) {
-        return axios.post(activeURL + "/user_functions/create_user", in_file).then(response => {
+         return axios.post(activeURL + "/user_functions/create_user", in_file).then(response => {
           return response
         })
       },
     update_userAccess(in_file, value) {
       if (value == "email") {
         return axios.post(activeURL + "/user_functions/update_userAccess/email", in_file).then(response => {
-          return "Email updated."
+          return response;
         })
       }
       else {
         return axios.post(activeURL + "/user_functions/update_userAccess/password", in_file).then(response => {
-          return "Password updated."
+          return response;
         })
       }
     },

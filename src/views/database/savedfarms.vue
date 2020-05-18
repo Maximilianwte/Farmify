@@ -41,7 +41,7 @@
         data() {
             return {
                 activeTab: 0,
-                storedFarms: store.state.profile.data.savedFarms,
+                storedFarms: store.state.profile.data.SavedFarms,
                 all_farms: store.state.farms.data
             }
         },

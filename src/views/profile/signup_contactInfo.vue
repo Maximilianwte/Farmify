@@ -94,6 +94,7 @@
 </template>
 <script>
     import store from "../../store";
+    import data_functions from "../../data/data_functions";
     export default {
         data() {
             return {
@@ -126,7 +127,6 @@
                         Email: this.input.email,
                         Password: this.input.password
                     }
-
                     store.commit("updateProfile", profileObject);
                     store.commit("pushSignUpPageCode", 1);
                     this.$router.push({

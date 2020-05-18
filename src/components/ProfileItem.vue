@@ -19,31 +19,27 @@
                 <h4>Account Credentials</h4>
             </div>
             <li>
-                <ul id="Email" v-if="edit != 'email'"
-                    class="w-full mt-6 flex-col justify-between">
+                <ul id="Email" v-if="edit != 'email'" class="w-full mt-6 flex-col justify-between">
                     <div id="email" class="mr-8 mb-4 xl:mb-0">E-mail: {{profile.Email}}
                     </div>
                     <button @click="pushEdit('email')"
                         class="bg-main_primary text-2xl hover:bg-main_secondary text-bg_primary rounded-sm px-8 py-2 mr-2">Edit</button>
                 </ul>
-                <ul id="editEmail" v-if="edit == 'email'"
-                    class="text-2xl mt-6 flex-col justify-between">
+                <ul id="editEmail" v-if="edit == 'email'" class="text-2xl mt-6 flex-col justify-between">
                     <input type="email" placeholder="Email" v-model="input.email"
                         class="w-90 mr-0 mb-4 border-2 border-main_secondary text-bg_primary px-2">
                     <button @click="applyEdit('email')"
                         class="bg-main_primary hover:bg-main_secondary text-bg_primary rounded-sm px-8 py-2">Accept
                         Changes</button>
                 </ul>
-                <ul v-if="edit != 'password'"
-                    class="mt-6 flex-col justify-between">
+                <ul v-if="edit != 'password'" class="mt-6 flex-col justify-between">
                     <div id="password" class="mr-8 mb-4">Password: {{passwordText}}
                     </div>
                     <button @click="pushEdit('password')"
                         class="bg-main_primary text-2xl hover:bg-main_secondary text-bg_primary rounded-sm px-4 lg:px-8 py-2 mr-2">Change
                         Password</button>
                 </ul>
-                <ul id="editPassword" v-if="edit == 'password'"
-                    class="text-2xl mt-6 flex-col justify-between">
+                <ul id="editPassword" v-if="edit == 'password'" class="text-2xl mt-6 flex-col justify-between">
                     <input type="password" placeholder="Password" v-model="input.password"
                         class="w-90 mb-4 mr-0 border-2 border-main_secondary text-bg_primary px-2">
                     <button @click="applyEdit('password')"
@@ -79,25 +75,28 @@
                             ".")) {
                         data_functions.update_userAccess({
                             ActiveEmail: this.profile.Email,
+                            Password: this.profile.password,
                             NewEmail: this.input.email
                         }, "email");
-                        store.commit("updateUserAccess", {
-                            value: this.input.email,
-                            valueID: "email"
-                        })
+                        var data = {
+                            Email: this.input.email
+                        }
+                        store.commit("updateProfile", data)
                     }
                     this.edit = "";
                 } else if (input == "password") {
                     if (this.input.password.length > 7) {
                         data_functions.update_userAccess({
                             Email: this.profile.Email,
+                            ActivePassword: this.profile.Password,
+                            NewPassword: this.input.password
+                        }, "password").then(response => {
+                            this.passwordText = response.data;
+                        });
+                        var data = {
                             Password: this.input.password
-                        }, "password");
-                        store.commit("updateUserAccess", {
-                            value: this.input.password,
-                            valueID: "password"
-                        })
-                        this.passwordText = "Authorization Sent"
+                        }
+                        store.commit("updateProfile", data)
                     }
                     this.edit = "";
                 }

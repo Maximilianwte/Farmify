@@ -1,7 +1,6 @@
 // https://jackwhiting.co.uk/posts/using-firebase-admin-sdk-with-netlify-lambda-functions/
 const express = require("express");
 const serverless = require("serverless-http");
-//const jwt = require('jsonwebtoken');
 
 // Firestore
 
@@ -69,77 +68,46 @@ router.get("/", (req, res) => {
 })
 
 router.post('/create_user', function (req, res) {
-  var data = JSON.parse(req.body)
-  let docRef = db.collection('users');
-  docRef.add({
-    Name: data.Name,
-    FamilyName: data.FamilyName,
-    Email: data.Email,
-    Password: data.Password,
-    Country: data.Country,
-    Joined: new Date().toDateString()
-  }).then(ref => {
-    res.send("Send POST worked.")
-  });;
-})
+  var inFile = JSON.parse(req.body)
+  let docRef = db.collection('users').where('Email', '==', inFile.Email).limit(1);
+  docRef.get()
+    .then(snapshot => {
+      if (snapshot.empty) {
+        let docRef2 = db.collection('users');
 
-// Maybe both of the update_userAccess functions must be rewritten to something using a snapshot
-// Because I just implemented the .where()s
-router.post('/update_userAccess/email', function (req, res) {
-  var data = JSON.parse(req.body)
-  let docRef = db.collection('users').where('Email', '==', data.ActiveEmail);
-  docRef.update({
-    Email: data.NewEmail,
-  }).then(ref => {
-    res.send("Send POST worked.")
-  });;
-})
-
-// !!! Ah, are these secure? Anybody could send query to the backend with the data.
-router.post('/update_userAccess/password', function (req, res) {
-  var data = JSON.parse(req.body)
-  let docRef = db.collection('users').where('Email', '==', data.Email);
-  docRef.update({
-    Password: data.Password,
-  }).then(ref => {
-    res.send("Send POST worked.")
-  });;
-})
-
-router.post('/update_savedFarms', function (req, res) {
-  var data = JSON.parse(req.body)
-  let docRef = db.collection('users').where('Email', '==', data.Email);
-  docRef.update({
-    SavedFarms: data.SavedFarms,
-  }).then(ref => {
-    res.send("Send POST worked.")
-  });;
-})
-
-router.post('/update_location', function (req, res) {
-  var data = JSON.parse(req.body)
-  let docRef = db.collection('users').where('Email', '==', data.Email);
-  docRef.update({
-    Location: data.Location,
-    GeoCode: data.GeoCode
-  }).then(ref => {
-    res.send("Send POST worked.")
-  });;
+        docRef2.add({
+          Name: inFile.Name,
+          FamilyName: inFile.FamilyName,
+          Email: inFile.Email,
+          Password: inFile.Password,
+          Country: inFile.Country,
+          Joined: new Date().toDateString()
+        }).then(ref => {
+          res.sendStatus(200);
+        })
+      }
+      snapshot.forEach(doc => {
+        res.sendStatus(406)
+      });
+    })
+    .catch(err => {
+      res.send(err)
+    });
 })
 
 router.post('/read_user', function (req, res) {
-  var data = JSON.parse(req.body);
-  let docRef = db.collection('users').where('Email', '==', data.Email).limit(1);
+  var inFile = JSON.parse(req.body);
+  let docRef = db.collection('users').where('Email', '==', inFile.Email).limit(1);
   docRef.get().then(snapshot => {
       if (snapshot.empty) {
         console.log('No matching documents.');
         return;
       }
       snapshot.forEach(doc => {
-        var DatabaseData = doc.data();
-        if (data.Password == DatabaseData.Password) {
-          DatabaseData = JSON.stringify(DatabaseData);
-          res.send(DatabaseData);
+        var data = doc.data();
+        if (inFile.Password == data.Password) {
+          data = JSON.stringify(data);
+          res.send(data);
         }
       });
     })
@@ -147,6 +115,90 @@ router.post('/read_user', function (req, res) {
       console.log('Error getting documents', err);
     });
 });
+
+router.post('/update_profile', function (req, res) {
+  var inFile = JSON.parse(req.body);
+  let docRef = db.collection('users').where('Email', '==', data.Email).limit(1);
+  docRef.get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      console.log(doc.id, " => ", doc.data());
+      db.collection('users').doc(doc.id).update(inFile).then(function () {
+        res.sendStatus(200);
+      }).catch(err => {
+        res.sendStatus(404);
+      });
+    });
+  })
+})
+
+router.post('/update_userAccess/email', function (req, res) {
+  var inFile = JSON.parse(req.body);
+  let docRef = db.collection('users').where('Email', '==', inFile.ActiveEmail).limit(1);
+  docRef.get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      db.collection('users').doc(doc.id).update({
+        Email: inFile.NewEmail
+      }).then(function () {
+        res.send('Email succesfully updated.');
+      }).catch(err => {
+        res.send('No fitting email found.');
+      });
+    });
+  })
+})
+
+router.post('/update_userAccess/password', function (req, res) {
+  var inFile = JSON.parse(req.body);
+  let docRef = db.collection('users').where('Email', '==', inFile.Email).where('Password', '==', inFile.ActivePassword).limit(1);
+  docRef.get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      db.collection('users').doc(doc.id).update({
+        Password: inFile.NewPassword
+      }).then(function () {
+        res.send('Password succesfully updated.');
+      }).catch(err => {
+        res.send('No fitting password found.');
+      });
+    });
+  })
+})
+
+router.post('/generate_redeem', function (req, res) {
+  var inFile = JSON.parse(req.body)
+  let docRef = db.collection('groupCodes');
+
+  var responseData = {
+    Codes: new Array
+  }
+  for (var i = 0; i++; i < inFile.Amount) {
+    var Code = `${inFile.FamilyName[0]}${parseInt(Math.random()*10000)}${inFile.Name[0]}${Math.random().toString(36).substring(5)}${parseInt(Math.random()*100000)}`;
+    docRef.add({
+      Name: `${inFile.Name} ${inFile.FamilyName}`,
+      Email: inFile.Email,
+      AmountBatched: inFile.Amount,
+      Created: new Date().toDateString(),
+      Code: Code
+    }).then(ref => {
+      responseData.Codes.push(Code)
+    })
+  }
+  // maybe i have to convert the forloop into a promise
+  res.send(responseData);
+})
+
+router.post('/redeem', function (req, res) {
+  var inFile = JSON.parse(req.body)
+  let docRef = db.collection('groupCodes').where('Code', '==', inFile.Code).limit(1);
+  docRef.get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      db.collection('groupCodes').doc(doc.id).delete().then(function () {
+        res.sendStatus(200);
+      }).catch(err => {
+        res.sendStatus(404);
+      });
+    });
+  })
+})
 
 // Oauth Routes
 
@@ -186,23 +238,3 @@ app.get('/auth/facebook/callback',
 app.use('/.netlify/functions/user_functions', router);
 
 module.exports.handler = serverless(app);
-
-/* function verifyToken(req, res, next) {
-  const bearerHeader = req.headers['authorization'];
-  if (typeof bearerHeader != 'undefined') {
-    const token = bearerHeader.split(' ')[1];
-    req.token = token;
-    next();
-  } else {
-    res.sendStatus(403);
-  }
-}
-
-function checkHost(req, res, next) {
-  var host = req.get('origin').substring(0,20);
-  if (host == "http://localhost:8888/.netlify/functions/user_functions/".substring(0,20)) {
-    next();
-  } else {
-    res.sendStatus(403);
-  }
-} */

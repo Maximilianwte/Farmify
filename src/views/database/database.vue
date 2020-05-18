@@ -51,7 +51,7 @@
         },
         data() {
             return {
-                location: store.state.profile.data.location,
+                location: store.state.profile.data.Location,
                 showFilter: true
             }
         },
@@ -70,7 +70,10 @@
         methods: {
             getGeoCode(adress) {
                 data_functions.get_geoCodeOpenCage(adress).then(geoCode => {
-                    store.commit("updateGeoCode", geoCode);
+                    var data = {
+                        Geo: geoCode
+                    }
+                    store.commit("updateProfile", data);
                 });
             }
         }

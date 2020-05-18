@@ -65,8 +65,10 @@
       let loginEmail = cookie_functions.getCookie("email");
       let loginPassword = cookie_functions.getCookie("password");
       if (loginEmail != "" && loginPassword != "") {
-        this.pushSendSignin(loginEmail, loginPassword);
+        // Activate this for auto login
+        /* this.pushSendSignin(loginEmail, loginPassword); */
       }
+
       // toggle get_groups off. So that we dont consume firestore on mass.
       /* data_functions.get_groups().then(groups => {
         store.commit("setFarmGroups", groups)
@@ -89,8 +91,12 @@
           reqObject.Password.length > 7) {
           data_functions.send_login(reqObject).then(profile => {
             store.commit("updateProfile", profile);
-            cookie_functions.setCookie("email", reqObject.Email, 5);
-            cookie_functions.setCookie("password", reqObject.Password, 5);
+
+            if (store.state.cookies.accepted == true) {
+              cookie_functions.setCookie("email", reqObject.Email, .1);
+              cookie_functions.setCookie("password", reqObject.Password, .1);
+            }
+
             this.$router.push({
               path: '/'
             });
