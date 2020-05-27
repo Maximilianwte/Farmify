@@ -3,7 +3,7 @@
         class="flex-col text-2xl absolute mt-24 px-12 bg-bg_primary border-2 border-main_primary rounded-sm ml-4 mr-4 md:mx-0 w-full md:w-128"
         style="z-index: 200">
         <div @click="active = false"
-            class="close absolute top-0 right-0 mt-2 mr-2 pb-1 h-10 w-10 flex justify-center items-center bg-main_focus hover:bg-main_focus_active rounded-full">
+            class="close absolute top-0 right-0 mt-2 mr-2 pb-1 h-10 w-10 flex justify-center items-center bg-main_focus text-light hover:bg-main_focus_active rounded-full">
             x</div>
         <h5 class="mt-12 text-3xl">Easy Apply</h5>
         <div class="icons flex mt-6 mb-4">
@@ -36,7 +36,7 @@
                 class="bg-main_primary text-bg_primary px-2 py-2 text-lg with-line-breaks border-t-2 border-bg_primary rounded-b-sm">{{getText}}</div>
         </div>
         <button @click="active = !active"
-            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-main_primary py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Send</button>
+            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Send</button>
     </div>
 </template>
 <script>

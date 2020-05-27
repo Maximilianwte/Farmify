@@ -28,7 +28,7 @@
       class="text-lg fixed bottom-0 right-0 mb-4 mr-4 bg-bg_primary border-4 border-main_focus rounded-sm flex">
       <h6 class="px-4 py-4">We use cookies for our services.</h6>
       <button @click="answerCookies(true)"
-        class="px-8 rounded-sm py-2 mb-2 mt-2 mr-2 bg-main_focus hover:bg-main_focus_active">Accept</button>
+        class="px-8 rounded-sm py-2 mb-2 mt-2 mr-2 text-light bg-main_focus hover:bg-main_focus_active">Accept</button>
     </div>
     <router-view />
   </div>
@@ -78,7 +78,7 @@
       answerCookies(answer) {
         store.commit("cookiesAnswered", answer);
         if (answer == true) {
-          cookie_functions.setCookie("acceptCookies", "true", 5);
+          cookie_functions.setCookie("acceptCookies", "true", 3);
         }
       },
       pushSendSignin(email, password) {

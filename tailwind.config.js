@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        "76": "14rem",
         "90": "20rem",
         "96": "24rem",
         "128": "40rem",
@@ -19,6 +20,8 @@ module.exports = {
       bg_secondary: "var(--bg-secondary)",
       main_primary: "var(--main-primary)",
       main_secondary: "var(--main-secondary)",
+      light: "var(--light)",
+      dark: "var(--dark)",
       main_focus: "var(--main-focus)",
       main_focus_active: "var(--main-focus-secondary)",
       green: "var(--green)",

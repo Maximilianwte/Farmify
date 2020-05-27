@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    theme: "theme_dark",
+    theme: "theme_light",
     auth: false,
     signupPageCode: 0,
     cookies: {
@@ -126,7 +126,7 @@ export default new Vuex.Store({
       state.signupPageCode = payload;
     },
     handleSavedFarm(state, payload) {
-      var savedFarms = state.profile.data.savedFarms
+      var savedFarms = state.profile.data.SavedFarms
       if (!savedFarms.includes(payload)) {
         savedFarms.push(payload);
       } else {

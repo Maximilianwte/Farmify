@@ -38,8 +38,8 @@
             </div>
         </div>
 
-        <signup_contactInfo v-if="this.page == 0" />
-        <signup_groups v-if="this.page == 1" />
+        <signup_groups v-if="this.page == 0" />
+        <signup_contactInfo v-if="this.page == 1" />
         <signup_payment v-if="this.page == 2" />
 
         <div id="payment" class="text-center mb-24 flex-col">

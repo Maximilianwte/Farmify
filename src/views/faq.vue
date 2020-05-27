@@ -1,6 +1,6 @@
 <template>
     <div class="container w-full flex-col">
-        <div id="faq" class="text-xl mt-24 mb-24 flex-col justify-around w-full md:w-2/3">
+        <div id="faq" class="text-xl mt-24 mb-24 flex-col justify-around w-full md:px-48">
             <h4 class="text-2xl">FAQ</h4>
             <div id="list" class="w-full px-6 md:px-16 mt-12">
                 <ul v-for="item in faq" :key="item.id" class="mt-2 border border-bg_secondary py-4 px-6">

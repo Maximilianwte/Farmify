@@ -4,7 +4,7 @@
             <p>If you received an activation code from one of your travelmates, you can input it here.</p>
         </div>
         <input type="text" placeholder="Group Activation Code" v-model="input.activationCode"
-            class="mt-8 mb-16 text-2xl w-90 border-2 border-main_secondary text-bg_primary px-2 py-2">
+            class="mt-8 mb-16 text-2xl w-90 border-2 border-main_secondary text-dark px-2 py-2">
 
         <div v-if="input.activationCode == ''" class="container">
             <h3 class="mt-8 text-3xl">Farmify for Groups</h3>
@@ -66,11 +66,12 @@
         </div>
 
         <button @click="getNextPage()"
-            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-main_primary py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Next</button>
+            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Next</button>
     </div>
 </template>
 <script>
     import store from "../../store";
+    import cookie_functions from "../../data/cookie_functions";
     export default {
         data() {
             return {
@@ -81,25 +82,32 @@
             }
         },
         mounted() {
-            if (store.state.signupPageCode != 1) {
-                this.$router.push({
-                    name: 'signup',
-                    params: {
-                        page: 0
-                    }
-                });
-            }
+            this.signupInit();
         },
         methods: {
             setActiveGroup(key) {
                 this.activegroup = key;
             },
+            signupInit() {
+                if (store.state.cookies.accepted == true) {
+                    var activationCode = cookie_functions.getCookie("activationCode");
+                    var groupState = cookie_functions.getCookie("groupState");
+                    activationCode != "" ? this.input.activationCode = activationCode : "";
+                    groupState != "" ? this.activegroup = groupState : "";
+                }
+            },
             getNextPage() {
-                store.commit("pushSignUpPageCode", 2);
+                store.commit("pushSignUpPageCode", 1);
+
+                if (store.state.cookies.accepted == true) {
+                    cookie_functions.setCookie("activationCode", this.input.activationCode, 7);
+                    cookie_functions.setCookie("groupState", this.activegroup, 7);
+                }
+
                 this.$router.push({
                     name: 'signup',
                     params: {
-                        page: 2
+                        page: 1
                     }
                 });
             },

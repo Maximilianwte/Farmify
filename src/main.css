@@ -11,25 +11,25 @@ html {
     --red_active: rgb(255, 125, 149);
     --yellow: #FFE569;
     --yellow_active: rgb(255, 244, 187);
+    --light: #f5efe0;
+    --dark: #413b36;
+    --main-focus: #cc6355;
+    --main-focus-secondary: #aa5348;
     overflow-x: hidden;
 }
 
 .theme_light {
-    --bg-primary: #67915f;
-    --main-primary: #f5efe0;
-    --bg-secondary: #96c08d;
-    --main-secondary: #d6e0c7;
-    --main-focus: #cc6355;
-    --main-focus-secondary: #aa5348;
-}
+    --bg-primary: #fdfbf4;
+    --main-primary: #6d9265;
+    --bg-secondary: #83a37e;
+    --main-secondary: #799c73;
 
+}
 .theme_dark {
     --bg-primary: #413b36;
     --main-primary: #f5efe0;
     --bg-secondary: #8d837b;;
     --main-secondary: #e6ddc8;
-    --main-focus: #cc6355;
-    --main-focus-secondary: #aa5348;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600&display=swap');
@@ -173,4 +173,10 @@ svg:hover {
 
   .with-line-breaks {
     white-space: pre-wrap;
+  }
+
+  .image {
+      background-image: url("./assets/vineyard.jpg");
+      background-size: cover;
+      background-position-y: center;
   }

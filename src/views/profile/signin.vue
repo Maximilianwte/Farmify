@@ -2,60 +2,18 @@
     <div id="sign" class="px-4 flex-col justify-around items-center text-xl">
         <div id="signin" class="w-full mt-40 mb-16 flex-col justify-around lg:w-4/5">
             <h1 class="text-3xl">Sign in</h1>
-            <div class="oauth justify-around w-5/6 md:w-96">
+            <div class="oauth justify-around text-button_text w-5/6 md:w-96">
                 <p class="text-center mt-8">{{soonMessage}}</p>
                 <div class="oauthGoogle flex justify-around mt-2">
                     <button @click="showSoonMessage" style="background-color: white"
-                        class="h-12 px-2 md:px-6 flex items-center hover:bg-main_secondary rounded-sm text-bg_primary">
+                        class="h-12 px-2 md:px-8 flex items-center hover:bg-main_secondary rounded-sm text-dark">
                         <div id="icon" class="pr-4">
-                            <svg class="svg-lg" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 46">
-                                <defs>
-                                    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox"
-                                        id="a">
-                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                                        <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1"
-                                            result="shadowBlurOuter1" />
-                                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.168 0"
-                                            in="shadowBlurOuter1" result="shadowMatrixOuter1" />
-                                        <feOffset in="SourceAlpha" result="shadowOffsetOuter2" />
-                                        <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter2"
-                                            result="shadowBlurOuter2" />
-                                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.084 0"
-                                            in="shadowBlurOuter2" result="shadowMatrixOuter2" />
-                                        <feMerge>
-                                            <feMergeNode in="shadowMatrixOuter1" />
-                                            <feMergeNode in="shadowMatrixOuter2" />
-                                            <feMergeNode in="SourceGraphic" />
-                                        </feMerge>
-                                    </filter>
-                                    <rect id="b" x="0" y="0" width="40" height="40" rx="2" />
-                                </defs>
-                                <g fill="none" fill-rule="evenodd">
-                                    <g transform="translate(3 3)" filter="url(#a)">
-                                        <use fill="#FFF" xlink:href="#b" />
-                                        <use xlink:href="#b" />
-                                        <use xlink:href="#b" />
-                                        <use xlink:href="#b" />
-                                    </g>
-                                    <path
-                                        d="M31.6 23.2l-.1-1.8H23v3.4h4.8C27.6 26 27 27 26 27.6v2.2h3a8.8 8.8 0 002.6-6.6z"
-                                        fill="#4285F4" />
-                                    <path d="M23 32c2.4 0 4.5-.8 6-2.2l-3-2.2a5.4 5.4 0 01-8-2.9h-3V27a9 9 0 008 5z"
-                                        fill="#34A853" />
-                                    <path d="M18 24.7a5.4 5.4 0 010-3.4V19h-3a9 9 0 000 8l3-2.3z" fill="#FBBC05" />
-                                    <path
-                                        d="M23 17.6c1.3 0 2.5.4 3.4 1.3l2.6-2.6A9 9 0 0015 19l3 2.4a5.4 5.4 0 015-3.7z"
-                                        fill="#EA4335" />
-                                    <path d="M14 14h18v18H14V14z" />
-                                </g>
-                            </svg>
-
+                            <svg class="svg-md" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg"><path d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z" fill="#4285f4"/><path d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z" fill="#34a853"/><path d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z" fill="#fbbc04"/><path d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z" fill="#ea4335"/></svg>
                         </div>
                         <p class="px-5">Sign In with Google</p>
                     </button>
                 </div>
-                <div class="oauthFacebook flex justify-around mt-4 mb-4">
+                <div class="oauthFacebook flex justify-around mt-4 mb-4 text-light">
                     <button @click="showSoonMessage" style="background-color: #3B5998"
                         class="h-12 px-2 md:px-6 flex items-center rounded-sm">
                         <div id="icon" class="pr-4">
@@ -72,11 +30,11 @@
             </div>
             <div id="sendSignin" class="mt-4 w-5/6 md:w-90">
                 <input type="email" placeholder="Email" v-model="input.email"
-                    class="mb-6 w-full border-2 border-main_secondary text-bg_primary px-2 py-2">
+                    class="mb-6 w-full border-2 border-main_secondary px-2 py-2">
                 <input type="password" placeholder="Password" v-model="input.password"
-                    class="mb-6 w-full border-2 border-main_secondary text-bg_primary px-2 py-2">
+                    class="mb-6 w-full border-2 border-main_secondary px-2 py-2">
                 <div @click="pushSendSignin"
-                    class="button text-center bg-main_focus hover:bg-main_focus_active text-main_primary py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">
+                    class="button text-center bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">
                     <p>Signin</p>
                 </div>
                 <div id="forgot" class="text-sm flex-col mt-4 text-bg_secondary">

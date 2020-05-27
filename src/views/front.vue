@@ -80,9 +80,9 @@
       <h6>Hooked? We're happy to sign you up here mate.</h6>
     </div>
     <div id="signUp" class="mb-20">
-      <router-link v-if="getAuth == false" to="/signup">
+      <router-link v-if="getAuth == false" :to="{name: 'signup', params: { page: 0 }}">
         <p
-          class="button text-3xl bg-main_focus hover:bg-main_focus_active text-main_primary py-2 px-4 lg:px-12 mx-2 cursor-pointer">
+          class="button text-3xl bg-main_focus hover:bg-main_focus_active text-light py-2 px-4 lg:px-12 mx-2 cursor-pointer">
           Sign up</p>
       </router-link>
     </div>

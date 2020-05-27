@@ -12,9 +12,10 @@
                         </svg>
                     </div>
                     <div id="filter_location" class="px-2">My Location: </div>
-                    <div id="location" class="px-4"> <input @change="getGeoCode(location)" type="text"
-                            placeholder="Location" v-model="location"
-                            class="bg-main_primary w-64 border-b-2 md:w-90 cursor-pointer text-bg_primary px-2"></div>
+                    <div id="location" class="px-4"> <input type="text"
+                            placeholder="Location" v-model="location" @change="locUpdated = true"
+                            class="bg-main_primary w-64 border-b-2 md:w-76 xl:w-90 cursor-pointer text-bg_primary px-2"></div>
+                            <button v-if="locUpdated == true" @click="getGeoCode(location)" class="px-4 py-1 rounded-sm bg-main_focus hover:bg-main_focus_active mt-2 mb-2 md:my-0 text-light">Accept</button>
                     <!-- <SmallMap :active="true" /> -->
                 </div>
                 <div class="sortby mt-4 md:mt-0 flex-col md:flex-row">
@@ -52,6 +53,7 @@
         data() {
             return {
                 location: store.state.profile.data.Location,
+                locUpdated: false,
                 showFilter: true
             }
         },

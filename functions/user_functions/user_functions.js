@@ -170,18 +170,36 @@ router.post('/generate_redeem', function (req, res) {
   var responseData = {
     Codes: new Array
   }
-  for (var i = 0; i++; i < inFile.Amount) {
-    var Code = `${inFile.FamilyName[0]}${parseInt(Math.random()*10000)}${inFile.Name[0]}${Math.random().toString(36).substring(5)}${parseInt(Math.random()*100000)}`;
-    docRef.add({
-      Name: `${inFile.Name} ${inFile.FamilyName}`,
-      Email: inFile.Email,
-      AmountBatched: inFile.Amount,
-      Created: new Date().toDateString(),
-      Code: Code
-    }).then(ref => {
-      responseData.Codes.push(Code)
+
+  function createCode(inFile) {
+    return new Promise((resolve, reject) => {
+      var Code = `${inFile.FamilyName[0]}${parseInt(Math.random()*1000)}${inFile.Name[0]}${Math.random().toString(36).substring(5)}${parseInt(Math.random()*1000)}`;
+      docRef.add({
+        Name: `${inFile.Name} ${inFile.FamilyName}`,
+        Email: inFile.Email,
+        AmountBatched: inFile.Amount,
+        Created: new Date().toDateString(),
+        Code: Code
+      }).then(ref => {
+        resolve(Code)
+      }).catch(error => {
+        console.log(error)
+      })
     })
   }
+
+  // Der Loop könnte mir so um die Ohren fliegen!
+  while (true) {
+    setTimeout(function() {
+      if (responseData.Codes.length < inFile.Amount - 1) {
+        createCode(inFile).then(code => {responseData.Codes.push(code)})
+      }
+      else {
+        break;
+      }
+    }, 500)
+  }
+
   // maybe i have to convert the forloop into a promise
   res.send(responseData);
 })

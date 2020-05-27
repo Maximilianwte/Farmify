@@ -42,7 +42,7 @@
       </div>
 
       <!-- Tablet & Desktop Menu -->
-      <div id="menu" style="z-index: 200" title="Menu"
+      <div id="menu" style="z-index: 100" title="Menu"
         class="hidden md:block absolute w-64 h-12 rounded-sm border-2 border-main_secondary top-0 right-0 mt-56 mr-6 text-bg_primary bg-main_primary">
         <div class="sortby mt-3 ml-2 w-64 flex">
           <div class="icon pl-2">
@@ -97,7 +97,7 @@
         <template class="relative" v-if="activeMarker == item.id">
           <!-- Full Maker Signed In -->
           <template v-if="auth == true">
-            <div style="width: 340px; height: 225px; z-index: 20; top: 22px"
+            <div style="width: 340px; height: 225px; z-index: 200; top: 22px"
               class="bigIcon cursor-pointer text-main_primary front relative bg-bg_primary rounded-sm px-4 py-0"
               v-if="activeMarker == item.id" id="activeBox">
               <div class="crop-icon absolute top-0 right-0 mr-4 mt-2">
@@ -157,7 +157,7 @@
           </template>
           <!-- Full Marker Not Signed In -->
           <template v-else>
-            <div style="width: 340px; height: 225px; z-index: 20; top: 22px"
+            <div style="width: 340px; height: 225px; z-index: 200; top: 22px"
               class="bigIcon cursor-pointer text-main_primary front relative bg-bg_primary rounded-sm px-4 py-0"
               v-if="activeMarker == item.id" id="activeBox">
               <div class="crop-icon absolute top-0 right-0 mr-4 mt-2">
@@ -323,7 +323,7 @@
         this.handleActiveButton(5);
       },
       getFill(id) {
-        var savedFarms = store.state.profile.data.savedFarms;
+        var savedFarms = store.state.profile.data.SavedFarms;
         if (savedFarms.includes(id)) {
           return "fill: #cc6355"
         }
