@@ -1,13 +1,11 @@
 <template>
     <div v-if="auth == false"
-        class="list-item relative pb-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
+        class="list-item relative py-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
         <div class="crop-icon absolute top-0 right-0 mr-4 mt-2">
             <FarmIconHandler :alt="item.category" :title="item.category" v-bind:key="item.id" v-bind:item="item" />
         </div>
-        <div class="image h-40 w-full rounded-t-sm text-dark">
-            <h1 class="px-4 w-64 py-1">A {{item.category}}</h1>
-            <h6 class="px-4 text-base">{{getDistance()}} km from your location</h6>
-        </div>
+        <h1 class="px-4 w-64 py-1">A {{item.category}}</h1>
+        <h6 class="px-4 text-base text-bg_secondary">{{getDistance()}} km from your location</h6>
         <div class="saveFarm ml-4 mt-3 md:absolute bottom-0 left-0 md:mb-2" style="z-index: 40">
             <svg @click="handleSavedFarm(item.id)" @mouseleave="handleActiveButton(0)" alt="Save Farm" title="Save Farm"
                 :style="getFill(item.id)" style="z-index: 30" class="svg-mds cursor-pointer" viewBox="0 -10 512 511"

@@ -1,5 +1,5 @@
 <template>
-    <div class="profileView text-3xl flex-col px-4 md:px-16 lg:px-24 w-full">
+    <div class="profileView text-3xl flex-col w-full">
         <div id="namerow" class="flex items-center text-3xl">
             <div id="Initials">
                 <h6 class="text-5xl rounded-full border-4 px-5 py-3 mx-4">{{profile.Name[0] + profile.FamilyName[0]}}

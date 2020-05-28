@@ -1,11 +1,13 @@
 <template>
     <div v-if="auth == false"
-        class="list-item relative py-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
-        <div class="crop-icon absolute top-0 right-0 mr-4 mt-2">
-            <FarmIconHandler :alt="item.category" :title="item.category" v-bind:key="item.id" v-bind:item="item" />
+        class="list-item relative pb-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
+        <div :style="{backgroundImage: `url(${getImage(item.category)})`}"
+            class="image h-48 w-full rounded-t-sm text-light">
+            <div class="overlay w-full h-full rounded-tl-sm">
+                <h1 class="px-4 w-64 py-1">A {{item.category}}</h1>
+                <h6 class="px-4 text-base">{{getDistance()}} km from your location</h6>
+            </div>
         </div>
-        <h1 class="px-4 w-64 py-1">A {{item.category}}</h1>
-        <h6 class="px-4 text-base text-bg_secondary">{{getDistance()}} km from your location</h6>
         <div class="saveFarm ml-4 mt-3 md:absolute bottom-0 left-0 md:mb-2" style="z-index: 40">
             <svg @click="handleSavedFarm(item.id)" @mouseleave="handleActiveButton(0)" alt="Save Farm" title="Save Farm"
                 :style="getFill(item.id)" style="z-index: 30" class="svg-mds cursor-pointer" viewBox="0 -10 512 511"
@@ -15,7 +17,7 @@
             </svg>
             <Tooltip :info="'save'" :active="getActive(5)" :type="'square'" />
         </div>
-        <div class="below w-full flex items-center justify-end mt-12 py-1 relative cursor-pointer">
+        <div class="below w-full flex items-center justify-end mt-8 py-1 relative cursor-pointer">
             <div v-if="item.phone != undefined" id="call" title="Phone" alt="Phone" class="cursor-pointer px-1">
                 <div @click="handleActiveButton(1)" @mouseleave="handleActiveButton(0)" class="button">
                     <svg class="svg-passive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -52,8 +54,7 @@
             </div>
             <div @click="handleActiveButton(4)" @mouseleave="handleActiveButton(0)" class="relative"
                 v-if="item.email != undefined" id="easyContact">
-                <button
-                    class="bg-bg_secondary cursor-pointer text-bg_primary rounded-sm px-4 py-2 ml-2 mr-2">Easy
+                <button class="bg-bg_secondary cursor-pointer text-bg_primary rounded-sm px-4 py-2 ml-2 mr-2">Easy
                     Apply</button>
                 <Tooltip :info="'signup'" :active="getActive(4)" :type="'square'" />
             </div>
@@ -146,7 +147,9 @@
                 activeButton: 0
             }
         },
-        computed: {},
+        computed: {
+
+        },
         methods: {
             getFill(id) {
                 var savedFarms = store.state.profile.data.SavedFarms;
@@ -161,6 +164,22 @@
             getDistance() {
                 var distance = farm_functions.calculateDistance(store.state.profile.data.Geo, this.item.location);
                 return distance
+            },
+            getImage(category) {
+                switch (category) {
+                    case "Cattle Farm": {
+                        return require('../assets/cattle.jpg')
+                    }
+                    case "Vineyard": {
+                        return require('../assets/vineyard2.jpg')
+                    }
+                    case "Berry Farm": {
+                        return require('../assets/berries.jpg')
+                    }
+                    default: {
+                        return require('../assets/fruit.jpg')
+                    }
+                }
             },
             handleActiveButton(id) {
                 if (this.activeButton == id) {

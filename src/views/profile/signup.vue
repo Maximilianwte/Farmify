@@ -2,7 +2,8 @@
     <div id="sign" class="px-4 flex-col justify-around text-3xl">
         <div id="process" class="mt-32 flex text-center">
             <div id="first" class="px-4 w-32 flex-col">
-                <p class="px-6 py-2 rounded-full border-2">1</p>
+                <p :class="getProcessStyle(0)" @click="handleProcessClick(0)" class="px-6 py-2 rounded-full border-2">1
+                </p>
                 <h6 class="mt-2 px-3 text-xl">Signup</h6>
             </div>
             <div class="arrow mt-8 px-1 md:px-4">
@@ -12,7 +13,7 @@
                 </svg>
             </div>
             <div id="second" class="px-4">
-                <p class="px-6 py-2 rounded-full flex-col border-2">2</p>
+                <p :class="getProcessStyle(2)" class="px-6 py-2 rounded-full flex-col border-2">2</p>
                 <h6 class="mt-2 text-xl">Payment</h6>
                 <div class="container mt-2 w-49 flex justify-around">
                     <a href="#payment">
@@ -87,14 +88,26 @@
             signup_groups,
             signup_payment
         },
-        data() {
-            return {
-                activePage: this.page,
-            }
-        },
         computed: {
             soonMessageHandler() {
                 return this.soonMessage;
+            }
+        },
+        methods: {
+            getProcessStyle(id) {
+                if (id <= this.page) {
+                    return "border-main_primary bg-main_primary text-bg_primary cursor-pointer"
+                }
+            },
+            handleProcessClick(id) {
+                if (id <= this.page) {
+                    this.$router.push({
+                        name: 'signup',
+                        params: {
+                            page: id
+                        }
+                    })
+                }
             }
         }
     }

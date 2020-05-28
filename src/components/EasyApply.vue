@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div id="preview"
-                class="bg-main_primary text-bg_primary px-2 py-2 text-lg with-line-breaks border-t-2 border-bg_primary rounded-b-sm">{{getText}}</div>
+                class="text-main_primary px-4 pt-6 pb-10 text-lg with-line-breaks border-t-2 border-2 border-main_primary rounded-b-sm">{{getText}}</div>
         </div>
         <button @click="active = !active"
             class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Send</button>

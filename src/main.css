@@ -22,7 +22,7 @@ html {
     --bg-primary: #fdfbf4;
     --main-primary: #6d9265;
     --bg-secondary: #83a37e;
-    --main-secondary: #799c73;
+    --main-secondary: #85a77f;
 
 }
 .theme_dark {
@@ -176,7 +176,10 @@ svg:hover {
   }
 
   .image {
-      background-image: url("./assets/vineyard.jpg");
       background-size: cover;
       background-position-y: center;
+  }
+
+  .overlay {
+      background-color: rgba(0, 0, 0, 0.205);
   }
