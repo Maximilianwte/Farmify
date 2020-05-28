@@ -2,13 +2,13 @@
     <div id="signup" class="mt-12 w-full flex-col text-center">
         <h2>Sign up</h2>
         <div id="contact" class="mt-16 lg:w-1/2 py-2 flex-col justify-around text-2xl text-center mb-24">
-            <div class="oauth justify-around w-5/6 md:w-96">
+            <div class="oauth justify-around w-full md:w-96">
                 <p class="text-center mt-8">{{soonMessage}}</p>
-                <div class="oauth justify-around text-button_text w-5/6 md:w-96">
+                <div class="oauth justify-around text-button_text w-full md:w-96">
                     <p class="text-center mt-8">{{soonMessage}}</p>
                     <div class="oauthGoogle flex justify-around mt-2">
                         <button @click="showSoonMessage" style="background-color: white"
-                            class="h-12 px-2 md:px-8 flex items-center hover:bg-main_secondary rounded-sm text-dark">
+                            class="h-12 px-4 md:px-8 flex items-center hover:bg-main_secondary rounded-sm text-dark">
                             <div id="icon" class="pr-4">
                                 <svg class="svg-md" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg">
                                     <path

@@ -4,9 +4,9 @@
             <p>If you received an activation code from one of your travelmates, you can input it here.</p>
         </div>
         <input type="text" placeholder="Group Activation Code" v-model="input.activationCode"
-            class="mt-8 mb-16 text-2xl w-90 border-2 border-main_secondary text-dark px-2 py-2">
-
-        <div v-if="input.activationCode == ''" class="container">
+            class="mt-8 text-2xl w-90 border-2 border-main_secondary text-dark px-2 py-2">
+        <button v-if="input.activationCode != '' && input.activation == false" @click="checkRedeem()" class="button text-2xl mb-16 mt-4 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded-sm mx-2 cursor-pointer">Apply</button>
+        <div v-if="input.activation == false" class="container">
             <h3 class="mt-8 text-3xl">Farmify for Groups</h3>
             <h6 class="text-bg_secondary text-xl">All your travelmates connected.</h6>
             <div class="groups mt-8 mb-8 flex-col md:flex-row cursor-pointer text-xl">
@@ -66,7 +66,7 @@
         </div>
 
         <button @click="getNextPage()"
-            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Next</button>
+            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 mx-2 cursor-pointer">Next</button>
     </div>
 </template>
 <script>
@@ -77,7 +77,8 @@
             return {
                 activegroup: 1,
                 input: {
-                    activationCode: ""
+                    activationCode: "",
+                    activation: false
                 }
             }
         },
@@ -95,6 +96,10 @@
                     activationCode != "" ? this.input.activationCode = activationCode : "";
                     groupState != "" ? this.activegroup = groupState : "";
                 }
+            },
+            checkRedeem() {
+                // check here from firestore database
+                this.input.activation = true;
             },
             getNextPage() {
                 store.commit("pushSignUpPageCode", 1);
