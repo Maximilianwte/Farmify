@@ -21,6 +21,9 @@
         <router-link to="/faq">
           <h5 class="px-4">FAQ</h5>
         </router-link>
+        <router-link to="/contact">
+          <h5 class="px-4">Contact</h5>
+        </router-link>
       </div>
       <p class="px-6">Copywright 2020.</p>
     </div>

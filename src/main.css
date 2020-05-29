@@ -11,7 +11,7 @@ html {
     --red_active: rgb(255, 125, 149);
     --yellow: #FFE569;
     --yellow_active: rgb(255, 244, 187);
-    --light: #f5efe0;
+    --light: #fdfbf4;
     --dark: #413b36;
     --main-focus: #cc6355;
     --main-focus-secondary: #aa5348;
@@ -23,12 +23,12 @@ html {
     --main-primary: #6d9265;
     --bg-secondary: #83a37e;
     --main-secondary: #85a77f;
-
 }
+
 .theme_dark {
-    --bg-primary: #413b36;
-    --main-primary: #f5efe0;
-    --bg-secondary: #8d837b;;
+    --bg-primary: #383333;
+    --main-primary: #fdfbf4;
+    --bg-secondary: #8d837b;
     --main-secondary: #e6ddc8;
 }
 
@@ -105,7 +105,12 @@ svg:hover {
 
 .svg-light {
     stroke: none;
-  }
+}
+
+.svg-darkColor {
+    stroke: var(--bg-dark);
+    fill: var(--bg-dark);
+}
 
 .svg-3xl {
     width: 10rem;
@@ -144,42 +149,42 @@ svg:hover {
 }
 
 .arrow-down {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid var(--bg-primary);
-  }
+}
 
-  .arrow-down-small {
-    width: 0; 
-    height: 0; 
+.arrow-down-small {
+    width: 0;
+    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid var(--bg-primary);
-  }
+}
 
-  .arrow-downSignupAlert {
-    width: 0; 
-    height: 0; 
+.arrow-downSignupAlert {
+    width: 0;
+    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid var(--main-secondary);
-  }
+}
 
-  .ol-zoom {
-      display: none;
-  }
+.ol-zoom {
+    display: none;
+}
 
-  .with-line-breaks {
+.with-line-breaks {
     white-space: pre-wrap;
-  }
+}
 
-  .image {
-      background-size: cover;
-      background-position-y: center;
-  }
+.image {
+    background-size: cover;
+    background-position-y: center;
+}
 
-  .overlay {
-      background-color: rgba(0, 0, 0, 0.205);
-  }
+.overlay {
+    background-color: rgba(0, 0, 0, 0.205);
+}

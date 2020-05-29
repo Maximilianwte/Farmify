@@ -43,10 +43,10 @@
 
       <!-- Tablet & Desktop Menu -->
       <div id="menu" style="z-index: 100" title="Menu"
-        class="hidden md:block absolute w-64 h-12 rounded-sm border-2 border-main_secondary top-0 right-0 mt-56 mr-6 text-bg_primary bg-main_primary">
+        class="hidden md:block absolute w-64 h-12 rounded-sm border-2 border-main_secondary top-0 right-0 mt-56 mr-6 text-dark bg-light">
         <div class="sortby mt-3 ml-2 w-64 flex">
           <div class="icon pl-2">
-            <svg class="svg-md svg-dark" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
+            <svg class="svg-md svg-darkColor" viewBox="-5 0 394 394" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M367.8 0H16.6c-6.2 0-12 3.4-14.8 9a16.7 16.7 0 001.3 17.4l128.7 181.3.2.1c4.6 6.4 7.2 14 7.2 21.9v147.8a16.4 16.4 0 0022.9 15.2l72.3-27.6c6.5-2 10.8-8 10.8-15.4v-120c0-7.9 2.5-15.5 7.2-21.9l.1-.1L381.2 26.4A16.7 16.7 0 00382.5 9c-2.8-5.6-8.5-9-14.7-9zm0 0" />
             </svg>
@@ -78,7 +78,7 @@
       <!-- Groups -->
       <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.location">
         <button @click="setActiveGroup(item)" :class="{'hidden': activeGroup == item.id}"
-          class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{item.numberInGroup}}</button>
+          class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{getActiveNumberInGroup(item)}}</button>
       </vl-overlay>
 
       <!-- Small Marker items -->
@@ -278,6 +278,9 @@
         } else {
           return [-30, -60];
         }
+      },
+      getActiveNumberInGroup(item) {
+        return farm_functions.findFarmsInGroup(item.id).length;
       },
       setActiveGroup(item) {
         var markerData = farm_functions.renderMarkers();

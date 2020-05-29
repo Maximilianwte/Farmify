@@ -1,7 +1,7 @@
 <template>
     <div id="database" class="w-full flex-col">
         <h1 class="text-4xl mt-32">Farms Around Me</h1>
-        <div id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
+        <div style="background-image: linear-gradient(-90deg, var(--main-gradient-color), var(--main-primary));" id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
             <div id="filter" class="flex-row md:flex mt-8 justify-between w-5/6 lg:w-2/3 px-2 py-2 border-2 rounded-sm">
                 <div class="location flex-col md:flex-row">
                     <div id="icon">
@@ -66,7 +66,7 @@
                     'No Farms found.'
             },
             list_item() {
-                return store.state.farms.active;
+                return farm_functions.sortFarmsByDistance(store.state.farms.active);
             }
         },
         methods: {

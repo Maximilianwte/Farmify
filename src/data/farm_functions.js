@@ -31,7 +31,23 @@ let map_functions = {
             if (groups[index].id != id) {
                 for (var farmIndex in groups[index].farmsIncluded) {
                     var farmID = groups[index].farmsIncluded[farmIndex];
-                    farms_in_groups.push(farmID);         
+                    farms_in_groups.push(farmID);
+                }
+            }
+        }
+        return farms_in_groups;
+    },
+    findFarmsInGroup(id) {
+        var groups = store.state.groups.data;
+        var farms_in_groups = [];
+
+        for (var index in groups) {
+            if (groups[index].id == id) {
+                for (var farmIndex in groups[index].farmsIncluded) {
+                    var farmID = groups[index].farmsIncluded[farmIndex];
+                    if (store.state.farms.active_ids.includes(farmID)) {
+                        farms_in_groups.push(farmID);
+                    }
                 }
             }
         }
@@ -62,6 +78,9 @@ let map_functions = {
                         farms_to_show = findObject(farms, 'id', farms[index]['id'])
                     }
                 }
+                break;
+            case 'Easy Apply Enabled':
+                farms_to_show = filterObjectByKey(farms_to_show, 'email');
                 break;
             case 'Farms with Website':
                 farms_to_show = filterObjectByKey(farms_to_show, 'website');
@@ -108,6 +127,18 @@ let map_functions = {
         const d = R * c; // in metres
 
         return (d / 1000).toFixed(2) // return distance in kilometres
+    },
+    sortFarmsByDistance(farms) {
+        for (var index in farms) {
+            var distance = this.calculateDistance(store.state.profile.data.Geo, farms[index].location);
+            farms[index]["distance"] = distance;
+        }
+
+        farms.sort(function (a, b) {
+            return a.distance - b.distance;
+        });
+
+        return farms;
     }
 }
 
