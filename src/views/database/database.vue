@@ -1,7 +1,8 @@
 <template>
     <div id="database" class="w-full flex-col">
         <h1 class="text-4xl mt-32">Farms Around Me</h1>
-        <div style="background-image: linear-gradient(-90deg, var(--main-gradient-color), var(--main-primary));" id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
+        <div style="background-image: linear-gradient(-90deg, var(--main-gradient-color), var(--main-primary));"
+            id="list" class="text-bg_primary bg-main_primary w-full flex-col pb-20 mt-6">
             <div id="filter" class="flex-row md:flex mt-8 justify-between w-5/6 lg:w-2/3 px-2 py-2 border-2 rounded-sm">
                 <div class="location flex-col md:flex-row">
                     <div id="icon">
@@ -12,10 +13,12 @@
                         </svg>
                     </div>
                     <div id="filter_location" class="px-2">My Location: </div>
-                    <div id="location" class="px-4"> <input type="text"
-                            placeholder="Location" v-model="location" @change="locUpdated = true"
-                            class="bg-main_primary w-64 border-b-2 md:w-76 xl:w-90 cursor-pointer text-bg_primary px-2"></div>
-                            <button v-if="locUpdated == true" @click="getGeoCode(location)" class="px-4 py-1 rounded-sm bg-main_focus hover:bg-main_focus_active mt-2 mb-2 md:my-0 text-light">Accept</button>
+                    <div id="location" class="px-4"> <input type="text" placeholder="Location" v-model="location"
+                            @change="locUpdated = true"
+                            class="bg-main_primary w-64 border-b-2 md:w-76 xl:w-90 cursor-pointer text-bg_primary px-2">
+                    </div>
+                    <button v-if="locUpdated == true" @click="getGeoCode(location)"
+                        class="px-4 py-1 rounded-sm bg-main_focus hover:bg-main_focus_active mt-2 mb-2 md:my-0 text-light">Accept</button>
                     <!-- <SmallMap :active="true" /> -->
                 </div>
                 <div class="sortby mt-4 md:mt-0 flex-col md:flex-row">
@@ -33,7 +36,14 @@
             </div>
             <div class="container flex-col md:w-3/4 w-full">
                 <p class="mt-4 text-lg text-bg_secondary">{{getNumberItems}}</p>
-                <ListItem class="mt-4" v-for="item in list_item" v-bind:key="item.id" v-bind:item="item" />
+                <ListItem class="mt-4" v-for="item in list_item.slice(page*10,(page+1)*10)" v-bind:key="item.id"
+                    v-bind:item="item" />
+                <div id="navigate" class="flex justify-center">
+                    <button :class="buttonInactive('dec')" @click="handlePageClick('dec')"
+                        class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+                    <button :class="buttonInactive('inc')" @click="handlePageClick('inc')"
+                        class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -54,7 +64,8 @@
             return {
                 location: store.state.profile.data.Location,
                 locUpdated: false,
-                showFilter: true
+                showFilter: true,
+                page: 0
             }
         },
         mounted() {
@@ -77,6 +88,26 @@
                     }
                     store.commit("updateProfile", data);
                 });
+            },
+            buttonInactive(dir) {
+                switch (dir) {
+                    case 'inc':
+                        return (this.page + 1) * 10 >= store.state.farms.active.length ? 'bg-main_focus_active' : 'bg-main_focus';
+                        break;
+                    case 'dec':
+                        return this.page == 0 ? 'bg-main_focus_active' : 'bg-main_focus'
+                        break;
+                }
+            },
+            handlePageClick(dir) {
+                switch (dir) {
+                    case 'inc':
+                        (this.page + 1) * 10 < store.state.farms.active.length ? this.page++ : '';
+                        break;
+                    case 'dec':
+                        this.page != 0 ? this.page-- : '';
+                        break;
+                }
             }
         }
     }

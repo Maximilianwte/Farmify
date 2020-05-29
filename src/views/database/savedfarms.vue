@@ -17,8 +17,14 @@
             </div>
             <div class="text-bg_primary bg-main_primary w-full flex-col pb-20 rounded-b-sm">
                 <div id="myList" class="w-full flex-col" v-if="activeTab == 0">
-                    <ListItem class="mt-8" v-for="savedFarmID in storedFarms" v-bind:key="savedFarmID"
-                        v-bind:item="getFarm('id', savedFarmID)" />
+                    <ListItem class="mt-8" v-for="savedFarmID in storedFarms.slice(page*10,(page+1)*10)"
+                        v-bind:key="savedFarmID" v-bind:item="getFarm('id', savedFarmID)" />
+                    <div id="navigate" class="flex justify-center">
+                        <button :class="buttonInactive('dec')" @click="handlePageClick('dec')"
+                            class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+                        <button :class="buttonInactive('inc')" @click="handlePageClick('inc')"
+                            class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+                    </div>
                 </div>
                 <div id="myList" class="w-full flex-col" v-else>
                     <!-- <ListItem class="mt-8" v-for="savedFarmID in storedFarms" v-bind:key="savedFarmID"
@@ -41,6 +47,7 @@
         data() {
             return {
                 activeTab: 0,
+                page: 0,
                 storedFarms: store.state.profile.data.SavedFarms,
                 all_farms: store.state.farms.data
             }
@@ -56,6 +63,27 @@
             },
             getFarm(id, value) {
                 return farm_functions.findFarm(id, value)
+            },
+            buttonInactive(dir) {
+                switch (dir) {
+                    case 'inc':
+                        return (this.page + 1) * 10 >= store.state.farms.active.length ? 'bg-main_focus_active' :
+                            'bg-main_focus';
+                        break;
+                    case 'dec':
+                        return this.page == 0 ? 'bg-main_focus_active' : 'bg-main_focus'
+                        break;
+                }
+            },
+            handlePageClick(dir) {
+                switch (dir) {
+                    case 'inc':
+                        (this.page + 1) * 10 < store.state.farms.active.length ? this.page++ : '';
+                        break;
+                    case 'dec':
+                        this.page != 0 ? this.page-- : '';
+                        break;
+                }
             }
         }
     }
