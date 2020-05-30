@@ -1,15 +1,17 @@
 <template>
     <div id="groups" class="flex-col text-center">
-        <div id="info" class="w-2/3 text-xl mt-16 text-justify">
-            <p>If you received an activation code from one of your travelmates, you can input it here.</p>
+        <div id="info" class="w-3/4 md:w-1/2 text-xl mt-16 text-justify">
+            <p>If you received an activation code from one of your travelmates, you can input it here. Otherwise please
+                choose one of the options below.</p>
         </div>
         <input type="text" placeholder="Group Activation Code" v-model="input.activationCode"
             class="mt-8 text-2xl w-90 border-2 border-main_secondary text-dark px-2 py-2">
-        <button v-if="input.activationCode != '' && input.activation == false" @click="checkRedeem()" class="button text-2xl mb-16 mt-4 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded-sm mx-2 cursor-pointer">Apply</button>
+        <button v-if="input.activationCode != '' && input.activation == false" @click="checkRedeem()"
+            class="button text-2xl mb-16 mt-4 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded-sm mx-2 cursor-pointer">Apply</button>
         <div v-if="input.activation == false" class="container">
             <h3 class="mt-8 text-3xl">Farmify for Groups</h3>
             <h6 class="text-bg_secondary text-xl">All your travelmates connected.</h6>
-            <div class="groups mt-8 mb-8 flex-col md:flex-row cursor-pointer text-xl">
+            <div class="groups mt-8 mb-8 flex-col md:flex-row justify-center cursor-pointer text-xl">
                 <div @click="setActiveGroup(1)"
                     :class="{'bg-main_primary': activegroup == 1, 'bg-bg_secondary': activegroup != 1}"
                     class="single text-bg_primary rounded-tl-sm rounded-tr-sm md:rounded-tr-none md:rounded-bl-sm w-full md:w-64 flex-col px-12 md:h-90">
@@ -64,9 +66,12 @@
                 </div>
             </div>
         </div>
-
-        <button @click="getNextPage()"
-            class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 mx-2 cursor-pointer">Next</button>
+        <div id="navigate" class="flex mb-12 justify-center">
+            <button
+                class="text-center text-2xl mt-4 bg-main_focus_active hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+            <button @click="getPage('next')"
+                class="text-center text-2xl mt-4 bg-main_focus hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+        </div>
     </div>
 </template>
 <script>
@@ -101,20 +106,27 @@
                 // check here from firestore database
                 this.input.activation = true;
             },
-            getNextPage() {
-                store.commit("pushSignUpPageCode", 1);
-
+            getPage(dir) {
                 if (store.state.cookies.accepted == true) {
                     cookie_functions.setCookie("activationCode", this.input.activationCode, 7);
                     cookie_functions.setCookie("groupState", this.activegroup, 7);
                 }
-
-                this.$router.push({
-                    name: 'signup',
-                    params: {
-                        page: 1
-                    }
-                });
+                if (dir == "next") {
+                    store.commit("pushSignUpPageCode", 1);
+                    this.$router.push({
+                        name: 'signup',
+                        params: {
+                            page: 1
+                        }
+                    });
+                } else {
+                    this.$router.push({
+                        name: 'signup',
+                        params: {
+                            page: 0
+                        }
+                    });
+                }
             },
         }
     }

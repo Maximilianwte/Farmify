@@ -58,8 +58,12 @@
                 <input @change="checkPasswords" type="password" placeholder="Confirm Password"
                     v-model="input.confirmPassword" class="w-90 border-2 border-main_secondary text-dark px-2 py-2">
                 <p class="mt-4 text-xl">{{checkPasswordsText}}</p>
-                <button @click="getNextPage()"
-                    class="button mb-8 mt-10 bg-main_focus hover:bg-main_focus_active text-light py-2 px-8 lg:px-8 rounded mx-2 cursor-pointer">Next</button>
+                <div id="navigate" class="flex mb-12 justify-center">
+                    <button @click="getPage('back')"
+                        class="text-center text-2xl mt-4 bg-main_focus hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+                    <button @click="getPage('next')"
+                        class="text-center text-2xl mt-4 bg-main_focus hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -71,13 +75,13 @@
         data() {
             return {
                 input: {
-                    name: "Peter",
-                    familyname: "Dinklage",
-                    email: "Peter.Dinklage@mail.com",
-                    country: "USA",
+                    name: "",
+                    familyname: "",
+                    email: "",
+                    country: "",
                     activationCode: "",
-                    password: "Peter1000",
-                    confirmPassword: "Peter1000"
+                    password: "",
+                    confirmPassword: ""
                 },
                 checkPasswordsText: "",
                 soonMessage: ""
@@ -99,7 +103,7 @@
             }
         },
         methods: {
-            getNextPage() {
+            getPage(dir) {
                 if (this.input.email.length > 5 && this.input.email.includes("@") && this.input.email.includes(".") &&
                     this.input.password.length > 7 && this.input.name.length > 3) {
                     var profileObject = {
@@ -110,11 +114,20 @@
                         Password: this.input.password
                     }
                     store.commit("updateProfile", profileObject);
+                }
+                if (dir == "next") {
                     store.commit("pushSignUpPageCode", 2);
                     this.$router.push({
                         name: 'signup',
                         params: {
                             page: 2
+                        }
+                    });
+                } else {
+                    this.$router.push({
+                        name: 'signup',
+                        params: {
+                            page: 0
                         }
                     });
                 }
@@ -133,7 +146,7 @@
                 if (this.input.password.length > 0 && this.input.password.length < 8) {
                     this.checkPasswordsText = "Password must be at least 8 characters long."
                 } else {
-                    if (this.input.password != this.input.confirmPassowrd) {
+                    if (this.input.password != this.input.confirmPassword) {
                         this.checkPasswordsText = "Both passwords must be the same."
                     } else {
                         this.checkPasswordsText = ""
