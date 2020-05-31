@@ -60,9 +60,9 @@
                 <p class="mt-4 text-xl">{{checkPasswordsText}}</p>
                 <div id="navigate" class="flex mb-12 justify-center">
                     <button @click="getPage('back')"
-                        class="text-center text-2xl mt-4 bg-main_focus hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+                        class="text-center text-2xl mr-2 mt-4 bg-main_focus hover:bg-main_focus_active rounded-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
                     <button @click="getPage('next')"
-                        class="text-center text-2xl mt-4 bg-main_focus hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+                        class="text-center text-2xl ml-2 mt-4 bg-main_focus hover:bg-main_focus_active rounded-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
                 </div>
             </div>
         </div>

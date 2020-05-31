@@ -40,9 +40,9 @@
                     v-bind:item="item" />
                 <div id="navigate" class="flex justify-center">
                     <button :class="buttonInactive('dec')" @click="handlePageClick('dec')"
-                        class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-l-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
+                        class="text-center text-2xl mr-2 mt-4 hover:bg-main_focus_active rounded-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
                     <button :class="buttonInactive('inc')" @click="handlePageClick('inc')"
-                        class="text-center text-2xl mt-4 hover:bg-main_focus_active rounded-r-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
+                        class="text-center text-2xl ml-2 mt-4 hover:bg-main_focus_active rounded-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Next</button>
                 </div>
             </div>
         </div>
