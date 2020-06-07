@@ -1,0 +1,4148 @@
+[
+    {
+        "id": "16454",
+        "name": "Burke & Wills Winery",
+        "adress": "89 Coombe Ln, Mia Mia VIC 3444",
+        "geoLocation": [
+            144.4515,
+            -37.2444
+        ],
+        "phone": "+613 5425 5400",
+        "website": "http://www.wineandmusic.net/",
+        "email": "wineandmusic@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16456",
+        "name": "Wild Dog Winery",
+        "adress": "6 Farrington Close, Warragul VIC 3820",
+        "geoLocation": [
+            145.9268202,
+            -38.1924149
+        ],
+        "phone": "+614 06 003 602",
+        "website": "http://www.wilddogwinery.com/",
+        "email": "luke@wilddogwinery.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16458",
+        "name": "Mia Valley Estate",
+        "adress": "203 Daniels Lane, Mia Mia VIC 3444",
+        "geoLocation": [
+            144.554238,
+            -36.9954573
+        ],
+        "phone": "+614 07311895",
+        "website": "http://www.miavalleyestate.com.au/",
+        "email": "info@miavalleyestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16459",
+        "name": "Wild Duck Creek Estate",
+        "adress": "764 Spring Flat Rd, Heathcote VIC 3523",
+        "geoLocation": [
+            144.7188642,
+            -36.9410711
+        ],
+        "phone": "+613 5433 3133",
+        "website": "http://www.wildduckcreekestate.com.au/",
+        "email": "winery@wdce.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16461",
+        "name": "Meehan Vineyard",
+        "adress": "4536 McIvor Hwy, Heathcote VIC 3523",
+        "geoLocation": [
+            144.6346631,
+            -36.8738005
+        ],
+        "phone": "+614 38 981 847",
+        "website": "http://www.meehanvineyard.com/",
+        "email": "meehanvineyard@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16462",
+        "name": "Mount Alexander Winery",
+        "adress": "410 Harcourt Rd, Sutton Grange VIC 3448",
+        "geoLocation": [
+            144.3568,
+            -37.124
+        ],
+        "phone": "+614 13181248",
+        "website": "http://www.mawine.com.au/",
+        "email": "bill@mawine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16463",
+        "name": "Blakes Estate",
+        "adress": "80 Bambra Cemetery Rd, Deans Marsh VIC 3235",
+        "geoLocation": [
+            143.9002663,
+            -38.3879358
+        ],
+        "phone": "+613 5236 3246",
+        "website": "http://blakesestate.com.au/",
+        "email": "rogerblake@internode.on.net",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16464",
+        "name": "Eastern Peake Vineyard",
+        "adress": "67 Pickfords Rd, Coghills Creek VIC 3364",
+        "geoLocation": [
+            143.7512054,
+            -37.3644723
+        ],
+        "phone": "+614 08059454",
+        "website": "http://www.easternpeake.com.au/",
+        "email": "owen.latta@gmail.com ",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16465",
+        "name": "Mount Beckworth Wines",
+        "adress": "425 Pickfords Rd, Glendaruel VIC 3363",
+        "geoLocation": [
+            143.7538983,
+            -37.3511555
+        ],
+        "phone": "+613 5343 4207",
+        "website": "http://www.mountbeckworthwines.com.au/",
+        "email": "info@mountbeckworthwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16466",
+        "name": "Merindoc Cellar Door",
+        "adress": "2905 Lancefield-Tooborac Rd, Tooborac VIC 3522",
+        "geoLocation": [
+            144.7593849,
+            -37.1104143
+        ],
+        "phone": "+613 5433 5188",
+        "website": "https://www.merindoc.com.au/contact",
+        "email": "admin@merindochq.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16468",
+        "name": "Nillahcootie Estate",
+        "adress": "Midland Hwy, Lima South VIC 3673",
+        "geoLocation": [
+            146.007075,
+            -36.8112043
+        ],
+        "phone": "+613 5768 2685",
+        "website": "http://www.nillahcootieestate.com.au/",
+        "email": "info@nillahcootieestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16469",
+        "name": "Michael Unwin Wines",
+        "adress": "10 Powells Rd,Windermere VIC 3352",
+        "geoLocation": [
+            143.7272672,
+            -37.4990954
+        ],
+        "phone": "+613 5349 2021",
+        "website": "https://michaelunwinwines.com.au/",
+        "email": "hellotenne@gmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16472",
+        "name": "De Bortoli Wines Hunter Valley Cellar Door",
+        "adress": "532 Wine Country Drive, Pokolbin NSW 2320",
+        "geoLocation": [
+            151.3448978,
+            -32.7816668
+        ],
+        "phone": "+612 4993 8800",
+        "website": "http://www.debortoli.com.au/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "New South Wales"
+    },
+    {
+        "id": "16474",
+        "name": "Morrisons of Glenrowan",
+        "adress": "30 Kays Lane, Glenrowan VIC 3675",
+        "geoLocation": [
+            146.2321486,
+            -36.4534203
+        ],
+        "phone": "+613 5766 2734",
+        "website": "https://morrisonswinery.com.au/",
+        "email": "info@morrisonswinery.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16475",
+        "name": "Wood Park Wines",
+        "adress": "263 Kneebones Gap Rd, Bobinawarrah VIC 3678",
+        "geoLocation": [
+            146.4333,
+            -36.8
+        ],
+        "phone": "+613 5727 3778",
+        "website": "http://www.woodparkwines.com.au/",
+        "email": "cellardoor@woodparkwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16477",
+        "name": "Markwood Estate",
+        "adress": "135 Morris Lane, Markwood VIC 3678",
+        "geoLocation": [
+            146.4903125,
+            -36.4934656
+        ],
+        "phone": "+613 5727 0361",
+        "website": "http://www.markwoodestate.com/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16478",
+        "name": "Monichino Wines",
+        "adress": "70 Berry's Rd, Katunga VIC 3640",
+        "geoLocation": [
+            145.4661082,
+            -36.0112517
+        ],
+        "phone": "+613 5864 6452",
+        "website": "http://www.monichino.com.au/",
+        "email": "sales@monichino.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16480",
+        "name": "Lake Marmal Vineyards",
+        "adress": "129 Terrapee Cemetery Rd, Lake Marmal VIC 3525",
+        "geoLocation": [
+            143.4046,
+            -36.2644
+        ],
+        "phone": "+6142 7828798",
+        "website": "http://www.lmv.com.au/",
+        "email": "john_leijer@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16481",
+        "name": "Tinkers Hill Wines",
+        "adress": "84 Sugarloaf Lane, Beechworth VIC 3747",
+        "geoLocation": [
+            146.6349302,
+            -36.2997871
+        ],
+        "phone": "+613 5728 3327",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16484",
+        "name": "Lake Moodemere Vineyards",
+        "adress": "12 Moodemere Road, Rutherglen VIC 3685",
+        "geoLocation": [
+            146.5,
+            -36.0333
+        ],
+        "phone": "+612 6032 9449",
+        "website": "http://www.moodemerewines.com.au/",
+        "email": "hello@moodemerewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16485",
+        "name": "Ceccanti Kiewa Valley Wines",
+        "adress": "285 Bay Creek Lane, Mongans Bridge VIC 3691",
+        "geoLocation": [
+            9.13501,
+            46.51367
+        ],
+        "phone": "+613 5754 5236",
+        "website": "http://www.ceccanti.com.au/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16486",
+        "name": "All Saints Estate",
+        "adress": "315 All Saints Road Wahgunyah Vic, Wahgunyah VIC 3687",
+        "geoLocation": [
+            146.4097951,
+            -35.9935111
+        ],
+        "phone": "+612 6035 2222",
+        "website": "http://www.allsaintswine.com.au/",
+        "email": "hr@allsaintswine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16487",
+        "name": "St Leonards Vineyard",
+        "adress": "201 St Leonards Road Wahgunyah Vic, Wahgunyah VIC 3687",
+        "geoLocation": [
+            146.4,
+            -36.0167
+        ],
+        "phone": "+612 6035 2222",
+        "website": "http://www.stleonardswine.com.au/",
+        "email": "hr@allsaintswine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16488",
+        "name": "Nicholson River Winery",
+        "adress": "20 Cabernet Cl, Nicholson VIC 3882",
+        "geoLocation": [
+            147.7570179,
+            -37.7975792
+        ],
+        "phone": "+61409 568 241",
+        "website": "http://www.nicholsonriverwinery.com.au/",
+        "email": "nrw@nicholsonriverwinery.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16492",
+        "name": "Woongarra Winery",
+        "adress": "95 Hayseys Rd, Narre Warren East VIC 3804",
+        "geoLocation": [
+            145.3735017,
+            -37.9657833
+        ],
+        "phone": "+614 88375797",
+        "website": "http://www.woongarrawinery.com.au/",
+        "email": "enquiries@woongarrawinery.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Victoria"
+    },
+    {
+        "id": "16868",
+        "name": "Wills Domain",
+        "adress": "17 Brash Rd, Yallingup WA 6282",
+        "geoLocation": [
+            7.90762,
+            46.17912
+        ],
+        "phone": "+618 9755 2327",
+        "website": "https://willsdomain.com.au/",
+        "email": "info@willsdomain.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16869",
+        "name": "Plantagenet Wines",
+        "adress": "Albany Hwy, Mt Barker WA 6324",
+        "geoLocation": [
+            117.6596961,
+            -34.6131081
+        ],
+        "phone": "+618 9851 3111",
+        "website": "http://www.plantagenetwines.com/",
+        "email": "cellardoor@plantagenetwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16870",
+        "name": "Jane Brook Estate Wines",
+        "adress": "229 Toodyay Rd, Middle Swan WA 6056",
+        "geoLocation": [
+            116.0279497,
+            -31.8674351
+        ],
+        "phone": "+618 9274 1432",
+        "website": "http://janebrook.com.au/",
+        "email": "pr@janebrook.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16871",
+        "name": "Estate 807",
+        "adress": "807 Scotsdale Rd, Denmark WA 6333",
+        "geoLocation": [
+            117.3544309,
+            -34.956639
+        ],
+        "phone": "+618 9840 9027",
+        "website": "http://www.estate807.com.au/",
+        "email": "info@estate807.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16873",
+        "name": "Windfall Wine Estate",
+        "adress": "7 Dardanup Rd W, North Boyanup WA 6237",
+        "geoLocation": [
+            115.7086384,
+            -33.4229962
+        ],
+        "phone": "+61408 930 332",
+        "website": "http://bonkingfrog.com.au/",
+        "email": "sales@windfallwine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16874",
+        "name": "Trevelen Farm - Great Southern Wine",
+        "adress": "506 Weir Rd, Cranbrook WA 6321",
+        "geoLocation": [
+            117.33333,
+            -34.25
+        ],
+        "phone": "+618 9826 1052",
+        "website": "http://www.trevelenfarm.com.au/",
+        "email": "info@trevelenfarm.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16875",
+        "name": "Twin Hill Wines",
+        "adress": "1093 Great Northern Hwy, Baskerville WA 6056",
+        "geoLocation": [
+            116.0216412,
+            -31.7941525
+        ],
+        "phone": "+61438 956 329",
+        "website": "http://www.twinhillwines.com/",
+        "email": "twinhillwines@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16877",
+        "name": "St Aidan Wines",
+        "adress": "754 Ferguson Rd, Dardanup WA 6236",
+        "geoLocation": [
+            115.8088456,
+            -33.4077093
+        ],
+        "phone": "+618 9728 3007",
+        "website": "http://www.saintaidan.com.au/",
+        "email": "cellardoor@saintaidan.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16878",
+        "name": "Galafrey Wines",
+        "adress": "432 Quangellup Rd, Mt Barker WA 6324",
+        "geoLocation": [
+            117.66606,
+            -34.63084
+        ],
+        "phone": "+618 9851 2022",
+        "website": "http://www.galafreywines.com.au/",
+        "email": "info@galafreywines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16879",
+        "name": "Entopia Wines",
+        "adress": "61 Memorial Ave, Baskerville WA 6056",
+        "geoLocation": [
+            8.18566,
+            46.40065
+        ],
+        "phone": "+61418 912 217",
+        "website": "http://entopia-wines.net.au/",
+        "email": "brian.hunt@entopia-wines.net.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16880",
+        "name": "Beckett's Flat",
+        "adress": "49 Beckett Rd, Metricup WA 6280",
+        "geoLocation": [
+            115.1329,
+            -33.77548
+        ],
+        "phone": "+618 9755 7402",
+        "website": "http://www.beckettsflat.com.au/",
+        "email": "sales@beckettsflat.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16881",
+        "name": "Vasse Felix Winery",
+        "adress": "Caves Rd & Tom Cullity Dr, Gracetown WA 6284",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9756 5000",
+        "website": "http://www.vassefelix.com.au/",
+        "email": "jobs@vassefelix.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16882",
+        "name": "Castle Rock Estate",
+        "adress": "2660 Porongurup Rd, Porongurup WA 6324",
+        "geoLocation": [
+            117.8658373,
+            -34.6514643
+        ],
+        "phone": "+618 9853 1035",
+        "website": "http://www.castlerockestate.com.au/",
+        "email": "diletti@castlerockestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16883",
+        "name": "Clairault Streicker Wines",
+        "adress": "3277 Caves Rd, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9755 6225",
+        "website": "https://www.clairaultstreickerwines.com.au/",
+        "email": "wine@clairaultstreicker.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16884",
+        "name": "Wignall's Wines",
+        "adress": "448 Chester Pass Rd, Walmsley WA 6330",
+        "geoLocation": [
+            117.8904671,
+            -34.9605128
+        ],
+        "phone": "+618 9841 2848",
+        "website": "http://www.wignallswines.com.au/",
+        "email": "info@wignallswines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16885",
+        "name": "MCLeod Creek Wines",
+        "adress": "10 McLeod Creek Rd, Karridale WA 6288",
+        "geoLocation": [
+            115.1041351,
+            -34.1613527
+        ],
+        "phone": "+614 00 773 203",
+        "website": "http://www.mcleodcreekwines.com.au/",
+        "email": "info@mcleodcreekwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16887",
+        "name": "Garbin Estate Wines",
+        "adress": "209 Toodyay Rd, Middle Swan WA 6056",
+        "geoLocation": [
+            116.0279497,
+            -31.8674351
+        ],
+        "phone": "+618 9274 1747",
+        "website": "http://www.garbinestatewines.com.au/",
+        "email": "joel@garbinestatewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16888",
+        "name": "Henley Park Wines",
+        "adress": "6 Swan St, Henley Brook WA 6055",
+        "geoLocation": [
+            116.0084771,
+            -31.8073288
+        ],
+        "phone": "+618 9296 4328",
+        "website": "http://www.henleywine.com/",
+        "email": "henleyparkwines@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16889",
+        "name": "Olive Farm Wines",
+        "adress": "920 Great Northern Hwy, Millendon WA 6056",
+        "geoLocation": [
+            116.0200057,
+            -31.8034193
+        ],
+        "phone": "+618 9296 4539",
+        "website": "http://www.olivefarmwines.com/",
+        "email": "info@olivefarm.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16890",
+        "name": "Fairbrossen Estate",
+        "adress": "51 Carmel Rd, Carmel WA 6076",
+        "geoLocation": [
+            116.0800564,
+            -32.0176262
+        ],
+        "phone": "+618 9293 5594",
+        "website": "https://www.fairbrossen.com.au/",
+        "email": "wine@fairbrossen.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16891",
+        "name": "Upper Reach Winery",
+        "adress": "77 Memorial Ave, Baskerville WA 6056",
+        "geoLocation": [
+            8.18566,
+            46.40065
+        ],
+        "phone": "+618 9296 0078",
+        "website": "http://upperreach.com.au/",
+        "email": "info@upperreach.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16892",
+        "name": "Cosham Wines",
+        "adress": "101 Union Rd, Carmel WA 6076",
+        "geoLocation": [
+            116.1012433,
+            -32.0180073
+        ],
+        "phone": "+618 9293 5424",
+        "website": "https://www.facebook.com/pages/category/Food---Beverage-Company/Cosham-Wines-179939108796102/",
+        "email": "cosham@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16893",
+        "name": "Swan Valley Wines",
+        "adress": "261 Haddrill Rd, Baskerville WA 6056",
+        "geoLocation": [
+            116.0546938,
+            -31.7971852
+        ],
+        "phone": "+614 02 981 969",
+        "website": "http://www.swanvalleywines.com.au/",
+        "email": "paulhoffman666@gmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16894",
+        "name": "Malmalling Vineyard",
+        "adress": "3025 Beacon Rd, Parkerville WA 6081",
+        "geoLocation": [
+            116.1310217,
+            -31.8673645
+        ],
+        "phone": "+614 17 970 704",
+        "website": "http://www.malmallingvineyard.com.au/",
+        "email": "sales@malmallingvineyard.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16895",
+        "name": "La Fattoria",
+        "adress": "211 Merrivale Rd, Pickering Brook WA 6076",
+        "geoLocation": [
+            116.1359137,
+            -32.0444552
+        ],
+        "phone": "+618 9293 7888",
+        "website": "http://www.lafattoria.com.au/",
+        "email": "info@lafattoria.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16896",
+        "name": "Millbrook Winery",
+        "adress": "Old Chestnut Lane, Jarrahdale WA 6124",
+        "geoLocation": [
+            116.046932,
+            -32.3469066
+        ],
+        "phone": "+618 9525 5796",
+        "website": "https://www.millbrook.wine/",
+        "email": "restaurant@millbrook.wine",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16897",
+        "name": "Cape Bouvard Winery & Brewery",
+        "adress": "185 Clifton Downs Rd, Herron WA 6211",
+        "geoLocation": [
+            113.88333,
+            -1.11667
+        ],
+        "phone": "+618 9739 1360",
+        "website": "http://cape-bouvard.com.au/",
+        "email": "info@cape-bouvard.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16898",
+        "name": "Vineyard 28",
+        "adress": "270 Bagieau Rd, Yarloop WA 6218",
+        "geoLocation": [
+            6.95991,
+            46.11027
+        ],
+        "phone": "+614 08 931 892",
+        "website": "http://www.vineyard28.com.au/",
+        "email": "wine@vineyard28.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16899",
+        "name": "Moojelup Farm",
+        "adress": "129 Thompson Rd, Cookernup WA 6220",
+        "geoLocation": [
+            115.8785938,
+            -33.0125313
+        ],
+        "phone": "+618 9733 5166",
+        "website": "http://www.moojelup.com.au/",
+        "email": "sales@moojelup.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16900",
+        "name": "Mandalay Estate",
+        "adress": "254 Mandalay Rd, Glen Mervyn WA 6239",
+        "geoLocation": [
+            7.4398,
+            46.29382
+        ],
+        "phone": "+618 9732 2006",
+        "website": "https://mandalayroad.com.au/",
+        "email": "wine@mandalayroad.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16901",
+        "name": "Smallwater Estate",
+        "adress": "52 Tramline Rd, Newlands WA 6251",
+        "geoLocation": [
+            115.8687687,
+            -33.688554
+        ],
+        "phone": "+618 9731 6036",
+        "website": "http://www.smallwaterestate.com/",
+        "email": "john@smallwaterestate.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16902",
+        "name": "Mongrel Creek Vineyard",
+        "adress": "109 Hayes Rd, Yallingup Siding WA 6282",
+        "geoLocation": [
+            7.90762,
+            46.17912
+        ],
+        "phone": "+61417 991 065",
+        "website": "http://www.mongrelcreek.com.au/",
+        "email": "mongrelcreek@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16903",
+        "name": "Swings & Roundabouts Cellar Door",
+        "adress": "2807 Caves Rd, Yallingup WA 6282",
+        "geoLocation": [
+            115.0288253,
+            -33.6947974
+        ],
+        "phone": "+618 9756 6640",
+        "website": "http://www.swings.com.au/",
+        "email": "admin@swings.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16904",
+        "name": "Bussell Vineyards",
+        "adress": "11 Jones Rd, Quedjinup WA 6281",
+        "geoLocation": [
+            115.0893978,
+            -33.6220769
+        ],
+        "phone": "+614 27 554 169",
+        "website": "http://bussellvineyards.com.au/",
+        "email": "info@bussellvineyards.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16905",
+        "name": "Howling Wolves Wines",
+        "adress": "5 Harmans Mill Rd, Metricup WA 6280",
+        "geoLocation": [
+            115.1329,
+            -33.77548
+        ],
+        "phone": "+614 12 177 481",
+        "website": "http://www.howlingwolveswines.com/",
+        "email": "sales@howlingwolveswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16906",
+        "name": "Larry Cherubino Wines",
+        "adress": "3462 Caves Rd, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9755 6732",
+        "website": "https://www.larrycherubino.com/Cellar-Doors/Margaret-River-Cellar-Door",
+        "email": "cellardoor@larrycherubino.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16908",
+        "name": "Knee Deep Wines",
+        "adress": "160 Johnson Rd, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+614 99 444 408",
+        "website": "http://kneedeepwines.com.au/",
+        "email": "admin@kneedeepwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16909",
+        "name": "Woodlands Wines",
+        "adress": "6284 Caves Rd, Margaret River WA 6285",
+        "geoLocation": [
+            7.84884,
+            46.19671
+        ],
+        "phone": "+618 9755 6226",
+        "website": "http://www.woodlandswines.com/",
+        "email": "mail@woodlandswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16910",
+        "name": "Thompson Estate",
+        "adress": "299 Tom Cullity Dr, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9755 6406",
+        "website": "http://www.thompsonestate.com/",
+        "email": "office@thompsonestate.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16911",
+        "name": "Tassell Park Wines",
+        "adress": "415 Treeton Rd, Treeton WA 6284",
+        "geoLocation": [
+            -1.3495315,
+            53.3686213
+        ],
+        "phone": "+618 9755 5440",
+        "website": "https://www.tassellparkwines.com/",
+        "email": "cellardoor@tassellparkwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16913",
+        "name": "Cullen Wines",
+        "adress": "4323 Caves Rd, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9755 5277",
+        "website": "http://www.cullenwines.com.au/",
+        "email": "cellardoor@cullenwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16914",
+        "name": "Passel Estate Winery",
+        "adress": "655 Ellen Brook Rd, Cowaramup WA 6284",
+        "geoLocation": [
+            115.0402034,
+            -33.8868656
+        ],
+        "phone": "+618 9717 6241",
+        "website": "http://passelestate.com/",
+        "email": "tastingroom@passelestate.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16915",
+        "name": "Brown Hill Estate",
+        "adress": "925 Rosa Brook Rd, Rosa Brook WA 6285",
+        "geoLocation": [
+            7.84884,
+            46.19671
+        ],
+        "phone": "+618 9757 4003",
+        "website": "https://www.brownhillestate.com.au/",
+        "email": "cellardoor@brownhillestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16917",
+        "name": "McHenry Hohnen Winery",
+        "adress": "325 Rocky Rd, Forest Grove WA 6286",
+        "geoLocation": [
+            7.89795,
+            46.30032
+        ],
+        "phone": "+618 9757 7600",
+        "website": "https://www.mchenryhohnen.com.au/",
+        "email": "sales@mchenryhohnen.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16918",
+        "name": "Cape Mentelle Vineyards",
+        "adress": "331 Wallcliffe Rd, Margaret River WA 6285",
+        "geoLocation": [
+            115.059757,
+            -33.9534853
+        ],
+        "phone": "+618 97570812",
+        "website": "http://www.capementelle.com.au/",
+        "email": "info@capementelle.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16919",
+        "name": "Xanadu Wines",
+        "adress": "316 Boodjidup Rd, Margaret River WA 6285",
+        "geoLocation": [
+            115.0752686,
+            -33.9616438
+        ],
+        "phone": "+618 9758 9500",
+        "website": "http://www.xanaduwines.com/",
+        "email": "info@xanaduwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16920",
+        "name": "Preveli Wines Cellar Door",
+        "adress": "99 Mitchell Dr, Prevelly WA 6285",
+        "geoLocation": [
+            114.9917916,
+            -33.9843944
+        ],
+        "phone": "+618 9757 2374",
+        "website": "http://www.preveliwines.com.au/",
+        "email": "preveli@preveliwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16921",
+        "name": "Voyager Estate",
+        "adress": "Stevens Rd, Margaret River WA 6285",
+        "geoLocation": [
+            115.0514478,
+            -33.9998108
+        ],
+        "phone": "+618 9757 6354",
+        "website": "http://www.voyagerestate.com.au/",
+        "email": "wineroom@voyagerestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16922",
+        "name": "Redgate Wines",
+        "adress": "659 Boodjidup Rd, Redgate WA 6286",
+        "geoLocation": [
+            7.89795,
+            46.30032
+        ],
+        "phone": "+618 9757 6488",
+        "website": "http://www.redgatewines.com.au/",
+        "email": "info@redgatewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16924",
+        "name": "Oceans Estate Margaret River ",
+        "adress": "290 Payne Rd, Courtenay WA 6288",
+        "geoLocation": [
+            7.96688,
+            46.05398
+        ],
+        "phone": "+614 19916359",
+        "website": "http://www.oceansestate.com.au/",
+        "email": "sales@oceansestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16925",
+        "name": "Stella Bella Cellar Door",
+        "adress": "205 Rosa Brook Road, Margaret River WA 6285",
+        "geoLocation": [
+            115.1040947,
+            -33.9737212
+        ],
+        "phone": "+618 9758 8611",
+        "website": "http://www.stellabella.com.au/",
+        "email": "wines@stellabella.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16926",
+        "name": "Below & Above Wines (Thella Estate)",
+        "adress": "43 Eastbrook Rd, Eastbrook WA 6260",
+        "geoLocation": [
+            -80.282856,
+            41.040906
+        ],
+        "phone": "+61414 446 405",
+        "website": "https://www.belowandabove.com.au/",
+        "email": "sales@belowandabove.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16928",
+        "name": "Duke's Vineyard",
+        "adress": "1380 Porongorup Rd, Mt Barker WA 6324",
+        "geoLocation": [
+            117.66606,
+            -34.63084
+        ],
+        "phone": "+618 9853 1107",
+        "website": "http://www.dukesvineyard.com/",
+        "email": "dukes@bordernet.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16929",
+        "name": "Whitfield Estate",
+        "adress": "198 McIntyre Rd, Denmark WA 6333",
+        "geoLocation": [
+            117.35321,
+            -34.96067
+        ],
+        "phone": "+614 08 919 256",
+        "website": "http://www.whitfieldestate.com.au/",
+        "email": "kelly@whitfieldestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16930",
+        "name": "Harewood Estate Cellar Door",
+        "adress": "1570 Scotsdale Rd, Denmark WA 6333",
+        "geoLocation": [
+            117.3544309,
+            -34.956639
+        ],
+        "phone": "+618 9840 9078",
+        "website": "http://www.harewoodestate.com.au/",
+        "email": "info@harewood.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16931",
+        "name": "Yilgarnia Wines and Wildflowers Pty Ltd",
+        "adress": "1847 Redmond West Rd, Redmond WA 6327",
+        "geoLocation": [
+            117.6483046,
+            -34.9013818
+        ],
+        "phone": "+618 9845 3031",
+        "website": "http://www.yilgarnia.com.au/",
+        "email": "sales@yilgarnia.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16932",
+        "name": "Alkoomi Wines Albany",
+        "adress": "225 Lower Stirling Tce, Albany WA 6330",
+        "geoLocation": [
+            117.883278,
+            -35.0272674
+        ],
+        "phone": "+614 09 543 714",
+        "website": "http://www.alkoomiwines.com.au/",
+        "email": "info@alkoomiwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16933",
+        "name": "Ambrook Wines",
+        "adress": "2810 W Swan Rd, Caversham WA 6055",
+        "geoLocation": [
+            115.9845479,
+            -31.8671774
+        ],
+        "phone": "+618 9274 1003",
+        "website": "http://www.ambrookwines.com.au/",
+        "email": "sales@ambrookwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16934",
+        "name": "Barrecas Winery",
+        "adress": "19001 S Western Hwy, Brookhampton WA 6239",
+        "geoLocation": [
+            7.4398,
+            46.29382
+        ],
+        "phone": "+614 39641894",
+        "website": "https://www.barrecas.com.au/Home",
+        "email": "kelly@barrecas.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16935",
+        "name": "Barnyard 1978",
+        "adress": "12 Canal Rocks Rd, Yallingup WA 6282",
+        "geoLocation": [
+            115.0138094,
+            -33.6673547
+        ],
+        "phone": "+618 9755 2548",
+        "website": "http://www.barnyard1978.com.au/",
+        "email": "welcome@barnyard1978.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16936",
+        "name": "Rockcliffe Winery",
+        "adress": "18 Hamilton Rd, Scotsdale WA 6333",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9848 2622",
+        "website": "https://www.rockcliffe.com.au/",
+        "email": "elysia@rockcliffe.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16937",
+        "name": "Bartholomew's Meadery (Honey)",
+        "adress": "2620 South Coast Hwy, Denmark WA 6333",
+        "geoLocation": [
+            117.3610334,
+            -34.9586935
+        ],
+        "phone": "+618 9840 9349",
+        "website": "http://www.honeywine.com.au/",
+        "email": "info@honeywine.com.au",
+        "category": "Animal & Animal Products Facility",
+        "cropCode": "7",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16939",
+        "name": "Burch Family Wines Australia",
+        "adress": "543 Miamup Rd, Cowaramup WA 6284",
+        "geoLocation": [
+            115.094759,
+            -33.8540323
+        ],
+        "phone": "+618 9756 5200",
+        "website": "http://www.burchfamilywines.com.au/",
+        "email": "hpw@hpw.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16941",
+        "name": "Paul Conti Wines",
+        "adress": "529 Wanneroo Rd, Wanneroo WA 6065",
+        "geoLocation": [
+            115.8145135,
+            -31.795043
+        ],
+        "phone": "+618 9409 9160",
+        "website": "http://www.paulcontiwines.com.au/",
+        "email": "conti@paulcontiwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16942",
+        "name": "Little River Wines",
+        "adress": "2 Forest Rd, Henley Brook WA 6055",
+        "geoLocation": [
+            8.20017,
+            46.4434
+        ],
+        "phone": "+618 9296 4462",
+        "website": "http://www.littleriverwinery.com/",
+        "email": "info@littleriverwinery.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16943",
+        "name": "Windy Creek Estate",
+        "adress": "27 Stock Rd, Herne Hill WA 6056",
+        "geoLocation": [
+            116.0358292,
+            -31.8307408
+        ],
+        "phone": "+618 9296 1057",
+        "website": "http://www.windycreekestate.com.au/",
+        "email": "tony@windycreekestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16944",
+        "name": "Talijancich Wines",
+        "adress": "26 Hyem Rd, Herne Hill WA 6056",
+        "geoLocation": [
+            116.0181396,
+            -31.8196421
+        ],
+        "phone": "+618 9296 4289",
+        "website": "http://www.taliwine.com.au/",
+        "email": "admin@taliwine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16945",
+        "name": "Chidlows Well Estate",
+        "adress": "Chidlow WA 6556",
+        "geoLocation": [
+            116.2687417,
+            -31.859595
+        ],
+        "phone": "+618 9572 3681",
+        "website": "http://www.chidlowswell.com.au/",
+        "email": "chidlowswell@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16946",
+        "name": "Drakesbrook Wines",
+        "adress": "Prince Rd, Waroona WA 6215",
+        "geoLocation": [
+            6.98254,
+            46.23452
+        ],
+        "phone": "+614 27 944 503",
+        "website": "http://www.drakesbrookwines.com.au/",
+        "email": "info@drakesbrook.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16947",
+        "name": "Vista Ridge Estate",
+        "adress": "219 Fleay Rd, Harvey WA 6220",
+        "geoLocation": [
+            115.9237468,
+            -33.0962806
+        ],
+        "phone": "+61418 932 223",
+        "website": "http://www.vistaridge.com.au/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16949",
+        "name": "Downderry Wines",
+        "adress": "Graham Rd, Dumberning WA 6312",
+        "geoLocation": [
+            117.10102,
+            -33.00422
+        ],
+        "phone": "+61427 814 903",
+        "website": "http://www.downderrywines.com/",
+        "email": "downderry@westnet.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16951",
+        "name": "Capel Vale Wines",
+        "adress": "118 Mallokup Rd, Capel WA 6271",
+        "geoLocation": [
+            115.5499177,
+            -33.5411234
+        ],
+        "phone": "+618 9727 1986",
+        "website": "http://www.capelvale.com/",
+        "email": "winery@capelvale.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16953",
+        "name": "Palmer Wines",
+        "adress": "1271 Caves Rd, Quindalup WA 6281",
+        "geoLocation": [
+            7.88059,
+            46.37591
+        ],
+        "phone": "+618 9756 7024",
+        "website": "https://palmerwines.com.au/",
+        "email": "cellardoor@palmerwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16955",
+        "name": "Churchview Estate",
+        "adress": "8 Gale Rd, Metricup WA 6280",
+        "geoLocation": [
+            115.1329,
+            -33.77548
+        ],
+        "phone": "+618 9755 7200",
+        "website": "http://www.churchview.com.au/",
+        "email": "info@churchview.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16957",
+        "name": "Fermoy Estate",
+        "adress": "838 Metricup Rd, Wilyabrup WA 6280",
+        "geoLocation": [
+            -120.50147,
+            47.50012
+        ],
+        "phone": "+618 9443 2988",
+        "website": "https://www.fermoy.com.au/",
+        "email": "cameronrhodes@fermoy.com.au ",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16959",
+        "name": "Edwards Vineyard",
+        "adress": "687 Ellen Brook Rd, Cowaramup WA 6284",
+        "geoLocation": [
+            115.0402034,
+            -33.8868656
+        ],
+        "phone": "+618 9755 5999",
+        "website": "http://www.edwardswines.com.au/",
+        "email": "bianca@edwardswines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16965",
+        "name": "Ferngrove Vineyard",
+        "adress": "276 Ferngrove Rd, Frankland River WA 6396",
+        "geoLocation": [
+            116.81667,
+            -34.96667
+        ],
+        "phone": "+618 9855 2378",
+        "website": "http://www.ferngrove.com.au/",
+        "email": "info@ferngrove.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16966",
+        "name": "Xabregas City Cellar Door",
+        "adress": "9A Agnew Way, Subiaco WA 6008",
+        "geoLocation": [
+            115.8209202,
+            -31.9466193
+        ],
+        "phone": "+618 6244 7870",
+        "website": "http://www.xabregas.com.au/",
+        "email": "paul@xabregas.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "16967",
+        "name": "Old Kent River Wines",
+        "adress": "687 Ellen Brook Rd, Cowaramup WA 6284",
+        "geoLocation": [
+            115.0402034,
+            -33.8868656
+        ],
+        "phone": "+618 9840 8136",
+        "website": "http://oldkentriverwines.com.au/",
+        "email": "debbie@oldkentriverwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Western Australia"
+    },
+    {
+        "id": "17143",
+        "name": "Horndale Winery",
+        "adress": "41 - 45 Fraser Ave, Happy Valley SA 5159",
+        "geoLocation": [
+            138.5812968,
+            -35.0911065
+        ],
+        "phone": "+618 8387 0033",
+        "website": "http://www.horndalewinery.com.au/",
+        "email": "oldhorndale@hotmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17144",
+        "name": "Yalumba Winery",
+        "adress": "40 Eden Valley Rd, Angaston SA 5353",
+        "geoLocation": [
+            139.0550954,
+            -34.513291
+        ],
+        "phone": "+618 8561 3200",
+        "website": "http://www.yalumba.com/",
+        "email": "employment@yalumba.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17146",
+        "name": "Schulz Wines",
+        "adress": "375 Belvidere Rd, Nuriootpa SA 5355",
+        "geoLocation": [
+            139.0009277,
+            -34.4301934
+        ],
+        "phone": "+618 8565 6257",
+        "website": "http://www.schulzwines.com.au/",
+        "email": "info@schulzwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17147",
+        "name": "Henschke Cellars",
+        "adress": "1428 Keyneton Rd, Keyneton SA 5353",
+        "geoLocation": [
+            139.1172767,
+            -34.5990154
+        ],
+        "phone": "+618 8564 8223",
+        "website": "http://www.henschke.com.au/",
+        "email": "info@henschke.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17148",
+        "name": "Patritti Wines",
+        "adress": "13 Clacton Rd, Dover Gardens SA 5048",
+        "geoLocation": [
+            138.5322563,
+            -35.0224818
+        ],
+        "phone": "+618 8296 8261",
+        "website": "http://www.patritti.com.au/",
+        "email": "cellardoor@patritti.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17149",
+        "name": "Skillogalee Wines",
+        "adress": "45 Trevarrick Rd, Sevenhill SA 5453",
+        "geoLocation": [
+            138.6193732,
+            -33.9106845
+        ],
+        "phone": "+618 8843 4311",
+        "website": "http://www.skillogalee.com.au/",
+        "email": "info@skillogalee.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17151",
+        "name": "Fox Creek Wines",
+        "adress": "140 Malpas Road McLaren Vale, SA 5171",
+        "geoLocation": [
+            138.5429332,
+            -35.2510061
+        ],
+        "phone": "+618 8557 0000",
+        "website": "http://www.foxcreekwines.com/",
+        "email": "sales@foxcreekwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17153",
+        "name": "Bleasdale Vineyards",
+        "adress": "1640 Langhorne Creek Rd, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.0456063,
+            -35.3043586
+        ],
+        "phone": "+618 8537 4000",
+        "website": "http://www.bleasdale.com.au/",
+        "email": "cellardoor@bleasdale.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17154",
+        "name": "St Mary's Wines",
+        "adress": "V&a Ln, Penola SA 5277",
+        "geoLocation": [
+            140.83678,
+            -37.3752
+        ],
+        "phone": "+618 87366070",
+        "website": "http://www.stmaryswines.com/",
+        "email": "stmaryswines@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17155",
+        "name": "Langhorne Creek Grape & Wine",
+        "adress": "79 Bridge Rd, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.0317973,
+            -35.2952716
+        ],
+        "phone": "+614 38 600 121",
+        "website": "http://www.langhornecreek.com/",
+        "email": "info@langhorncreek.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17156",
+        "name": "Parish Hill Wines",
+        "adress": "14 Parish Hill Rd, Uraidla SA 5142",
+        "geoLocation": [
+            138.745455,
+            -34.9643795
+        ],
+        "phone": "+61418 830 273",
+        "website": "http://www.parishhill.com.au/",
+        "email": "parishhillwines@gmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17159",
+        "name": "Blesing's Garden Glenhome Vineyards",
+        "adress": "White Park Rd, Bangor SA 5481",
+        "geoLocation": [
+            138.1509793,
+            -32.9822622
+        ],
+        "phone": "+618 8666 5222",
+        "website": "http://www.blesingsgardenwines.com.au/",
+        "email": "blesingsgardenwines@westnet.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17160",
+        "name": "Raidis Estate Coonawarra",
+        "adress": "15741 Riddoch Hwy, Penola SA 5277",
+        "geoLocation": [
+            140.8423209,
+            -37.427357
+        ],
+        "phone": "+614 19805 845",
+        "website": "http://www.raidis.com.au/",
+        "email": "sales@raidis.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17161",
+        "name": "Kies Family Wines",
+        "adress": "1303 Barossa Valley Way, Lyndoch SA 5351",
+        "geoLocation": [
+            138.8943375,
+            -34.600455
+        ],
+        "phone": "+618 8524 4110",
+        "website": "http://www.kieswines.com.au/",
+        "email": "cellardoor@kieswines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17163",
+        "name": "Seppeltsfield",
+        "adress": "730 Seppeltsfield Rd, Seppeltsfield SA 5355",
+        "geoLocation": [
+            138.9191121,
+            -34.4896437
+        ],
+        "phone": "+618 8568 6200",
+        "website": "https://www.seppeltsfield.com.au/",
+        "email": "cellarsales@seppeltsfield.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17164",
+        "name": "Longview Vineyards",
+        "adress": "Pound Rd, Macclesfield SA 5153",
+        "geoLocation": [
+            138.8322361,
+            -35.1990789
+        ],
+        "phone": "+618 8388 9694",
+        "website": "http://www.longviewvineyard.com.au/",
+        "email": "wine@longviewsa.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17166",
+        "name": "Chateau Yaldara 1847 Wines",
+        "adress": "159 Hermann Thumm Dr, Lyndoch SA 5351",
+        "geoLocation": [
+            138.8768024,
+            -34.5872019
+        ],
+        "phone": "+618 8524 0200",
+        "website": "https://www.1847wines.com/",
+        "email": "msimounds@1847wines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17168",
+        "name": "Barley Stack Wines",
+        "adress": "159 Lizard Park Drive, South Kilkerran SA 5573",
+        "geoLocation": [
+            88.95,
+            25.96667
+        ],
+        "phone": "+614 18 859 544",
+        "website": "http://www.barleystackswines.com/",
+        "email": "admin@barleystackswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17169",
+        "name": "Malcolm Creek Vineyard",
+        "adress": "33 Bonython Rd, Kersbrook SA 5231",
+        "geoLocation": [
+            138.8752125,
+            -34.7618743
+        ],
+        "phone": "+61404 677 894",
+        "website": "http://www.malcolmcreekwines.com.au/",
+        "email": "info@malcolmcreekwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17170",
+        "name": "Old Oval Estate",
+        "adress": "18 Sand Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.559857,
+            -35.2181646
+        ],
+        "phone": "+618 8323 9100",
+        "website": "http://www.oldovalestate.com/",
+        "email": "joan@oldovalestate.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17171",
+        "name": "Irvine Wines",
+        "adress": "63 Valley Rd, Angaston SA 5353",
+        "geoLocation": [
+            139.0496852,
+            -34.5095695
+        ],
+        "phone": "+618 8564 1110",
+        "website": "http://www.irvinewines.com.au/",
+        "email": "admin@irvinewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17172",
+        "name": "Jack Estate",
+        "adress": "15025 Riddoch Hwy, Coonawarra SA 5263 ",
+        "geoLocation": [
+            140.8461961,
+            -37.2369474
+        ],
+        "phone": "+618 8736 3130",
+        "website": "http://www.jackestate.com/",
+        "email": "admin@coonawarrajack.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17173",
+        "name": "Lady Bay Vineyard",
+        "adress": "42-44 Davis St, Wingfield SA 5013",
+        "geoLocation": [
+            138.5595588,
+            -34.8430181
+        ],
+        "phone": "+614 13 185 771",
+        "website": "https://www.facebook.com/ladybay",
+        "email": "sales@ladybay.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17174",
+        "name": "Nepenthe Wines",
+        "adress": "93 Jones Rd, Balhannah SA 5242",
+        "geoLocation": [
+            138.8259772,
+            -35.0067677
+        ],
+        "phone": "+618 8398 8899",
+        "website": "http://www.nepenthe.com.au/",
+        "email": "cellardoor@nepenthe.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17175",
+        "name": "McGuigan Wines",
+        "adress": "447 McDonalds Rd, Pokolbin NSW 2320 ",
+        "geoLocation": [
+            151.3033459,
+            -32.7723493
+        ],
+        "phone": "+612 4998 4111",
+        "website": "http://www.mcguiganwines.com.au/",
+        "email": "hunter@mcguiganwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "New South Wales"
+    },
+    {
+        "id": "17176",
+        "name": "Murray Street Vineyards",
+        "adress": "Murray St, Greenock SA 5360",
+        "geoLocation": [
+            138.9272455,
+            -34.4575103
+        ],
+        "phone": "+618 8562 8373",
+        "website": "http://www.murraystreet.com.au/",
+        "email": "admin@murraystreet.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17177",
+        "name": "Mirabella Vineyards",
+        "adress": "12226 Sturt Highway Waikerie SA 5330",
+        "geoLocation": [
+            139.992197,
+            -34.1918603
+        ],
+        "phone": "+61408 822 319",
+        "website": "http://www.mirabellavineyards.com/",
+        "email": "info@mirabellavineyards.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17179",
+        "name": "Padthaway Estate Winery",
+        "adress": "Riddoch Hwy, Padthaway SA 5271",
+        "geoLocation": [
+            140.4935673,
+            -36.6004013
+        ],
+        "phone": "+614 17408147",
+        "website": "http://www.padthawayestate.com/",
+        "email": "wine@landaire.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17180",
+        "name": "Wangolina Station",
+        "adress": "8 Limestone Coast Road, Mount Benson SA 5275",
+        "geoLocation": [
+            139.78333,
+            -37.08333
+        ],
+        "phone": "+618 8768 6187",
+        "website": "http://www.wangolina.com.au/",
+        "email": "wineroom@wangolina.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17181",
+        "name": "Morambro Creek Wines",
+        "adress": "Riddoch Hwy, Padthaway SA 5271",
+        "geoLocation": [
+            140.4935673,
+            -36.6004013
+        ],
+        "phone": "+61418 281 060",
+        "website": "http://www.morambrocreek.com.au/",
+        "email": "david@morambrocreek.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17182",
+        "name": "Hill River Estate Wines Head Office",
+        "adress": "138 Greenhill Rd, Unley SA 5061",
+        "geoLocation": [
+            138.6065885,
+            -34.9410312
+        ],
+        "phone": "+618 8357 7656",
+        "website": "http://www.hillriverestatewine.com/",
+        "email": "admin@hillriverestatewine.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17183",
+        "name": "Tomich Wines Adelaide Hills Vineyard",
+        "adress": "1403 Onkaparinga Valley Rd, Woodside SA 5244",
+        "geoLocation": [
+            138.8831887,
+            -34.9356461
+        ],
+        "phone": "+618 8299 7500",
+        "website": "https://www.tomich.com.au/",
+        "email": "cellardoor@tomich.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17184",
+        "name": "Wakefield Valley Head Office",
+        "adress": "14 Hauteville Tce, Eastwood, SA 5063",
+        "geoLocation": [
+            138.6246155,
+            -34.9416082
+        ],
+        "phone": "+614 07797 041",
+        "website": "http://www.wakefieldvalley.com.au/",
+        "email": "wine@wakefieldvalley.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17185",
+        "name": "West End Brewery Tours",
+        "adress": "107 Port Rd, Thebarton SA 5031",
+        "geoLocation": [
+            138.578529,
+            -34.9183246
+        ],
+        "phone": "+618 8354 8744",
+        "website": "http://www.westenddraught.com.au/news-offers/brewery-tours",
+        "email": "robbitims@chariot.net.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17187",
+        "name": "Angove McLaren Vale Vineyards & Cellar Door",
+        "adress": "117 Chalk Hill Road, McLaren Vale, SA 5171",
+        "geoLocation": [
+            138.5493677,
+            -35.2086234
+        ],
+        "phone": "+618 8323 6900",
+        "website": "http://www.angove.com.au/",
+        "email": "mclarenvale@angove.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17189",
+        "name": "Geoff Merrill Wines",
+        "adress": "291 Pimpala Rd, Woodcroft SA 5162",
+        "geoLocation": [
+            138.5602841,
+            -35.1033873
+        ],
+        "phone": "+618 8381 6877",
+        "website": "https://geoffmerrillwines.com.au/",
+        "email": "info@geoffmerrillwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17190",
+        "name": "Mt Lofty Ranges Vineyard",
+        "adress": "166 Harris Rd, Lenswood SA 5240",
+        "geoLocation": [
+            138.8202924,
+            -34.9076497
+        ],
+        "phone": "+618 8389 8339",
+        "website": "http://mtloftyrangesvineyard.com.au/",
+        "email": "info@mtloftyranges.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17191",
+        "name": "Somerled Cellar Door",
+        "adress": "89 Main St, Hahndorf SA 5245",
+        "geoLocation": [
+            138.8096715,
+            -35.0288458
+        ],
+        "phone": "+618 8388 7478",
+        "website": "http://somerled.com.au/",
+        "email": "cellarbar@somerled.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17193",
+        "name": "The Lane Vineyard",
+        "adress": "5 Ravenswood Lane, Balhannah SA 5242",
+        "geoLocation": [
+            138.8354473,
+            -35.0090541
+        ],
+        "phone": "+618 8388 1250",
+        "website": "https://www.thelane.com.au/",
+        "email": "welcome@thelane.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17194",
+        "name": "Tilbrook Estate",
+        "adress": "1856  Lobethal Road, Lobethal SA 5241",
+        "geoLocation": [
+            138.8710355,
+            -34.9100009
+        ],
+        "phone": "+614 19007401",
+        "website": "http://www.tilbrookestate.com.au/",
+        "email": "cellar@tilbrookestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17196",
+        "name": "Yangarra Estate Vineyard",
+        "adress": "809 McLaren Flat Rd, Kangarilla SA 5157",
+        "geoLocation": [
+            138.6613613,
+            -35.1484962
+        ],
+        "phone": "+618 8383 7459",
+        "website": "http://www.yangarra.com/",
+        "email": "sales@yangarra.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17197",
+        "name": "Possums Wines",
+        "adress": "Adams Rd, Blewitt Springs SA 5171",
+        "geoLocation": [
+            138.6108742,
+            -35.1653373
+        ],
+        "phone": "+618 7325 6280",
+        "website": "http://www.possumswines.com.au/",
+        "email": "info@dowiedoole.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17198",
+        "name": "Samuel's Gorge Winery",
+        "adress": "193 Chaffeys Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5534368,
+            -35.1803066
+        ],
+        "phone": "+618 8323 8651",
+        "website": "http://www.gorge.com.au/",
+        "email": "cellardoor@gorge.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17199",
+        "name": "Artwine ",
+        "adress": "72 Bird In Hand Rd, Woodside SA 5244",
+        "geoLocation": [
+            138.9361562,
+            -34.9518647
+        ],
+        "phone": "+618 8389 9399",
+        "website": "http://www.artwine.com.au/",
+        "email": "cellardoor@artwine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17200",
+        "name": "McLaren Vintners",
+        "adress": "181 Douglas Gly, McLaren Flat SA 5171",
+        "geoLocation": [
+            115.2166,
+            -8.65
+        ],
+        "phone": "+618 8383 2000",
+        "website": "http://mclarenvintners.com.au/",
+        "email": "info@mclarenvintners.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17201",
+        "name": "Maximus Wines Australia",
+        "adress": "195 Foggo Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.568327,
+            -35.2052186
+        ],
+        "phone": "+618 8323 8777",
+        "website": "https://www.facebook.com/Maximuswines/",
+        "email": "maximuswines@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17202",
+        "name": "Oliver's Taranga Vineyards",
+        "adress": "246 Seaview Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5340857,
+            -35.1884271
+        ],
+        "phone": "+618 8323 8498",
+        "website": "http://www.oliverstaranga.com/",
+        "email": "admin@oliverstaranga.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17204",
+        "name": "Parri Estate",
+        "adress": "Ingoldby Rd, McLaren Flat SA 5171",
+        "geoLocation": [
+            138.5938225,
+            -35.2033335
+        ],
+        "phone": "+614 07747 132 ",
+        "website": "http://www.parriestate.com.au/",
+        "email": "cellardoor@parriestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17205",
+        "name": "Pannell S C",
+        "adress": "60 Olivers Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5424871,
+            -35.2036373
+        ],
+        "phone": "+618 8323 8000",
+        "website": "http://www.pannell.com.au/",
+        "email": "cellardoor@pannell.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17206",
+        "name": "Paxton Landcross Farm Cellar Door",
+        "adress": "68 Wheaton Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5102769,
+            -35.2001736
+        ],
+        "phone": "+618 8323 9131",
+        "website": "http://www.paxtonvineyards.com/",
+        "email": "wine@paxtonvineyards.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17207",
+        "name": "Maxwell Wines",
+        "adress": "19 Olivers Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5424871,
+            -35.2036373
+        ],
+        "phone": "+618 8323 8200",
+        "website": "http://www.maxwellwines.com.au/",
+        "email": "experience@maxwellwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17208",
+        "name": "Tinlins Wines",
+        "adress": "Kangarilla Rd, McLaren Flat SA 5171",
+        "geoLocation": [
+            138.5644365,
+            -35.215052
+        ],
+        "phone": "+618 8323 8649",
+        "website": "http://www.tinlins.com.au/",
+        "email": "cellardoor@tinlins.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17209",
+        "name": "Lloyd Brothers McLaren Vale Cellar Door",
+        "adress": "34 Warners Rd, Seaford Heights SA 5169",
+        "geoLocation": [
+            138.49086,
+            -35.19878
+        ],
+        "phone": "+618 8323 8792",
+        "website": "http://www.lloydbrothers.com.au/",
+        "email": "info@lloydbrothers.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17210",
+        "name": "McLaren Vale Winemakers",
+        "adress": "200 Chalk Hill Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5493677,
+            -35.2086234
+        ],
+        "phone": "+618 8323 8623",
+        "website": "http://www.mclarenvalewinemakers.com.au/",
+        "email": "contact@mclarenvalewinemakers.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17211",
+        "name": "Mitolo Wines",
+        "adress": "141 McMurtrie Road, McLaren Vale South Australia 5171",
+        "geoLocation": [
+            138.5718211,
+            -35.2285267
+        ],
+        "phone": "+618 8323 9304",
+        "website": "http://www.mitolowines.com.au/",
+        "email": "enquiries@mitolowines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17212",
+        "name": "Chalk Hill Wines",
+        "adress": "56 Field St, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5436288,
+            -35.2180182
+        ],
+        "phone": "+618 8323 6400",
+        "website": "https://www.chalkhillwines.com.au/",
+        "email": "wine@chalkhill.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17213",
+        "name": "Hawkers Gate",
+        "adress": "Foggo Rd, McLaren Flat SA 5171",
+        "geoLocation": [
+            138.568327,
+            -35.2052186
+        ],
+        "phone": "+61403 809 990",
+        "website": "http://www.hawkersgate.com.au/",
+        "email": "winery@hawkersgate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17214",
+        "name": "J & J Wines McLaren Vale",
+        "adress": "67 Rivers Lane, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.52733,
+            -35.2158883
+        ],
+        "phone": "+618 83239888",
+        "website": "http://www.jjwines.com.au/",
+        "email": "sales@jjwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17215",
+        "name": "Conte Estate Wines",
+        "adress": "270 Sand Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.559857,
+            -35.2181646
+        ],
+        "phone": "+618 8383 0183",
+        "website": "https://www.facebook.com/pages/Conte-Estate-Wines/284865684891971?fref=ts",
+        "email": "info@conteestatewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17217",
+        "name": "Sabella Vineyards",
+        "adress": "233 McMurtrie Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5718211,
+            -35.2285267
+        ],
+        "phone": "+614 16361369",
+        "website": "http://www.sabella.com.au/",
+        "email": "vineyards@sabella.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17218",
+        "name": "Longview Vineyard",
+        "adress": "154 Pound Rd, Macclesfield SA 5153",
+        "geoLocation": [
+            138.8322361,
+            -35.1990789
+        ],
+        "phone": "+618 8388 9694",
+        "website": "http://www.longviewvineyard.com.au/",
+        "email": "wine@longviewsa.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17219",
+        "name": "Bendbrook Vineyard & Wines",
+        "adress": "2474 Strathalbyn Road, Macclesfield South Australia 5153",
+        "geoLocation": [
+            138.8417266,
+            -35.1805439
+        ],
+        "phone": "+614 18824287",
+        "website": "http://www.bendbrookwines.com.au/",
+        "email": "sales@bendbrookwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17220",
+        "name": "Doc Adams Wines",
+        "adress": "276 California Rd, Tatachilla SA 5171",
+        "geoLocation": [
+            138.5198306,
+            -35.2417152
+        ],
+        "phone": "+618 8556 2111",
+        "website": "http://www.docadamswines.com.au/",
+        "email": "accounts@docadamswines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17221",
+        "name": "Lopresti D & S Vineyards",
+        "adress": "Lot 2 Aldinga Road, Aldinga SA 5072",
+        "geoLocation": [
+            138.4804681,
+            -35.2745095
+        ],
+        "phone": "+618 8557 8996",
+        "website": "http://loprestiwines.com.au/",
+        "email": "sales@loprestiwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17223",
+        "name": "Hemera Estate",
+        "adress": "1516 Barossa Valley Way, Altona SA 5351",
+        "geoLocation": [
+            138.9169176,
+            -34.5963432
+        ],
+        "phone": "+618 8524 4033",
+        "website": "https://hemeraestate.com.au/",
+        "email": "cellar@hemeraestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17224",
+        "name": "Charles Cimicky Wines",
+        "adress": "100 Herman Thumm Dr, Lyndoch SA 5351",
+        "geoLocation": [
+            138.89094,
+            -34.60124
+        ],
+        "phone": "+618 8254 4025",
+        "website": "http://www.cimickywines.com.au/",
+        "email": "cellardoor@cimickywines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17225",
+        "name": "Lou Miranda Estate",
+        "adress": "1876 Barossa Valley Hwy, Rowland Flat SA 5352",
+        "geoLocation": [
+            138.93333,
+            -34.58333
+        ],
+        "phone": "+618 8524 4537",
+        "website": "http://www.loumirandaestate.com.au/",
+        "email": "lou@loumirandaestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17226",
+        "name": "Pindarie Wines",
+        "adress": "946 Rosedale Rd, Gomersal SA 5352",
+        "geoLocation": [
+            138.8692794,
+            -34.5331202
+        ],
+        "phone": "+618 8524 9019",
+        "website": "http://www.pindarie.com.au/",
+        "email": "pindarie@pindarie.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17227",
+        "name": "Rockford Wines",
+        "adress": "131 Krondorf Rd, Krondorf SA 5352",
+        "geoLocation": [
+            138.9630048,
+            -34.5579842
+        ],
+        "phone": "+618 8563 2720",
+        "website": "https://www.rockfordwines.com.au/",
+        "email": "info.contact@rockfordwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17228",
+        "name": "Henry Holmes Vineyard (Woodbridge Farm)",
+        "adress": "Gomersal Rd, Tanunda SA 5352",
+        "geoLocation": [
+            138.9475651,
+            -34.5329947
+        ],
+        "phone": "+618 8563 2059",
+        "website": "http://www.woodbridgefarm.com/",
+        "email": "woodbridgefarm@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17229",
+        "name": "Mt Jagged Wines",
+        "adress": "3191 Victor Harbor Rd, Mt Jagged SA 5211",
+        "geoLocation": [
+            138.6286701,
+            -35.3873463
+        ],
+        "phone": "+618 8554 9520",
+        "website": "http://www.mtjaggedwines.com.au/",
+        "email": "sales@mtjaggedwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17230",
+        "name": "Zontes Footstep Head Office",
+        "adress": "49 Oakley Road, McLaren Flat, SA 5171",
+        "geoLocation": [
+            138.5947098,
+            -35.2149671
+        ],
+        "phone": "+618 7286 3088 ",
+        "website": "http://www.zontesfootstep.com.au/",
+        "email": "cheers@zontesfootstep.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17231",
+        "name": "Château Tanunda",
+        "adress": "9 Basedow Rd, Tanunda SA 5352",
+        "geoLocation": [
+            138.9719518,
+            -34.5275522
+        ],
+        "phone": "+618 8563 3888",
+        "website": "http://www.chateautanunda.com/",
+        "email": "cellardoor@chateautanunda.com ",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17232",
+        "name": "Basedow Wines",
+        "adress": "161-165 Murray St, Tanunda SA 5352",
+        "geoLocation": [
+            138.9530274,
+            -34.5284837
+        ],
+        "phone": "+61418 847 400",
+        "website": "https://www.facebook.com/basedowwines.barossa/",
+        "email": "wine@basedow.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17234",
+        "name": "Langmeil Winery",
+        "adress": "Para Rd, Tanunda SA 5352",
+        "geoLocation": [
+            138.9753984,
+            -34.5119833
+        ],
+        "phone": "+618 8563 2595",
+        "website": "http://www.langmeilwinery.com.au/",
+        "email": "info@langmeilwinery.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17235",
+        "name": "Two Hands Wines",
+        "adress": "273 Neldner Rd, Marananga SA 5355",
+        "geoLocation": [
+            138.9317449,
+            -34.4970465
+        ],
+        "phone": "+618 8562 4566",
+        "website": "http://www.twohandswines.com/",
+        "email": "cellardoor@twohandswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17236",
+        "name": "Temple Bruer Organic Wines",
+        "adress": "689 Milang Rd, Angas Plains SA 5255",
+        "geoLocation": [
+            138.9819993,
+            -35.3477097
+        ],
+        "phone": "+618 8537 0203",
+        "website": "http://www.templebruer.com.au/",
+        "email": "hello@templebruer.com.au ",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17237",
+        "name": "Barossa Valley Estate ",
+        "adress": "9 Kraehe Road, Marananga South Australia 5355",
+        "geoLocation": [
+            138.9303135,
+            -34.4930662
+        ],
+        "phone": "+618 8568 6910",
+        "website": "https://www.barossavalleyestate.com/",
+        "email": "bve@barossavalleyestate.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17238",
+        "name": "Torbreck Vintners",
+        "adress": "348 Roennfeldt RdMarananga SA 5355",
+        "geoLocation": [
+            45.0,
+            25.0
+        ],
+        "phone": "+618 8562 4155",
+        "website": "http://www.torbreck.com/",
+        "email": "cellardoor@torbreck.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17239",
+        "name": "Rusticana Wines",
+        "adress": "Lake Plains Rd, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.0522373,
+            -35.3487264
+        ],
+        "phone": "+618 8537 3086",
+        "website": "http://www.rusticanawines.com.au/",
+        "email": "admin@rusticanawines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17240",
+        "name": "Heathvale Wines",
+        "adress": "300 Sawpit Gully Rd, Keyneton SA 5353",
+        "geoLocation": [
+            139.1093696,
+            -34.5808524
+        ],
+        "phone": "+618 8564 8248",
+        "website": "http://www.heathvale.com/",
+        "email": "trevor.march@heathvale.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17241",
+        "name": "Laughing Jack Wines",
+        "adress": "194 Stonewell Rd, Marananga SA 5355",
+        "geoLocation": [
+            138.9535063,
+            -34.4776252
+        ],
+        "phone": "+618 8562 3878",
+        "website": "http://www.laughingjackwines.com/",
+        "email": "hello@laughingjackwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17242",
+        "name": "Gibson Wines Cellar Door",
+        "adress": "190 Willows Rd, Light Pass SA 5355",
+        "geoLocation": [
+            139.0274581,
+            -34.4548862
+        ],
+        "phone": "+618 8562 4224",
+        "website": "http://www.gibsonwines.com.au/",
+        "email": "sales@gibsonwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17243",
+        "name": "Velvet & Willow Wines",
+        "adress": "17 Main North Rd, Auburn SA 5451",
+        "geoLocation": [
+            138.6824,
+            -34.01515
+        ],
+        "phone": "+618 7477 7848",
+        "website": "http://www.velvetandwillowwines.com.au/",
+        "email": "hamish@andrewmillerwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17244",
+        "name": "Barley Stacks Wines",
+        "adress": "159 Lizard Park Dr, Yorke Valley SA 5573",
+        "geoLocation": [
+            137.6328118,
+            -34.45525
+        ],
+        "phone": "+614 18 859 544",
+        "website": "http://www.barleystackswines.com/",
+        "email": "admin@barleystackswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17245",
+        "name": "O'Leary Walker Wines",
+        "adress": "7093 Horrocks Highway, Leasingham South Australia 5452",
+        "geoLocation": [
+            138.6644335,
+            -34.004217
+        ],
+        "phone": "+61 1300342569",
+        "website": "http://www.olearywalkerwines.com/",
+        "email": "info@olearywalkerwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17246",
+        "name": "Cape Jaffa Wines",
+        "adress": "459 Limestone Coast Rd, Mt Benson SA 5275",
+        "geoLocation": [
+            139.78333,
+            -37.08333
+        ],
+        "phone": "+614 28 541 185",
+        "website": "http://www.capejaffawines.com.au/",
+        "email": "orders@capejaffawines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17247",
+        "name": "Dudley Wines",
+        "adress": "1153 Willoughby Rd, Penneshaw SA 5222",
+        "geoLocation": [
+            8.81555,
+            46.00329
+        ],
+        "phone": "+618 8553 1333",
+        "website": "http://www.dudleywines.com.au/",
+        "email": "info@dudleywines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17248",
+        "name": "Greg Cooley Wines",
+        "adress": "Main North Road, Clare SA 5453, Australien",
+        "geoLocation": [
+            138.614093,
+            -33.8357848
+        ],
+        "phone": "+614 21 055 799",
+        "website": "http://www.gregcooleywines.com.au/",
+        "email": "kelli@gregcooleywines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17249",
+        "name": "Kirrihill Wines Head Office",
+        "adress": "91 King William Street, Adelaide, SA, 5000",
+        "geoLocation": [
+            138.6000899,
+            -34.9316014
+        ],
+        "phone": "+618 8472 3334",
+        "website": "http://www.kirrihillwines.com.au/",
+        "email": "office@kirrihillwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17251",
+        "name": "The Islander Estate Vineyards",
+        "adress": "78 Gum Creek Road Cygnet River, Kangaroo Island South Australia 5223",
+        "geoLocation": [
+            137.4986639,
+            -35.6875642
+        ],
+        "phone": "+618 8553 9008",
+        "website": "http://www.iev.com.au/",
+        "email": "cellardoor@iev.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17253",
+        "name": "Ral Ral Creek Wines",
+        "adress": "4 Harding Rd, Monash SA 5342",
+        "geoLocation": [
+            140.5887515,
+            -34.2322909
+        ],
+        "phone": "+618 8583 5335",
+        "website": "http://www.ralralcreekwines.com.au/contract-winemaking.html",
+        "email": "admin@ralralcreekwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17254",
+        "name": "Mallee Estate",
+        "adress": "20055 Renmark Ave, Renmark South SA 5341",
+        "geoLocation": [
+            140.7071158,
+            -34.2034528
+        ],
+        "phone": "+618 8595 1088",
+        "website": "https://www.malleeestate.com.au/",
+        "email": "admin@malleeestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17255",
+        "name": "Angove McLaren Vale Vineyards & Cellar Door",
+        "adress": "117 Chalk Hill Road, McLaren Vale, SA 5171",
+        "geoLocation": [
+            138.5493677,
+            -35.2086234
+        ],
+        "phone": "+618 8323 6900",
+        "website": "http://www.angove.com.au/",
+        "email": "mclarenvale@angove.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17256",
+        "name": "Hoggies Estate",
+        "adress": "Gaffney Road, Coonawarra  South Australia 5263",
+        "geoLocation": [
+            140.8466584,
+            -37.2932425
+        ],
+        "phone": "+618 8736 3078",
+        "website": "http://hoggieswine.com/",
+        "email": "gavin@hoggieswine.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17257",
+        "name": "Parker Coonawarra Estate",
+        "adress": "15688 Riddoch Hwy, Coonawarra SA 5263",
+        "geoLocation": [
+            140.8461961,
+            -37.2369474
+        ],
+        "phone": "+618 8737 3525",
+        "website": "http://www.parkercoonawarraestate.com.au/",
+        "email": "info@parkercoonawarraestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17258",
+        "name": "Zema Estate",
+        "adress": "14944 Riddoch Hwy, Coonawarra SA 5263",
+        "geoLocation": [
+            140.836641,
+            -37.2959272
+        ],
+        "phone": "+618 8736 3219",
+        "website": "https://www.zema.com.au/",
+        "email": "friends@zema.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17259",
+        "name": "Hollick Winery and Restaurant",
+        "adress": "11 Racecourse Road, PENOLA SOUTH AUSTRALIA 5277",
+        "geoLocation": [
+            140.8603182,
+            -37.3527781
+        ],
+        "phone": "+618 8737 2318",
+        "website": "http://www.hollick.com/",
+        "email": "cellardoor@hollick.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17260",
+        "name": "Koonara Wines",
+        "adress": "44 Church St, Penola SA 5277",
+        "geoLocation": [
+            140.8374205,
+            -37.372006
+        ],
+        "phone": "+618 8737 3222",
+        "website": "https://www.koonara.com/",
+        "email": "wine@koonara.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17261",
+        "name": "Herbert Vineyard",
+        "adress": "Bishop Rd, Worrolong SA 5291",
+        "geoLocation": [
+            140.8139662,
+            -37.8106947
+        ],
+        "phone": "+614 08 849 080",
+        "website": "http://www.herbertvineyard.com.au/",
+        "email": "info@herbertvineyard.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17264",
+        "name": "Mylkappa Wines",
+        "adress": "66 Mylkappa Rd, Birdwood SA 5234",
+        "geoLocation": [
+            138.9340765,
+            -34.8374684
+        ],
+        "phone": "+61 8 8568 5489",
+        "website": "http://www.mylkappawines.com.au/",
+        "email": "pat@mylkappawines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17265",
+        "name": "Ekhidna Wines",
+        "adress": "67 Branson Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5322587,
+            -35.2410747
+        ],
+        "phone": "+61499 002 633",
+        "website": "https://ekhidnawines.com.au/",
+        "email": "enquiries@ekhidnawines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17266",
+        "name": "Schiller Vineyards",
+        "adress": "Light Pass Rd, Light Pass SA 5355",
+        "geoLocation": [
+            139.0215964,
+            -34.4754761
+        ],
+        "phone": "+618 8562 2560",
+        "website": "http://www.schillervineyards.com.au/",
+        "email": "info@schillervineyards.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17267",
+        "name": "Nicklebray Vineyards",
+        "adress": "33 Schuller Rd, Kangarilla SA 5157",
+        "geoLocation": [
+            138.62366,
+            -35.158814
+        ],
+        "phone": "+614 14 778 933",
+        "website": "http://www.nicklebray.com/",
+        "email": "nicklebray@outlook.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17268",
+        "name": "Ralph Fowler Wines",
+        "adress": "498 Limestone Coast Rd, Wangolina SA 5275",
+        "geoLocation": [
+            139.7525724,
+            -36.966833
+        ],
+        "phone": "+618 8768 5000",
+        "website": "http://www.ralphfowlerwines.com.au/",
+        "email": "info@ralphfowlerwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17269",
+        "name": "Oxenberry Wines",
+        "adress": "26-28 Kangarilla Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5644365,
+            -35.215052
+        ],
+        "phone": "+618 8323 0188",
+        "website": "http://www.oxenberry.com/",
+        "email": "info@oxenberry.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17270",
+        "name": "Woodstock Wine Estate",
+        "adress": "215 Douglas Gully Rd, McLaren Flat SA 5171",
+        "geoLocation": [
+            138.6073033,
+            -35.183685
+        ],
+        "phone": "+618 8383 0156",
+        "website": "http://www.woodstockwine.com.au/",
+        "email": "woodstock@woodstockwine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17273",
+        "name": "Bremerton Wines",
+        "adress": "14 Kent Town Road, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.025124,
+            -35.2945712
+        ],
+        "phone": "+618 8537 3093",
+        "website": "http://www.bremerton.com.au/",
+        "email": "rebecca@bremerton.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17274",
+        "name": "Brown Brothers Milawa Vineyard",
+        "adress": "239 Milawa-Bobinawarrah Rd, Milawa VIC 3678",
+        "geoLocation": [
+            146.4286703,
+            -36.4536694
+        ],
+        "phone": "+613 5720 5547",
+        "website": "http://www.brownbrothers.com.au/",
+        "email": "info@brownbrothers.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17275",
+        "name": "Deviation Road Wines",
+        "adress": "207 Scott Creek Rd, Longwood SA 5153",
+        "geoLocation": [
+            138.7089172,
+            -35.0385591
+        ],
+        "phone": "+618 8339 2633",
+        "website": "http://www.deviationroad.com/",
+        "email": "cellardoor@deviationroad.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17278",
+        "name": "Yangarra Estate Vineyard",
+        "adress": "809 McLaren Flat Road, Kangarilla SA 5157",
+        "geoLocation": [
+            138.6613613,
+            -35.1484962
+        ],
+        "phone": "+618 8383 7459",
+        "website": "http://www.yangarra.com/",
+        "email": "sales@yangarra.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17279",
+        "name": "Almondcart Wines",
+        "adress": "109 Juers Road, Charleston South Australia 5244",
+        "geoLocation": [
+            138.8987318,
+            -34.9161486
+        ],
+        "phone": "+614 27 526473",
+        "website": "http://www.almondcartwines.com.au/",
+        "email": "sales@almondcartwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17280",
+        "name": "Coriole Vineyards",
+        "adress": "79 Chaffeys Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5534368,
+            -35.1803066
+        ],
+        "phone": "+618 8323 8305",
+        "website": "http://www.coriole.com/",
+        "email": "contact@coriole.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17282",
+        "name": "De Lisio Wines",
+        "adress": "252 Sand Rd, McLaren Vale South Australia 5171",
+        "geoLocation": [
+            138.559857,
+            -35.2181646
+        ],
+        "phone": "+614 23146 217",
+        "website": "http://www.delisiowines.com.au/",
+        "email": "contact@delisiowines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17283",
+        "name": "Malcolm Creek Vineyard",
+        "adress": "33 Bonython Rd, Kersbrook SA 5231",
+        "geoLocation": [
+            138.8752125,
+            -34.7618743
+        ],
+        "phone": "+614 04677 894",
+        "website": "http://www.malcolmcreekwines.com.au/",
+        "email": "info@malcolmcreekwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17284",
+        "name": "Alpha Box N Dice Vineyard",
+        "adress": "8 Olivers Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5424871,
+            -35.2036373
+        ],
+        "phone": "+618 8323 7750",
+        "website": "http://www.alphaboxdice.com/",
+        "email": "j@alphaboxdice.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17286",
+        "name": "Hardys Wines",
+        "adress": "202 Main Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.526447,
+            -35.2073219
+        ],
+        "phone": "+618 8329 4110",
+        "website": "https://shop.hardyswines.com/",
+        "email": "cellardoor@tintara.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17287",
+        "name": "Paxton Vineyards",
+        "adress": "68 Wheaton Road, McLaren Vale South Australia 5171",
+        "geoLocation": [
+            138.5102769,
+            -35.2001736
+        ],
+        "phone": "+618 8323 9131",
+        "website": "http://www.paxtonvineyards.com/",
+        "email": "wine@paxtonvineyards.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17289",
+        "name": "Lobethal Road Wines",
+        "adress": "2254 Onkaparinga Valley Rd, Mount Torrens SA 5244",
+        "geoLocation": [
+            138.9599058,
+            -34.8685746
+        ],
+        "phone": "+618 8389 4595",
+        "website": "http://www.lobethalroad.com/",
+        "email": "info@lobethalroad.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17290",
+        "name": "Lazy Ballerina Wines",
+        "adress": "1152 Brookman Rd, Dingabledinga SA 5172",
+        "geoLocation": [
+            138.6356926,
+            -35.2682506
+        ],
+        "phone": "+618 8556 7085",
+        "website": "http://www.lazyballerina.com/",
+        "email": "info@lazyballerina.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17291",
+        "name": "Serafino Wines",
+        "adress": "39 Kangarilla Rd, McLaren Vale SA 5171",
+        "geoLocation": [
+            138.5644365,
+            -35.215052
+        ],
+        "phone": "+618 8323 0157",
+        "website": "http://www.serafinowines.com.au/",
+        "email": "info@serafinowines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17292",
+        "name": "Whitechapel Wines",
+        "adress": "Gerry Semmler Rd, Lyndoch SA 5351",
+        "geoLocation": [
+            138.898212,
+            -34.6169865
+        ],
+        "phone": "+61438 822 409",
+        "website": "http://www.whitechapelwines.com.au/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17294",
+        "name": "Poverty Hill Wines",
+        "adress": "14 Miller St, Springton SA 5235",
+        "geoLocation": [
+            139.0890781,
+            -34.7078431
+        ],
+        "phone": "+614 37 145 542",
+        "website": "http://www.povertyhillwines.com.au/",
+        "email": "info@povertyhillwine.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17295",
+        "name": "Rosemount Estate Vineyard",
+        "adress": "Milang Rd, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.03591,
+            -35.29596
+        ],
+        "phone": "+618 8323 6220",
+        "website": "https://www.rosemountestate.com/",
+        "email": "info@rosemountestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17297",
+        "name": "Gatt Wines",
+        "adress": "39 Siegersdorf Rd, Nuriootpa SA 5355",
+        "geoLocation": [
+            138.9862642,
+            -34.4984476
+        ],
+        "phone": "+618 8564 1166",
+        "website": "http://www.gattwines.com/",
+        "email": "sales@gattwines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17298",
+        "name": "Two Hands Wines",
+        "adress": "273 Neldner Rd, Marananga SA 5355",
+        "geoLocation": [
+            138.9317449,
+            -34.4970465
+        ],
+        "phone": "+618 8562 4566",
+        "website": "http://www.twohandswines.com/",
+        "email": "cellardoor@twohandswines.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17299",
+        "name": "Rolf Binder Wines ",
+        "adress": "185 Stelzer Rd, Stone Well SA 5352",
+        "geoLocation": [
+            138.9626964,
+            -34.5078851
+        ],
+        "phone": "+618 8562 3300",
+        "website": "http://www.rolfbinder.com/",
+        "email": "nfo@rolfbinder.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17306",
+        "name": "Taylors Wines ",
+        "adress": "89A Winery Road Auburn, South Australia 5451",
+        "geoLocation": [
+            138.7095534,
+            -34.0008255
+        ],
+        "phone": "+618 8849 1111",
+        "website": "http://www.taylorswines.com.au/",
+        "email": "info@taylorswines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17307",
+        "name": "Burk Salter Wines",
+        "adress": "72 Paisley Rd, Paisley SA 5357",
+        "geoLocation": [
+            139.6232982,
+            -34.3347803
+        ],
+        "phone": "+614 38405023",
+        "website": "http://www.burksalterwines.com.au/",
+        "email": "admin@burksalterwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17308",
+        "name": "Eldredge Wines",
+        "adress": "Spring Gully Rd, Clare SA 5453",
+        "geoLocation": [
+            138.6033435,
+            -33.8693373
+        ],
+        "phone": "+618 8842 3086",
+        "website": "http://www.eldredge.com.au/",
+        "email": "bluechip@eldredge.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17310",
+        "name": "Rookery Wines",
+        "adress": "Willsons Rd, Macgillivray SA 5223",
+        "geoLocation": [
+            137.5560782,
+            -35.7846046
+        ],
+        "phone": "+618 8553 9099",
+        "email": "rookery.wines@bigpond.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17311",
+        "name": "Burra Scrumpy Cumpany",
+        "adress": "John Barker Rd, Burra SA 5417",
+        "geoLocation": [
+            138.92835,
+            -33.67171
+        ],
+        "phone": "+61 8 8892 3090",
+        "website": "https://www.facebook.com/BurraScrumpy/",
+        "email": "tim@supercraft.com.au",
+        "category": "Fruit Farm",
+        "cropCode": "1",
+        "state": "South Australia"
+    },
+    {
+        "id": "17315",
+        "name": "Lincoln Estate Wines",
+        "adress": "877 Clarkes Ln, Green Patch SA 5606",
+        "geoLocation": [
+            135.7983852,
+            -34.6104186
+        ],
+        "phone": "+618 8684 5053",
+        "website": "http://www.lincolnestatewines.com.au/",
+        "email": "info@lincolnestatewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17317",
+        "name": "Governor Robe Wines",
+        "adress": "503 Old Naracoorte Road, Robe SA 5276",
+        "geoLocation": [
+            139.9429254,
+            -37.1719704
+        ],
+        "phone": "+618 8768 2930",
+        "website": "http://www.governorrobewines.com.au/",
+        "email": "info@governorrobe.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17318",
+        "name": "Redden Bridge Wines Head Office",
+        "adress": "3/ 44 Robertson St, Naracoorte SA 5271",
+        "geoLocation": [
+            140.7440215,
+            -36.9561676
+        ],
+        "phone": "+618 7704 2244",
+        "website": "http://reddenbridge.com/",
+        "email": "info@reddenbridge.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17319",
+        "name": "Penley Estate ",
+        "adress": "McLeans Road, Coonawarra SA 5263",
+        "geoLocation": [
+            8.96376,
+            45.91012
+        ],
+        "phone": "+618 8736 3211",
+        "website": "http://www.penley.com.au/",
+        "email": "cellardoor@penley.com.au ",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17320",
+        "name": "Brothers in Arms Wine",
+        "adress": "Lake Plains Road, Langhorne Creek SA 5255",
+        "geoLocation": [
+            139.0522373,
+            -35.3487264
+        ],
+        "phone": "+618 8537 3182",
+        "website": "https://www.brothersinarms.com.au/",
+        "email": "wine@brothersinarms.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "South Australia"
+    },
+    {
+        "id": "17321",
+        "name": "Ulithorne Wines",
+        "adress": "85 Kays Road, Blewitt Springs, McLAREN VALE SA 5171",
+        "geoLocation": [
+            138.5672027,
+            -35.1868351
+        ],
+        "phone": "+624 06 336 282",
+        "website": "http://www.ulithorne.com.au/",
+        "email": "sales@ulithorne.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17645",
+        "name": "Pooley Wines",
+        "adress": "1431 Richmond Rd, Richmond TAS 7025",
+        "geoLocation": [
+            147.4302894,
+            -42.7382931
+        ],
+        "phone": "+613 6260 2895",
+        "website": "http://www.pooleywines.com.au/",
+        "email": "enquiries@pooleywines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17646",
+        "name": "Mewstone Wines",
+        "adress": "11 Flowerpot Jetty Rd, Flowerpot TAS 7163",
+        "geoLocation": [
+            147.254617,
+            -43.2000926
+        ],
+        "phone": "+61439 367 653",
+        "website": "http://mewstonewines.com.au/",
+        "email": "jonny@mewstonewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17647",
+        "name": "Leaning Church Vineyard",
+        "adress": "76 Brooks Rd, Lalla TAS 7267",
+        "geoLocation": [
+            147.1333,
+            -41.2167
+        ],
+        "phone": "+613 6395 4447",
+        "website": "http://www.leaningchurch.com.au/",
+        "email": "cellardoor@leaningchurch.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17648",
+        "name": "Stefano Lubiana Wines",
+        "adress": "60 Rowbottoms Rd, Granton TAS 7030",
+        "geoLocation": [
+            147.2022381,
+            -42.7461789
+        ],
+        "phone": "+613 6263 7457",
+        "website": "http://www.slw.com.au/",
+        "email": "cellardoor@slw.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17649",
+        "name": "Laurel Bank Wines",
+        "adress": "130 Black Snake Rd, Granton TAS 7030",
+        "geoLocation": [
+            147.2284025,
+            -42.7536307
+        ],
+        "phone": "+613 6263 5977",
+        "website": "http://www.laurelbankwines.com.au/",
+        "email": "info@laurelbankwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17650",
+        "name": "Ghost Rock Tasmania",
+        "adress": "1055 Port Sorell Rd, Northdown TAS 7307",
+        "geoLocation": [
+            146.4939242,
+            -41.1761787
+        ],
+        "phone": "+613 6428 4005",
+        "website": "http://www.ghostrock.com.au/",
+        "email": "mail@ghostrock.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17651",
+        "name": "Hartzview Vineyard",
+        "adress": "70 Dillons Rd, Gardners Bay TAS 7112",
+        "geoLocation": [
+            147.1047,
+            -43.2455
+        ],
+        "phone": "+613 6295 1623",
+        "website": "http://www.hartzview.com.au/",
+        "email": "enquiries@hartzview.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17653",
+        "name": "Holm Oak Vineyards",
+        "adress": "11 West Bay Rd, Rowella TAS 7270",
+        "geoLocation": [
+            146.9173971,
+            -41.1788081
+        ],
+        "phone": "+614 39 408 933",
+        "website": "http://holmoakvineyards.com.au/",
+        "email": "admin@holmoakvinyards.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17654",
+        "name": "Nandroya Wines",
+        "adress": "262 Sandfly Rd, Margate TAS 7054",
+        "geoLocation": [
+            147.24368,
+            -43.0078128
+        ],
+        "phone": "+624 19348867",
+        "website": "http://www.nandroya.com.au/",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17657",
+        "name": "Clemens Hill Wines",
+        "adress": "686 Richmond Rd, Cambridge TAS 7170",
+        "geoLocation": [
+            147.4411219,
+            -42.8358768
+        ],
+        "phone": "+614 37 008 069",
+        "website": "http://www.clemenshill.com.au/",
+        "email": "info@clemenshill.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17658",
+        "name": "Puddleduck Vineyard",
+        "adress": "992 Richmond Rd, Richmond TAS 7025",
+        "geoLocation": [
+            147.4302894,
+            -42.7382931
+        ],
+        "phone": "+613 6260 2301",
+        "website": "http://www.puddleduckvineyard.com.au/",
+        "email": "bottomsup@puddleduck.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17660",
+        "name": "Nocton Wine",
+        "adress": "373 Colebrook Rd, Richmond TAS 7025",
+        "geoLocation": [
+            147.4301672,
+            -42.736473
+        ],
+        "phone": "+613 6260 2688",
+        "website": "https://www.noctonwine.com.au/",
+        "email": "cellardoor@noctonwine.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17661",
+        "name": "Grandvewe Sheep Cheesery",
+        "adress": "59 Devlyns Rd, Birchs Bay TAS 7162",
+        "geoLocation": [
+            147.2283969,
+            -43.1830029
+        ],
+        "phone": "+614 16289786",
+        "website": "http://www.grandvewe.com/",
+        "email": "info@grandvewe.com",
+        "category": "Animal & Animal Products Facility",
+        "cropCode": "7",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17663",
+        "name": "Cape Bernier Vineyard",
+        "adress": "230 Bream Creek Rd, Bream Creek TAS 7175",
+        "geoLocation": [
+            147.8375646,
+            -42.7959242
+        ],
+        "phone": "+613 6253 5443",
+        "website": "http://www.capebernier.com.au/",
+        "email": "info@capebernier.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17664",
+        "name": "Jinglers Creek Vineyard",
+        "adress": "288 Relbia Rd, Relbia TAS 7258",
+        "geoLocation": [
+            147.2079185,
+            -41.5081212
+        ],
+        "phone": "+614 16739 903",
+        "website": "https://www.jinglerscreek.com.au/",
+        "email": "JINGLERSCREEKVINEYARD@GMAIL.COM",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17666",
+        "name": "Tamara Ridge Tasmania",
+        "adress": "1A Waldhorn Drive Rosevears 7277",
+        "geoLocation": [
+            147.010898,
+            -41.3556356
+        ],
+        "phone": "+613 6330 0300",
+        "website": "https://www.tamarridge.com.au/",
+        "email": "info@tamarridge.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17667",
+        "name": "Native Point Wines",
+        "adress": "718 Windermere Rd, Swan Bay TAS 7252",
+        "geoLocation": [
+            147.0056906,
+            -41.2838201
+        ],
+        "phone": "+6124 28 632 816",
+        "website": "http://www.nativepoint.com/",
+        "email": "info@nativepoint.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17668",
+        "name": "Wines For Joanie",
+        "adress": "163 Glendale Rd, Sidmouth TAS 7270",
+        "geoLocation": [
+            146.8842678,
+            -41.2478427
+        ],
+        "phone": "+614 27796128",
+        "website": "http://www.winesforjoanie.com.au/",
+        "email": "info@winesforjoanie.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17669",
+        "name": "Moores Hill Estate",
+        "adress": "3343 West Tamar Hwy, Sidmouth TAS 7270",
+        "geoLocation": [
+            146.9150889,
+            -41.2673104
+        ],
+        "phone": "+613 6394 7649",
+        "website": "http://www.mooreshill.com.au/",
+        "email": "enquiries@mooreshill.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17670",
+        "name": "Clover Hill Wines",
+        "adress": "Pipers River 60 Clover Hill Rd, Lebrina TAS 7254",
+        "geoLocation": [
+            147.2167,
+            -41.1667
+        ],
+        "phone": "+613 6395 6114",
+        "website": "https://cloverhillwines.com.au/",
+        "email": "info@cloverhillwines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17671",
+        "name": "Wilmot Hills Vineyard",
+        "adress": "407 Back Rd, Wilmot TAS 7310",
+        "geoLocation": [
+            146.1724595,
+            -41.3686735
+        ],
+        "phone": "+613 6492 1193",
+        "website": "https://www.facebook.com/pages/Wilmot-Hills-Vineyard/563401363841578",
+        "email": "wilmothills@connexus.net.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17672",
+        "name": "La Villa Wines",
+        "adress": "347 Mersey Main Rd, Spreyton TAS 7310",
+        "geoLocation": [
+            146.3542352,
+            -41.2248356
+        ],
+        "phone": "+61418 642 722",
+        "website": "https://www.lavillawines.com.au/",
+        "email": "INFO@LAVILLAWINES.COM.AU",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17673",
+        "name": "Unavale Vineyard",
+        "adress": "10 Badger Corner Rd, Lady Barron TAS 7255",
+        "geoLocation": [
+            148.1889517,
+            -40.2162941
+        ],
+        "phone": "+61427 593 631  ",
+        "website": "http://www.unavale.com.au/",
+        "email": "unavale@bordernet.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17674",
+        "name": "Gala Estate Vineyard",
+        "adress": "14891 Tasmainia Hwy, Cranbrook TAS 7190",
+        "geoLocation": [
+            147.9158,
+            -42.3064
+        ],
+        "phone": "+613 6257 8641",
+        "website": "http://www.galaestate.com.au/",
+        "email": "hello@galaestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17677",
+        "name": "Pembroke Wine Company Head Office",
+        "adress": "91A Albert Rd, Moonah Tasmania 7009",
+        "geoLocation": [
+            147.3022777,
+            -42.8480344
+        ],
+        "phone": "+613 6278 3808",
+        "website": "http://www.pembrokewines.com.au/",
+        "email": "sales@pembrokewines.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17678",
+        "name": "Moorilla Winery",
+        "adress": "655 Main Rd, Berriedale TAS 7011",
+        "geoLocation": [
+            147.2548666,
+            -42.812268
+        ],
+        "phone": "+613 6277 9960",
+        "website": "https://moorilla.com.au/",
+        "email": "cellardoor@mona.net.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17681",
+        "name": "Pages Creek Estate",
+        "adress": "624 Middle Tea Tree Rd, Tea Tree TAS 7017",
+        "geoLocation": [
+            147.3866283,
+            -42.7181603
+        ],
+        "phone": "+613 6260 2311",
+        "website": "http://www.pagescreekwine.com.au/",
+        "email": "info@pagescreekestate.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17684",
+        "name": "Milton Vineyard",
+        "adress": "14635 Tasman Hwy, Swansea TAS 7190",
+        "geoLocation": [
+            148.0662047,
+            -42.1197224
+        ],
+        "phone": "+613 6257 8298",
+        "website": "http://www.miltonvineyard.com.au/",
+        "email": "wine@miltonvineyard.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17685",
+        "name": "Elmslie Winery & Cellar Door",
+        "adress": "2 Upper Mcewans Rd, Legana TAS 7277",
+        "geoLocation": [
+            147.0257329,
+            -41.3487034
+        ],
+        "phone": "+614 19 608 074",
+        "website": "http://www.elmsliewines.com.au/",
+        "email": "elmslietasmania@gmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17688",
+        "name": "Delamere Vineyard",
+        "adress": "4238 Bridport Rd, Pipers Brook TAS 7254",
+        "geoLocation": [
+            147.1365745,
+            -41.0808355
+        ],
+        "phone": "+613 6382 7190",
+        "website": "http://www.delamerevineyards.com.au/",
+        "email": "info@delamerevineyards.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17689",
+        "name": "Dalrymple Vineyards",
+        "adress": "1337 Pipers Brook Rd, Pipers Brook TAS 7254",
+        "geoLocation": [
+            147.2011293,
+            -41.1138654
+        ],
+        "phone": "+613 6382 7229",
+        "website": "http://www.dalrymplevineyards.com.au/",
+        "email": "INFO@DALRYMPLEVINEYARDS.COM.AU",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17690",
+        "name": "Prickly Mo Wines",
+        "adress": "62 Lakeside Rd, Eugenana TAS 7310",
+        "geoLocation": [
+            146.3107658,
+            -41.2277878
+        ],
+        "phone": "+61430 315 705",
+        "website": "https://www.facebook.com/PricklyMo",
+        "email": "tim.lynch7@gmail.com",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17691",
+        "name": "Leven Valley Vineyard",
+        "adress": "321 Raymond Rd, Gunns Plains TAS 7315",
+        "geoLocation": [
+            146.0490293,
+            -41.2842656
+        ],
+        "phone": "+613 6429 1140",
+        "website": "http://www.levenvalleyvineyard.com.au/",
+        "email": "info@levenvalleyvineyard.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Tasmania"
+    },
+    {
+        "id": "17744",
+        "name": "Mount Majura Vineyard",
+        "adress": "88 Lime Kiln Road, Majura ACT 2609",
+        "geoLocation": [
+            149.1969687,
+            -35.2342222
+        ],
+        "phone": "+612 6262 3070",
+        "website": "http://www.mountmajura.com.au/",
+        "email": "info@mountmajura.com.au",
+        "category": "Vineyard or Winery",
+        "cropCode": "3",
+        "state": "Act"
+    },
+    {
+        "id": "17749",
+        "name": "Paspaley Pearls Head Office",
+        "adress": "19 The Mall, Darwin NT 0800",
+        "geoLocation": [
+            130.8410469,
+            -12.46044
+        ],
+        "phone": "+618 8982 5551",
+        "website": "http://www.paspaleygroup.com/pearling-recruitment",
+        "email": "recruitment@paspaley.com.au",
+        "category": "Fish & Seafood Farm",
+        "cropCode": "8",
+        "state": "Nothern Australia"
+    }
+]

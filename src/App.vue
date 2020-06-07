@@ -72,8 +72,15 @@
         /* this.pushSendSignin(loginEmail, loginPassword); */
       }
 
+      
+
+/*       // testwise load farms from firestore
+      data_functions.fetch_farms().then(farms => {
+        store.commit("setFarms", farms)
+      })
       // toggle get_groups off. So that we dont consume firestore on mass.
-      /* data_functions.get_groups().then(groups => {
+      data_functions.fetch_groups().then(groups => {
+        console.log(groups)
         store.commit("setFarmGroups", groups)
       }) */
     },

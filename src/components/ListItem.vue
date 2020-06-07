@@ -1,7 +1,7 @@
 <template>
     <div v-if="auth == false"
         class="list-item relative pb-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
-        <div :style="{backgroundImage: `url(${getImage(item.category)})`}"
+        <div :style="{backgroundImage: `url(${getImage(item.cropCode)})`}"
             class="image h-48 w-full rounded-t-sm text-light">
             <div class="overlay w-full h-full rounded-tl-sm">
                 <h1 class="px-4 w-64 py-1">A {{item.category}}</h1>
@@ -60,13 +60,15 @@
             </div>
         </div>
     </div>
-    <div v-else class="list-item relative py-2 text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
-        <div class="crop-icon absolute top-0 right-0 mr-4 mt-2">
-            <FarmIconHandler :alt="item.category" :title="item.category" v-bind:key="item.id" v-bind:item="item" />
+    <div v-else class="list-item relative text-xl bg-bg_primary text-main_primary rounded-sm w-5/6 lg:w-128">
+        <div :style="{backgroundImage: `url(${getImage(item.cropCode)})`}"
+            class="image h-48 w-full rounded-t-sm text-light">
+            <div class="overlay w-full h-full rounded-tl-sm">
+                <h1 class="px-4 w-64 py-1">{{item.name}}</h1>
+                <h2 class="px-4 py-1">{{item.adress}}</h2>
+                <h6 class="px-4 text-base">{{getDistance()}} km from your location</h6>
+            </div>
         </div>
-        <h1 class="px-4 w-64 py-1">{{item.name}}</h1>
-        <h2 class="px-4 py-1">{{item.adress}}</h2>
-        <h6 class="px-4 text-base text-bg_secondary">{{getDistance()}} km from your location</h6>
         <div class="saveFarm ml-4 mt-3 md:absolute bottom-0 left-0 md:mb-2" style="z-index: 40">
             <svg @click="handleSavedFarm(item.id)" alt="Save Farm" title="Save Farm" :style="getFill(item.id)"
                 style="z-index: 30" class="svg-mds cursor-pointer" viewBox="0 -10 512 511"
@@ -162,18 +164,18 @@
                 this.handleActiveButton(5);
             },
             getDistance() {
-                var distance = farm_functions.calculateDistance(store.state.profile.data.Geo, this.item.location);
+                var distance = farm_functions.calculateDistance(store.state.profile.data.Geo, this.item.geoLocation);
                 return distance
             },
-            getImage(category) {
-                switch (category) {
-                    case "Cattle Farm": {
+            getImage(cropCode) {
+                switch (cropCode) {
+                    case "7": {
                         return require('../assets/cattle.jpg')
                     }
-                    case "Vineyard": {
+                    case "3": {
                         return require('../assets/vineyard2.jpg')
                     }
-                    case "Berry Farm": {
+                    case "2": {
                         return require('../assets/berries.jpg')
                     }
                     default: {

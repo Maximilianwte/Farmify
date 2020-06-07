@@ -104,6 +104,7 @@
         },
         methods: {
             getPage(dir) {
+                var informationComplete = false;
                 if (this.input.email.length > 5 && this.input.email.includes("@") && this.input.email.includes(".") &&
                     this.input.password.length > 7 && this.input.name.length > 3) {
                     var profileObject = {
@@ -113,9 +114,10 @@
                         Email: this.input.email,
                         Password: this.input.password
                     }
+                    var informationComplete = true;
                     store.commit("updateProfile", profileObject);
                 }
-                if (dir == "next") {
+                if (dir == "next" && informationComplete == true) {
                     store.commit("pushSignUpPageCode", 2);
                     this.$router.push({
                         name: 'signup',

@@ -1,53 +1,14 @@
 import store from "../store";
 
 let map_functions = {
-    renderMarkers() {
-        var groups = store.state.groups.data;
-        var farms_to_show = store.state.farms.data;
-
-        for (var index in groups) {
-            for (var farmIndex in groups[index].farmsIncluded) {
-                var farmID = groups[index].farmsIncluded[farmIndex]
-                farms_to_show = deleteObjectByValue(farms_to_show, 'id', farmID);
-            }
-        }
-        return farms_to_show;
-    },
-    handleMarkersInGroup(farms_to_show, groupID) {
-        var all_farms = store.state.farms.data;
-        var farmsInGroup = findObject(store.state.groups.data, 'id', groupID);
-        farmsInGroup = farmsInGroup[0].farmsIncluded;
-
-        for (var index in farmsInGroup) {
-            farms_to_show.push(findObject(all_farms, 'id', farmsInGroup[index])[0]);
-        }
-        return farms_to_show;
-    },
-    renderMarkers2(id) {
-        var groups = store.state.groups.data;
-        var farms_in_groups = [];
+    renderMarkers2(groups, id = undefined) {
+        var farms_in_groups = new Array();
 
         for (var index in groups) {
             if (groups[index].id != id) {
                 for (var farmIndex in groups[index].farmsIncluded) {
                     var farmID = groups[index].farmsIncluded[farmIndex];
                     farms_in_groups.push(farmID);
-                }
-            }
-        }
-        return farms_in_groups;
-    },
-    findFarmsInGroup(id) {
-        var groups = store.state.groups.data;
-        var farms_in_groups = [];
-
-        for (var index in groups) {
-            if (groups[index].id == id) {
-                for (var farmIndex in groups[index].farmsIncluded) {
-                    var farmID = groups[index].farmsIncluded[farmIndex];
-                    if (store.state.farms.active_ids.includes(farmID)) {
-                        farms_in_groups.push(farmID);
-                    }
                 }
             }
         }
@@ -72,13 +33,7 @@ let map_functions = {
     filterFarms(farms, filterValue) {
         var farms_to_show = farms;
         switch (filterValue) {
-            case 'Less than 200km from me':
-                for (var index in farms) {
-                    if (this.calculateDistance(store.state.profile.data.geoCode, farms.data.location) < 200) {
-                        farms_to_show = findObject(farms, 'id', farms[index]['id'])
-                    }
-                }
-                break;
+            // I switched both statements, find got delete and around.. does it work?
             case 'Easy Apply Enabled':
                 farms_to_show = filterObjectByKey(farms_to_show, 'email');
                 break;
@@ -86,13 +41,14 @@ let map_functions = {
                 farms_to_show = filterObjectByKey(farms_to_show, 'website');
                 break;
             case 'Animal free work (V)':
-                farms_to_show = deleteObjectByValue(farms_to_show, 'category', 'Cattle Farm');
+                farms_to_show = deleteObjectByValue(farms_to_show, 'cropCode', '7');
+                farms_to_show = deleteObjectByValue(farms_to_show, 'cropCode', '8');
                 break;
             case 'Animal related work':
-                farms_to_show = findObject(farms_to_show, 'category', 'Cattle Farm');
+                farms_to_show = findObject(farms_to_show, 'cropCode', '7');
                 break;
             case 'Vineyards':
-                farms_to_show = findObject(farms_to_show, 'category', 'Vineyard');
+                farms_to_show = findObject(farms_to_show, 'cropCode', '3');
                 break;
             default:
                 break;
@@ -130,7 +86,7 @@ let map_functions = {
     },
     sortFarmsByDistance(farms) {
         for (var index in farms) {
-            var distance = this.calculateDistance(store.state.profile.data.Geo, farms[index].location);
+            var distance = this.calculateDistance(store.state.profile.data.Geo, farms[index].geoLocation);
             farms[index]["distance"] = distance;
         }
 
@@ -139,14 +95,83 @@ let map_functions = {
         });
 
         return farms;
+    },
+    renderMapBoundaries(center, zoom) {
+        // Maybe add display size into additive Calculation for further improvements
+
+        // Lat boundaries
+        var centerLat = center[0];
+        const additiveLat = (800 / (zoom ** 2));
+        var boundariesLat = [centerLat - additiveLat < 114 ? 114 : centerLat - additiveLat, null];
+        boundariesLat[1] = centerLat + additiveLat > 155 ? 155 : centerLat + additiveLat;
+        // Lon boundaries
+        var centerLon = center[1];
+        const additiveLon = (288 / (zoom ** 2));
+        var boundariesLon = [centerLon + additiveLon, centerLon - additiveLon];
+
+        return [boundariesLat, boundariesLon]
+    },
+    groupFarms(farms, boundaries, zoom) {
+        const step = (110 / (zoom ** 2));
+        var groups = new Array()
+        for (var yCOR = boundaries[0][0]; yCOR <= boundaries[0][1]; yCOR = yCOR + step) {
+            for (var xCOR = boundaries[1][0]; xCOR >= boundaries[1][1]; xCOR = xCOR - step) {
+                var xGroup = new Array()
+                var yGroup = new Array()
+                var group = {
+                    id: groups.length + 1,
+                    geoLocation: "",
+                    farmsIncluded: new Array()
+                }
+
+                for (var index in farms) {
+                    var geoLocation = farms[index].geoLocation;
+                    if (geoLocation[0] >= yCOR && geoLocation[0] < yCOR + step) {
+                        if (geoLocation[1] >= xCOR && geoLocation[1] < xCOR + step) {
+                            xGroup.push(geoLocation[0]);
+                            yGroup.push(geoLocation[1]);
+                            group.farmsIncluded.push(farms[index].id);
+                        }
+                    }
+                }
+
+                if (group.farmsIncluded.length > 4) {
+                    var averageX = average(xGroup);
+                    var averageY = average(yGroup);
+                    group.geoLocation = [averageX, averageY]
+                    groups.push(group)
+                }
+            }
+        }
+        console.log(groups)
+        return groups
     }
 }
 
 export default map_functions
 
+let average = (array) => {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += parseInt(array[i], 10); //don't forget to add the base
+    }
+
+    return sum / array.length;
+}
+
 let deleteObjectByValue = (array, key, value) => {
     return array.filter((e) => {
         if (e && e.hasOwnProperty(key) && e[key] === value) {
+            return false;
+        }
+
+        return true;
+    });
+};
+
+let deleteObjectByKey = (array, key, value) => {
+    return array.filter((e) => {
+        if (e && e.hasOwnProperty(key)) {
             return false;
         }
 

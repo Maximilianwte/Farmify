@@ -76,13 +76,13 @@
       </vl-geoloc> -->
 
       <!-- Groups -->
-      <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.location">
+      <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.geoLocation">
         <button @click="setActiveGroup(item)" :class="{'hidden': activeGroup == item.id}"
           class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{getActiveNumberInGroup(item)}}</button>
       </vl-overlay>
 
       <!-- Small Marker items -->
-      <vl-overlay v-for="item in markerData" :key="item.id" :id="item.id" :position="item.location"
+      <vl-overlay v-for="item in markerData" :key="item.id" :id="item.id" :position="item.geoLocation"
         :offset="handleOffset(item.id)">
         <template v-if="getActiveMarker(item)">
           <div @click="setActiveMarker(item)" style="width: 60px; height: 50px"
@@ -242,13 +242,15 @@
     data() {
       return {
         auth: store.state.auth,
-        filter: {
-          options: ["No Filter", "Below 200km", "Farm with Website", "Animal Free Work (V)"],
-        },
-        markerData: store.state.farms.data,
-        groupData: store.state.groups.data,
+        markerData: store.state.farms.active,
         zoom: 3.7,
+        last_zoom: 0,
         center: [134.75096, -26.77611],
+        last_center: [134.75096, -26.77611],
+        boundaries: [
+          [114, 155],
+          [-52, -18]
+        ],
         rotation: 0,
         geolocPosition: undefined,
         activeMarkerValue: 0,
@@ -261,17 +263,22 @@
       activeMarker() {
         return this.activeMarkerValue;
       },
-      farmsFiltered() {
-        return store.state.farms.active_ids;
+    },
+    mounted() {},
+    watch: {
+      zoom: function () {
+        this.handleZoom()
+      },
+      center: function () {
+        const step = 150 / (this.zoom ** 2);
+        if (Math.abs(this.center[0] - this.last_center[0]) > step || Math.abs(this.center[1] - this.last_center[1]) >
+          step) {
+          this.calculateBoundaries();
+          this.last_center = this.center;
+        }
       }
     },
-    mounted() {
-      this.farms_in_groups = farm_functions.renderMarkers2();
-    },
     methods: {
-      zoomUpdated(zoom) {
-        this.mapZoom = zoom;
-      },
       handleOffset(id) {
         if (id == this.activeMarkerValue) {
           return [-160, -270];
@@ -280,12 +287,10 @@
         }
       },
       getActiveNumberInGroup(item) {
-        return farm_functions.findFarmsInGroup(item.id).length;
+        return item.farmsIncluded.length;
       },
       setActiveGroup(item) {
-        var markerData = farm_functions.renderMarkers();
-
-        this.farms_in_groups = farm_functions.renderMarkers2(item.id);
+        this.farms_in_groups = farm_functions.renderMarkers2(this.groupData, item.id);
         if (this.activeGroup != item.id) {
           this.activeGroup = item.id;
           //this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 3)];
@@ -305,10 +310,10 @@
         if (this.activeMarker == item.id) {
           return false
         } else {
-          if (this.farms_in_groups.includes(item.id) == false && this.farmsFiltered.includes(item.id) == true) {
-            return true;
-          } else {
+          if (this.farms_in_groups.includes(item.id)) {
             return false;
+          } else {
+            return this.calculateOnMap(item) ? true : false;
           }
         }
       },
@@ -331,13 +336,36 @@
           return "fill: #cc6355"
         }
       },
-      handleZoom(id) {
-        if (id == "in") {
-          this.zoom++;
-        } else {
-          if (Number(this.zoom) >= 4.5) {
-            this.zoom--;
+      handleZoom(id = null) {
+        if (id != null) {
+          if (id == "in") {
+            this.zoom++;
+          } else {
+            if (Number(this.zoom) >= 4.5) {
+              this.zoom--;
+            }
           }
+        }
+
+        if (Math.abs(this.zoom - this.last_zoom) > 0.5) {
+          this.last_zoom = this.zoom;
+          this.calculateBoundaries();
+        }
+      },
+      calculateBoundaries() {
+        this.boundaries = farm_functions.renderMapBoundaries(this.center, this.zoom);
+        if (this.activeGroup == 0) {
+          this.groupData = farm_functions.groupFarms(this.markerData, this.boundaries, this.zoom);
+          this.farms_in_groups = farm_functions.renderMarkers2(this.groupData);
+        }
+      },
+      calculateOnMap(item) {
+        var location = item.geoLocation;
+        var boundaries = this.boundaries;
+        if (location[0] >= boundaries[0][0] && location[0] <= boundaries[0][1]) {
+          return true;
+        } else {
+          return false;
         }
       },
       handleActiveButton(id) {

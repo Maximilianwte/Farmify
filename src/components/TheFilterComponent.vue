@@ -87,20 +87,12 @@
                 var farms_to_show = store.state.farms.data;
 
                 if (this.activeOptions.length == 0) {
-                    farms_to_show = farms_to_show.map(farm => farm.id);
-                    store.commit("updateFarmIDSToShow", farms_to_show);
+                    store.commit("updateFarmsToShow", farms_to_show);
                 } else {
-                    if (this.Type == "Map") {
-                        for (var index in this.activeOptions) {
-                            farms_to_show = farm_functions.filterFarms2(farms_to_show, this.activeOptions[index])
-                        }
-                        store.commit("updateFarmIDSToShow", farms_to_show);
-                    } else {
-                        for (var index in this.activeOptions) {
-                            farms_to_show = farm_functions.filterFarms(farms_to_show, this.activeOptions[index])
-                        }
-                        store.commit("updateFarmsToShow", farms_to_show);
+                    for (var index in this.activeOptions) {
+                        farms_to_show = farm_functions.filterFarms(farms_to_show, this.activeOptions[index])
                     }
+                    store.commit("updateFarmsToShow", farms_to_show);
                 }
             },
             handleShowFilter() {

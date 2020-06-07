@@ -23,6 +23,26 @@ router.get("/", (req, res) => {
   res.send('This route only farm related requests.')
 })
 
+router.get('/read_allFarms', function (req, res) {
+  let docRef = db.collection('farms');
+  docRef.get().then(snapshot => {
+      if (snapshot.empty) {
+        console.log('No matching documents.');
+        return;
+      }
+      // hope making a new array and pushing data works.
+      var DatabaseData = new Array();
+      snapshot.forEach(doc => {
+        DatabaseData.push(doc.data());
+      });
+      DatabaseData = JSON.stringify(DatabaseData);
+      res.send(DatabaseData);
+    })
+    .catch(err => {
+      console.log('Error getting documents', err);
+    });
+});
+
 router.get('/read_allGroups', function (req, res) {
   let docRef = db.collection('groups');
   docRef.get().then(snapshot => {

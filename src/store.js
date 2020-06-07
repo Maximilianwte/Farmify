@@ -1,12 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import farmsData from "./data/Farms.json";
+import groupData from "./data/Groups.json";
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    theme: "theme_light",
-    auth: false,
+    theme: "theme_dark",
+    auth: true,
     signupPageCode: 0,
     cookies: {
       asked: false,
@@ -26,79 +29,11 @@ export default new Vuex.Store({
       }
     },
     farms: {
-      data: [{
-          id: 1,
-          name: "Peter Dierks Apple Tree Farm",
-          adress: "Middleton, 2405 Queensland",
-          phone: "+613 5480 9088",
-          website: "farm.co.au",
-          email: "max@mail.com",
-          category: "General Farm",
-          location: [139.77096, -21.79611]
-        },
-        {
-          id: 2,
-          name: "The All Natural Farm",
-          adress: "Engawala, 6750 Nothern Territory",
-          phone: "+613 5480 9088",
-          website: "farm.co.au",
-          email: "tom@hennsy.co.au",
-          category: "Berry Farm",
-          location: [132.72096, -23.75611]
-        },
-        {
-          id: 3,
-          name: "Barnyard Milk Products Pty LTD",
-          adress: "Bremner Ct, Moama NSW 2731",
-          phone: "+613 5480 9088",
-          website: "farm.co.au",
-          category: "Cattle Farm",
-          location: [125.77096, -17.79611]
-        },
-        {
-          id: 4,
-          name: "The Estate Yellowdine",
-          adress: "Yellowdine, 6224 Western Australia",
-          category: "Vineyard",
-          email: "tom@hennsy.co.au",
-          phone: "+613 5480 9088",
-          location: [115.866686, -31.965272]
-        },
-        {
-          id: 5,
-          name: "Berry Barn",
-          adress: "Divine, 2004 New South Wales",
-          category: "Berry Farm",
-          website: "farm.co.au",
-          location: [116.866686, -25.965272]
-        },
-        {
-          id: 6,
-          name: "The Meat Corp LTD",
-          adress: "Melbourne, 3943 Victoria",
-          email: "tom@hennsy.co.au",
-          phone: "+613 5480 9088",
-          category: "Cattle Farm",
-          location: [114.866686, -22.965272]
-        }
-      ],
-      active: [],
-      active_ids: [0, 1, 2, 3, 4, 5, 6]
+      data: farmsData,
+      active: farmsData,
     },
     groups: {
-      data: [{
-          id: "g1",
-          farmsIncluded: [1, 2, 3],
-          numberInGroup: 3,
-          location: [134.866686, -20.965272]
-        },
-        {
-          id: "g2",
-          farmsIncluded: [5, 6],
-          numberInGroup: 2,
-          location: [115.866686, -23.965272]
-        }
-      ],
+      data: null,
       active: []
     }
   },
@@ -133,15 +68,15 @@ export default new Vuex.Store({
         savedFarms.splice(savedFarms.indexOf(payload), 1);
       }
     },
+    setFarms(state, payload) {
+      state.farms.data = payload;
+    },
     setFarmGroups(state, payload) {
       state.groups.data = payload;
     },
     updateFarmsToShow(state, payload) {
       state.farms.active = payload;
-    },
-    updateFarmIDSToShow(state, payload) {
-      state.farms.active_ids = payload;
-    },
+    }
   },
   actions: {
 

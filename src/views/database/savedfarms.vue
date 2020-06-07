@@ -15,11 +15,11 @@
                     <h6 class="py-4">My Group Saved</h6>
                 </div>
             </div>
-            <div class="text-bg_primary bg-main_primary w-full flex-col pb-20 rounded-b-sm">
+            <div class="text-bg_primary bg-main_primary hideout-bg w-full flex-col pb-20 rounded-b-sm">
                 <div id="myList" class="w-full flex-col" v-if="activeTab == 0">
                     <ListItem class="mt-8" v-for="savedFarmID in storedFarms.slice(page*10,(page+1)*10)"
                         v-bind:key="savedFarmID" v-bind:item="getFarm('id', savedFarmID)" />
-                    <div id="navigate" class="flex justify-center">
+                    <div v-if="storedFarms.length > 10" id="navigate" class="flex justify-center">
                         <button :class="buttonInactive('dec')" @click="handlePageClick('dec')"
                             class="text-center text-2xl mr-2 mt-4 hover:bg-main_focus_active rounded-sm text-light py-2 px-8 w-40 rounded cursor-pointer">Previous</button>
                         <button :class="buttonInactive('inc')" @click="handlePageClick('inc')"

@@ -63,28 +63,31 @@
         </svg>
       </div>
     </div>
-    <div id="pricingBanner"
-      class="mt-20 flex-col md:flex-row justify-between mb-8 w-5/6 md:w-3/5 px-6 py-12 rounded-sm border-2 text-2xl md:text-3xl text-center">
-      <div class="svg px-8 flex justify-around">
-        <svg class="svg-2xl" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M456.8 0H338.4c-26 0-60.8 14.4-79.2 32.8l-243 243a54.8 54.8 0 00-16.2 39c0 14.8 5.7 28.7 16.1 39l142 142a54.8 54.8 0 0039 16.2c14.8 0 28.6-5.7 39-16.1l243.1-243a126.7 126.7 0 0032.8-79.3V55.2A55.2 55.2 0 00456.8 0zM482 173.6c0 18.1-11.2 45.2-24 58l-243 243c-4.8 4.8-11.1 7.4-17.9 7.4s-13-2.6-17.8-7.3l-142-142a25 25 0 01-7.3-17.8 25 25 0 017.3-17.8l243-243a97.4 97.4 0 0158-24.1h118.5A25.2 25.2 0 01482 55.2zm0 0" />
-          <path
-            d="M139.3 331.5c-5.4-5.5-4-13.4 4-21.6 9.6-9.5 16.6-7.8 20-11.4 4.2-4 .8-11-1.8-13.7-7.5-7.5-24 5.8-30.7 12.5-13 13-21.8 33.4-4.9 50.3 27 27 58.2-14.7 75.2 2.3 6.8 6.8 4 15.8-2.8 22.6-11.6 11.6-23.4 6-28 10.6-3.6 3.5-1.8 11.2 1.4 14.4 6.6 6.6 25.4 2.7 40.3-12.2 15.7-15.6 18.7-35.4 2.4-51.6-29.4-29.5-61 11.9-75-2.2zm0 0M298.1 282.6l-93.4-49.5c-4.4-2.4-10.2.2-14.5 4.6-4.2 4.2-6.8 10-4.4 14.4l49.5 93.4c.3.5.7 1.1 1 1.3 3.6 3.7 11.4.8 15.4-3.1 2.5-2.5 3.6-5.3 2-8L243 316.3l26-26 19.5 10.8c2.7 1.5 5.4.4 8-2 3.9-4 6.6-12 3.1-15.5-.3-.4-.8-.6-1.4-1zm-63.7 19l-25-44.7 44.8 25zm0 0M343 226.4l-27.7 27.7-65.6-65.5c-3.2-3.2-8.3-.8-11.9 2.8-3.7 3.8-6 8.8-2.8 12l73.8 73.8c3 3 7.8 1.5 11.1-1.8l36-36c3-3 1.2-7.8-2-11-3.3-3.2-8-5-10.9-2zm0 0M402.4 167L370.3 199l-22.9-22.8 17.3-17.3c3.2-3.1 1.6-7.7-1-10.3-3-3-7.6-4.2-10.6-1.2l-17.3 17.2-22.7-22.7 32.2-32.2c3-3 1.6-7.7-2-11.2-3-3-7.8-4.9-11-1.7L292 137.3c-3.3 3.3-5 8.1-1.8 11.2l73.7 73.7c3 3 7.8 1.5 11.1-1.8l40.5-40.5c3.2-3.1 1.3-8-1.7-11-3.5-3.5-8.3-4.9-11.3-2zm0 0M417.5 80.4a15.1 15.1 0 00-15 15 15 15 0 0015 15 15 15 0 0015-15 15 15 0 00-15-15zm0 0" />
-        </svg>
+    <div v-if="getAuth == false" class="containerAuthO flex-col w-full">
+      <div id="pricingBanner"
+        class="mt-20 flex-col md:flex-row justify-between mb-8 w-5/6 md:w-3/5 px-6 py-12 rounded-sm border-2 text-2xl md:text-3xl text-center">
+        <div class="svg px-8 flex justify-around">
+          <svg class="svg-2xl" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M456.8 0H338.4c-26 0-60.8 14.4-79.2 32.8l-243 243a54.8 54.8 0 00-16.2 39c0 14.8 5.7 28.7 16.1 39l142 142a54.8 54.8 0 0039 16.2c14.8 0 28.6-5.7 39-16.1l243.1-243a126.7 126.7 0 0032.8-79.3V55.2A55.2 55.2 0 00456.8 0zM482 173.6c0 18.1-11.2 45.2-24 58l-243 243c-4.8 4.8-11.1 7.4-17.9 7.4s-13-2.6-17.8-7.3l-142-142a25 25 0 01-7.3-17.8 25 25 0 017.3-17.8l243-243a97.4 97.4 0 0158-24.1h118.5A25.2 25.2 0 01482 55.2zm0 0" />
+            <path
+              d="M139.3 331.5c-5.4-5.5-4-13.4 4-21.6 9.6-9.5 16.6-7.8 20-11.4 4.2-4 .8-11-1.8-13.7-7.5-7.5-24 5.8-30.7 12.5-13 13-21.8 33.4-4.9 50.3 27 27 58.2-14.7 75.2 2.3 6.8 6.8 4 15.8-2.8 22.6-11.6 11.6-23.4 6-28 10.6-3.6 3.5-1.8 11.2 1.4 14.4 6.6 6.6 25.4 2.7 40.3-12.2 15.7-15.6 18.7-35.4 2.4-51.6-29.4-29.5-61 11.9-75-2.2zm0 0M298.1 282.6l-93.4-49.5c-4.4-2.4-10.2.2-14.5 4.6-4.2 4.2-6.8 10-4.4 14.4l49.5 93.4c.3.5.7 1.1 1 1.3 3.6 3.7 11.4.8 15.4-3.1 2.5-2.5 3.6-5.3 2-8L243 316.3l26-26 19.5 10.8c2.7 1.5 5.4.4 8-2 3.9-4 6.6-12 3.1-15.5-.3-.4-.8-.6-1.4-1zm-63.7 19l-25-44.7 44.8 25zm0 0M343 226.4l-27.7 27.7-65.6-65.5c-3.2-3.2-8.3-.8-11.9 2.8-3.7 3.8-6 8.8-2.8 12l73.8 73.8c3 3 7.8 1.5 11.1-1.8l36-36c3-3 1.2-7.8-2-11-3.3-3.2-8-5-10.9-2zm0 0M402.4 167L370.3 199l-22.9-22.8 17.3-17.3c3.2-3.1 1.6-7.7-1-10.3-3-3-7.6-4.2-10.6-1.2l-17.3 17.2-22.7-22.7 32.2-32.2c3-3 1.6-7.7-2-11.2-3-3-7.8-4.9-11-1.7L292 137.3c-3.3 3.3-5 8.1-1.8 11.2l73.7 73.7c3 3 7.8 1.5 11.1-1.8l40.5-40.5c3.2-3.1 1.3-8-1.7-11-3.5-3.5-8.3-4.9-11.3-2zm0 0M417.5 80.4a15.1 15.1 0 00-15 15 15 15 0 0015 15 15 15 0 0015-15 15 15 0 00-15-15zm0 0" />
+          </svg>
+        </div>
+        <h4 class="mt-4 md:mt-0">We want to keep things simple! We're charging you a low membership fee of 17.99 $AUD to
+          cover our
+          database costs and finding all the relevant data.</h4>
       </div>
-      <h4 class="mt-4 md:mt-0">We want to keep things simple! We're charging you a low membership fee of 17.99 $AUD to cover our
-        database costs and finding all the relevant data.</h4>
-    </div>
-    <div id="signUpHeader" class="mt-4 mb-4 text-2xl w-4/5 text-center">
-      <h6>Hooked? We're happy to sign you up here mate.</h6>
-    </div>
-    <div id="signUp" class="mb-20">
-      <router-link v-if="getAuth == false" :to="{name: 'signup', params: { page: 0 }}">
-        <p
-          class="button text-3xl bg-main_focus hover:bg-main_focus_active text-light py-2 px-4 lg:px-12 mx-2 cursor-pointer">
-          Sign up</p>
-      </router-link>
+      <div id="signUpHeader" class="mt-4 mb-4 text-2xl w-4/5 text-center">
+        <h6>Hooked? We're happy to sign you up here mate.</h6>
+      </div>
+      <div id="signUp" class="mb-20">
+        <router-link :to="{name: 'signup', params: { page: 0 }}">
+          <p
+            class="button text-3xl bg-main_focus hover:bg-main_focus_active text-light py-2 px-4 lg:px-12 mx-2 cursor-pointer">
+            Sign up</p>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -94,15 +97,13 @@
   export default {
     name: 'home',
     data() {
-      return {
-      }
+      return {}
     },
     computed: {
       getAuth() {
         return store.state.auth
       }
     },
-    methods: {
-    }
+    methods: {}
   }
 </script>
