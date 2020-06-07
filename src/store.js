@@ -2,13 +2,12 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import farmsData from "./data/Farms.json";
-import groupData from "./data/Groups.json";
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    theme: "theme_dark",
+    theme: "theme_light",
     auth: true,
     signupPageCode: 0,
     cookies: {
@@ -31,10 +30,6 @@ export default new Vuex.Store({
     farms: {
       data: farmsData,
       active: farmsData,
-    },
-    groups: {
-      data: null,
-      active: []
     }
   },
   mutations: {
