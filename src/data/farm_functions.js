@@ -135,7 +135,7 @@ let map_functions = {
                     }
                 }
 
-                if (group.farmsIncluded.length > 4) {
+                if (group.farmsIncluded.length > 5) {
                     var averageX = average(xGroup);
                     var averageY = average(yGroup);
                     group.geoLocation = [averageX, averageY]
@@ -143,7 +143,6 @@ let map_functions = {
                 }
             }
         }
-        console.log(groups)
         return groups
     }
 }

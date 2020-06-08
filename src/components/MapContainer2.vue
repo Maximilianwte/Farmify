@@ -1,7 +1,7 @@
 <template>
   <div>
-    <vl-map @click="activeMarkerValue = 0" :load-tiles-while-animating="false" :load-tiles-while-interacting="true"
-      data-projection="EPSG:4326" class="h-full bg-main_primary">
+    <vl-map @click="activeMarkerValue = 0; setActiveGroup(0)" :load-tiles-while-animating="false"
+      :load-tiles-while-interacting="true" data-projection="EPSG:4326" class="h-full bg-main_primary">
       <vl-view :zoom.sync="zoom" :min-zoom="3.5" :center.sync="center" :enable-rotation="false"
         :rotation.sync="rotation" />
 
@@ -264,16 +264,20 @@
         return this.activeMarkerValue;
       },
     },
-    mounted() {},
+    mounted() {
+      this.calculateBoundaries();
+      this.calculateGroups();
+    },
     watch: {
       zoom: function () {
-        this.handleZoom()
+        this.handleZoom();
       },
       center: function () {
-        const step = 150 / (this.zoom ** 2);
+        const step = 250 / (this.zoom ** 2);
         if (Math.abs(this.center[0] - this.last_center[0]) > step || Math.abs(this.center[1] - this.last_center[1]) >
           step) {
           this.calculateBoundaries();
+          this.calculateGroups();
           this.last_center = this.center;
         }
       }
@@ -347,17 +351,19 @@
           }
         }
 
-        if (Math.abs(this.zoom - this.last_zoom) > 0.5) {
+        if (Math.abs(this.zoom - this.last_zoom) > 1.5) {
           this.last_zoom = this.zoom;
           this.calculateBoundaries();
+          this.calculateGroups();
         }
       },
       calculateBoundaries() {
         this.boundaries = farm_functions.renderMapBoundaries(this.center, this.zoom);
-        if (this.activeGroup == 0) {
-          this.groupData = farm_functions.groupFarms(this.markerData, this.boundaries, this.zoom);
-          this.farms_in_groups = farm_functions.renderMarkers2(this.groupData);
-        }
+
+      },
+      calculateGroups() {
+        this.groupData = farm_functions.groupFarms(this.markerData, this.boundaries, this.zoom);
+        this.farms_in_groups = farm_functions.renderMarkers2(this.groupData);
       },
       calculateOnMap(item) {
         var location = item.geoLocation;
