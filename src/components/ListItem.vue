@@ -17,7 +17,7 @@
             </svg>
             <Tooltip :info="'save'" :active="getActive(5)" :type="'square'" />
         </div>
-        <div class="below w-full flex items-center justify-end mt-8 py-1 relative cursor-pointer">
+        <div class="below w-full flex items-center justify-end mt-8 py-2 relative cursor-pointer">
             <div v-if="item.phone != undefined" id="call" title="Phone" alt="Phone" class="cursor-pointer px-1">
                 <div @click="handleActiveButton(1)" @mouseleave="handleActiveButton(0)" class="button">
                     <svg class="svg-passive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -77,7 +77,7 @@
                     d="M114.6 491.1A27.1 27.1 0 0188 458l33-145.1-111.8-98a27.2 27.2 0 0115.4-47.6l147.8-13.4L231 17a27.2 27.2 0 0150 0l58.4 136.8 147.8 13.4a27.2 27.2 0 0115.5 47.6l-111.7 98 33 145a27.2 27.2 0 01-40.6 29.4L256 411.1l-127.5 76.2a27.3 27.3 0 01-14 3.8zM256 378.3c4.8 0 9.6 1.3 14 3.8l120.2 72-31-137c-2.3-9.7 1-19.9 8.6-26.5l105.4-92.5-139.5-12.7c-10-.9-18.7-7.2-22.6-16.5L256 40l-55.2 129a27.1 27.1 0 01-22.5 16.5L38.7 198l105.5 92.5a27.2 27.2 0 018.6 26.5l-31 137L242 382c4.3-2.5 9.1-3.8 14-3.8zm-84.6-221.9zm169.1 0zm0 0" />
             </svg>
         </div>
-        <div class="below w-full flex items-center justify-end mt-12 py-1 relative cursor-pointer">
+        <div class="below w-full flex items-center justify-end mt-12 py-2 relative cursor-pointer">
 
             <div v-if="item.phone != undefined" id="call" title="Phone" alt="Phone" class="cursor-pointer px-1">
                 <div @click="handleButtonClick('phone')" class="button">
