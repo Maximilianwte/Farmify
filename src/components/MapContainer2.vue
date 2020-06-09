@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vl-map @click="activeMarkerValue = 0; setActiveGroup(0)" :load-tiles-while-animating="false"
+    <vl-map @click="activeMarkerValue == 0 ? setActiveGroup(0) : null; activeMarkerValue = 0;" :load-tiles-while-animating="false"
       :load-tiles-while-interacting="true" data-projection="EPSG:4326" class="h-full bg-main_primary">
       <vl-view :zoom.sync="zoom" :min-zoom="3.5" :center.sync="center" :enable-rotation="false"
         :rotation.sync="rotation" />
@@ -77,8 +77,9 @@
 
       <!-- Groups -->
       <vl-overlay v-for="item in groupData" :key="item.id" :id="item.id" :position="item.geoLocation">
-        <button @click="setActiveGroup(item)" :class="{'hidden': activeGroup == item.id}"
-          class="group px-5 py-2 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{getActiveNumberInGroup(item)}}</button>
+        <button @click="setActiveGroup(item)"
+          :class="[getGroupPadding(getActiveNumberInGroup(item)),{'hidden': activeGroup == item.id}]"
+          class="group px-5 cursor-pointer rounded-full border-2 border-bg_primary text-xl text-bg_primary bg-main_primary hover:bg-blue_active">{{getActiveNumberInGroup(item)}}</button>
       </vl-overlay>
 
       <!-- Small Marker items -->
@@ -321,69 +322,78 @@
           }
         }
       },
-      pushMenu() {
-        if (this.$router.currentRoute.path == "/menu") {
-          this.$router.go(-1);
+      getGroupPadding(length) {
+        if (length > 9 && length < 99) {
+          return "py-3"
+        } else if (length > 99) {
+          return "py-4"
         } else {
-          this.$router.push({
-            path: '/menu'
-          });
+          return "py-2"
         }
-      },
-      handleSavedFarm(id) {
-        store.commit("handleSavedFarm", id);
-        this.handleActiveButton(5);
-      },
-      getFill(id) {
-        var savedFarms = store.state.profile.data.SavedFarms;
-        if (savedFarms.includes(id)) {
-          return "fill: #cc6355"
-        }
-      },
-      handleZoom(id = null) {
-        if (id != null) {
-          if (id == "in") {
-            this.zoom++;
-          } else {
-            if (Number(this.zoom) >= 4.5) {
-              this.zoom--;
-            }
+    },
+    pushMenu() {
+      if (this.$router.currentRoute.path == "/menu") {
+        this.$router.go(-1);
+      } else {
+        this.$router.push({
+          path: '/menu'
+        });
+      }
+    },
+    handleSavedFarm(id) {
+      store.commit("handleSavedFarm", id);
+      this.handleActiveButton(5);
+    },
+    getFill(id) {
+      var savedFarms = store.state.profile.data.SavedFarms;
+      if (savedFarms.includes(id)) {
+        return "fill: #cc6355"
+      }
+    },
+    handleZoom(id = null) {
+      if (id != null) {
+        if (id == "in") {
+          this.zoom++;
+        } else {
+          if (Number(this.zoom) >= 4.5) {
+            this.zoom--;
           }
         }
-
-        if (Math.abs(this.zoom - this.last_zoom) > 1.5) {
-          this.last_zoom = this.zoom;
-          this.calculateBoundaries();
-          this.calculateGroups();
-        }
-      },
-      calculateBoundaries() {
-        this.boundaries = farm_functions.renderMapBoundaries(this.center, this.zoom);
-
-      },
-      calculateGroups() {
-        this.groupData = farm_functions.groupFarms(this.markerData, this.boundaries, this.zoom);
-        this.farms_in_groups = farm_functions.renderMarkers2(this.groupData);
-      },
-      calculateOnMap(item) {
-        var location = item.geoLocation;
-        var boundaries = this.boundaries;
-        if (location[0] >= boundaries[0][0] && location[0] <= boundaries[0][1]) {
-          return true;
-        } else {
-          return false;
-        }
-      },
-      handleActiveButton(id) {
-        if (this.activeButton == id) {
-          this.activeButton = 0;
-        } else {
-          this.activeButton = id;
-        }
-      },
-      getActive(id) {
-        return true ? id == this.activeButton : false;
       }
+
+      if (Math.abs(this.zoom - this.last_zoom) > 1.5) {
+        this.last_zoom = this.zoom;
+        this.calculateBoundaries();
+        this.calculateGroups();
+      }
+    },
+    calculateBoundaries() {
+      this.boundaries = farm_functions.renderMapBoundaries(this.center, this.zoom);
+
+    },
+    calculateGroups() {
+      this.groupData = farm_functions.groupFarms(this.markerData, this.boundaries, this.zoom);
+      this.farms_in_groups = farm_functions.renderMarkers2(this.groupData);
+    },
+    calculateOnMap(item) {
+      var location = item.geoLocation;
+      var boundaries = this.boundaries;
+      if (location[0] >= boundaries[0][0] && location[0] <= boundaries[0][1]) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    handleActiveButton(id) {
+      if (this.activeButton == id) {
+        this.activeButton = 0;
+      } else {
+        this.activeButton = id;
+      }
+    },
+    getActive(id) {
+      return true ? id == this.activeButton : false;
     }
+  }
   }
 </script>
