@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import farmsData from "./data/Farms.json";
+import farmFunctions from "./data/farm_functions";
 
 Vue.use(Vuex)
 
@@ -30,6 +31,7 @@ export default new Vuex.Store({
     farms: {
       data: farmsData,
       active: farmsData,
+      activeFarmIDs: null
     }
   },
   mutations: {
@@ -71,6 +73,7 @@ export default new Vuex.Store({
     },
     updateFarmsToShow(state, payload) {
       state.farms.active = payload;
+      state.farms.activeFarmIDs = farmFunctions.filterFarms2(payload);
     }
   },
   actions: {

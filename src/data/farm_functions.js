@@ -55,9 +55,8 @@ let map_functions = {
         }
         return farms_to_show
     },
-    filterFarms2(farms, filterValue) {
-        farms = this.filterFarms(farms, filterValue);
-        var farms_to_show = new Array;
+    filterFarms2(farms) {
+        var farms_to_show = [];
         for (var index in farms) {
             farms_to_show.push(farms[index].id);
         }

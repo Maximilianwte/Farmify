@@ -58,6 +58,7 @@ let logic_functions = {
   },
   get_geoCodeOpenCage(location) {
     return axios.get('https://api.opencagedata.com/geocode/v1/json?key=d066a4fbf9964946af519566f421efbb&q=' + encodeURIComponent(location) + '&pretty=1&no_annotations=1', ).then(response => {
+      console.log([response.data.results[0].geometry.lng, response.data.results[0].geometry.lat])
       return [response.data.results[0].geometry.lng, response.data.results[0].geometry.lat]
     })
   }

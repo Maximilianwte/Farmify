@@ -22,7 +22,7 @@
               d="M201 125a55 55 0 10110.1-.1 55 55 0 00-110.1 0zm90 0a35 35 0 11-70 0 35 35 0 0170 0zM296 394.5a10 10 0 0010-10v-40a10 10 0 00-20 0v40a10 10 0 0010 10zM216 394.5a10 10 0 0010-10v-40a10 10 0 00-20 0v40a10 10 0 0010 10z" />
           </svg>
         </div>
-        <h4 class="w-2/3 lg:w-1/2">We have more than 3000+ farms included in our Database.</h4>
+        <h4 class="w-2/3 lg:w-1/2">We have more than 2000+ farms included in our Database.</h4>
       </div>
       <div id="fruits" class="w-full md:w-1/3 flex-col mt-12 md:mt-0 justify-around">
         <svg class="svg-2xl mb-8 svg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.1 512.1">
@@ -31,7 +31,7 @@
           <path
             d="M293.7 49.9a294.3 294.3 0 00-26.6-.1 8.5 8.5 0 10.9 17 252.7 252.7 0 0125.2.1 8.5 8.5 0 00.5-17zM235.3 62.1A8.5 8.5 0 00225 56a194.1 194.1 0 00-44.3 17.3 219.6 219.6 0 00-30.4 19.3 269.6 269.6 0 00-30.8 27 308.2 308.2 0 00-26.8 30.7 242.3 242.3 0 00-19.4 30.4 8.5 8.5 0 1015 8 208.5 208.5 0 0118-28.2 245.7 245.7 0 0125.3-29 289.2 289.2 0 0129-25.2 223.4 223.4 0 0128-18 194.9 194.9 0 0140.7-15.7 8.5 8.5 0 006.1-10.4zM219.5 438a9 9 0 00-12.2 0 8 8 0 00-1.8 2.8 8.5 8.5 0 001.8 9.3 10 10 0 002.9 1.8c3.1 1.4 6.8.7 9.3-1.8a10 10 0 001.7-2.8c1-2 1-4.4 0-6.5-.3-1-1-2-1.7-2.8zM255.8 425.9a8.6 8.6 0 00-2.7-1.9 8.8 8.8 0 00-6.6 0c-1 .4-2 1-2.7 1.9-.8.8-1.5 1.7-1.9 2.7a8.9 8.9 0 001.9 9.3c.7.8 1.7 1.5 2.7 1.9a9 9 0 003.3.7c2.3 0 4.5-1 6-2.6a8.3 8.3 0 000-12zM225.5 407.7a8.5 8.5 0 10-2.8 14 8.8 8.8 0 004.7-4.7 8.9 8.9 0 00-1.9-9.3zM189 419.8a15 15 0 00-1.2-1l-1.5-.9-1.6-.4c-2.8-.6-5.6.3-7.7 2.3a8.9 8.9 0 00-2.6 6c0 2.3 1 4.5 2.6 6a8.6 8.6 0 006 2.6 8.6 8.6 0 006-2.6c.9-.7 1.5-1.7 2-2.7.4-1 .6-2.2.5-3.3 0-1.1-.1-2.2-.5-3.3-.5-1-1.1-1.9-2-2.7zM247 397.3c1-.4 2-1 2.7-1.9a8.4 8.4 0 000-12 8.6 8.6 0 00-13.9 2.7 8.9 8.9 0 002 9.3c.7.8 1.6 1.5 2.6 1.9 1.1.4 2.2.7 3.4.7 1 0 2.2-.3 3.2-.7zM280.1 401.6l-1.3-1a6 6 0 00-1.4-.8c-.5-.3-1-.5-1.6-.5-1.1-.3-2.3-.3-3.4 0-.5 0-1 .2-1.6.5a8.4 8.4 0 00-2.7 14 8.2 8.2 0 006 2.3 8.6 8.6 0 007.9-11.7c-.5-1-1.1-2-1.9-2.8z" />
         </svg>
-        <h4 class="w-2/3 lg:w-1/2">We have more than 150+ fruits and vegetables included.</h4>
+        <h4 class="w-2/3 lg:w-1/2">We have more than 100+ fruits and vegetables included.</h4>
       </div>
       <div id="functions" class="w-full md:w-1/3 flex-col mt-12 md:mt-0 justify-around">
         <div class="icon">
@@ -50,8 +50,7 @@
       </div>
     </div>
     <div id="addingFarmsBanner" class="mt-20 mb-20 w-5/6 md:w-3/5 px-6 py-12 rounded-sm border-2 text-3xl text-center">
-      <h4 class="">Hey Mate, we're adding 200 new farms to our coverage every week! We
-        want to cover all farms in Australia.</h4>
+      <h4 class="">Hey Mate, by using Farmify finding work gets so much easier for less money than one hour of work.</h4>
       <div class="svg mt-6 mb-4 flex justify-around">
         <svg class="svg-2xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path
