@@ -2,11 +2,11 @@
   "type": "service_account",
   "project_id": "farmify-2d43e",
   "private_key_id": "d86eebe1e4e257c0fffe96aafec9f0c848753ed8",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCejy/LdFaZ8W4b\nEmNxIfV3DSq9G0oCwCA8iGTNnk/hLHHXsQV1Qz+nntlcuUknwxoOaGnPQPoNGueC\nknYRudu1qTY4JD7TAjdq9Lg4Z0VajCyLxOmlKO1CvDi0ShJU8yfBsvUedEJUJVOt\nBtP4f/NPDPeZHvbCKw0fygVYHk2pzFIrhA1CtyM5uUJpY6uQ2vROIjLJiMjq1aO1\nnF3myoxMVJOl1i3BIaFAdPdKjUIM8p5kfqX3pYV7VjxJ+1qiTfOcTZnmOY6n/Pns\nNe91NnNsxde0GEDL3A3CsZ5MhJpdQ+j3FwEB5QtLReT1bsmtcCo0NSgpDAOeTz5p\nWdRVQumFAgMBAAECggEAIvpIy5vEL+0JwkiV7cLVRLg/nZxrwPwTkG7xN8fM7Moy\naee34cSeQfKhlhocqHwaXyPK9aiqkKIHAK+hAquKq4IivxNF1aQXSA2opu6nJsCl\n4gZkGWZUIqTlaGYvsZQ7SLha6OcyK6BZW2HWeGr3aFCevSVOv4oiOMlG0QfMT6C1\nSok7Tu8LMGHavmQ1n3NrKYfdGaGO9YLPFwVuw7wpkns5SPCH1EXRzP1peWBY68LY\noD8sLARyBaEjyMSbVbaM8zM9F6JCTI+JyNJQn7jZrfJALLfM0KAjLlg+TddJPCIc\nzGfygbnQPn34HTgm8fH04+Eq0HnQLlubQt6yzRCDoQKBgQDXDSRv2QmfbSQmKCmu\nS7BMRuRfgBTtOt2J94KcKgEnbBO60CNJQHhPsDYYKjMf6ULvRYdcInpj0RMMBZq7\nKWz8rPTKAP1r+Aql2pIIDb/XD71gyiVvYYs6+TD7ZW4XIOnKkgKDX6Iuey5YD7VQ\nlMbvE3LaNnoa3TOnZ8TpY7fo5QKBgQC8wEs1u7Ev289erf6zSlPdJZrSehZmxM0y\nvnVzCvq2ZxOT6087D0qtANjz9n2WTWQqAi6ITi26t61nQk2cvDMnqUVkCaKS6TcT\nWvgbn1/0uO+DPkD4Ddph1QJagSvpIT6mwAwfAuppCV8gS292TkI0GLtr9qPw/nw9\nMv6vcSwUIQKBgBbyVw38ObOiQLY1mOT5PJGXCu1JzHHX0yXSnEQvkznypVRMu0co\nsu3F3q/LaPMhv7uqTpw9LZQTDhY9TtpjvDZl+iTH4EKyD+jMnsJvPSYkjs+SIlZ1\nMRcU2e4pT4r2PxwXYl9ESBjvme1Zl75Gcce26o1wPK07JzTYtME2m7wlAoGAH9nH\nFzsj7DKIbK6pwzFws2msFYZaj174TW7MPOyGYA9Gw3g6t3meHVF+SrS2fo1ysJAL\nsB6ZIt/p1/ndROyRKUksF3R0xZurGo4IPgkH1TD74ca4ieM0jbu3GPShJ0bf3p2b\nrgP88FqPfdCc73bHPylJPy+wfHNFHcKkLZDIYmECgYEAqo0fhBphQGIbLybl/XTJ\nW5XYFTZophsUIFnRYSeOvCUmDQAAI/wPlgVLiT1KOvBp2OIVIXu2ukUndUV1HgJj\n4bv6B3oLaJlP4u/hM6JKejM2QP2ZogeCvrcH14Tb4sGxsHUU+1iy8SYNBFYKW2+p\n7ThEMwzithwVbzp7lOnOn0E=\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-g5q7i@farmify-2d43e.iam.gserviceaccount.com",
+  "private_key": "-----BEGIN PRIVATE KEY--XXXGet_THESE_AGAIN_FROM_FIREBASEXXXXAQEFAASCBKcwggSjAgEAAoIBAQCXXXGet_THESE_AGAIN_FROM_FIREBASEXXXXV3DSq9G0oCwCA8iGTXXXGet_THESE_AGAIN_FROM_FIREBASEXXXXATE KEY-----\n",
+  "client_email": "firebase-adminXXXGet_THESE_AGAIN_FROM_FIREBASEXXXXe.iam.gserviceaccount.com",
   "client_id": "105834141175807806079",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "auth_uri": "https://XXXGet_THESE_AGAIN_FROM_FIREBASEXXXXth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-g5q7i%40farmify-2d43e.iam.gserviceaccount.com"
+  "client_x509_cert_url": "https://www.googleXXXGet_THESE_AGAIN_FROM_FIREBASEXXXXmetadata/x509/firebase-adminsdk-g5q7i%40farmify-2d43e.iam.gserviceaccount.com"
 }

@@ -440,8 +440,8 @@ export default {
   watch: {
     zoom: function() {
       this.handleZoom();
-    },
-    center: function() {
+    }
+    /*     center: function() {
       const step = 250 / this.zoom ** 2;
       if (
         Math.abs(this.center[0] - this.last_center[0]) > step ||
@@ -451,7 +451,7 @@ export default {
         this.calculateGroups();
         this.last_center = this.center;
       }
-    }
+    } */
   },
   methods: {
     handleOffset(id) {
@@ -465,10 +465,14 @@ export default {
       return item.farmsIncluded.length;
     },
     setActiveGroup(item) {
+      // calculate subgroups
+      //this.groupData.concat(this.calculateSubGroups(item.id));
+
       this.farms_in_groups = farm_functions.renderMarkers2(
         this.groupData,
         item.id
       );
+
       if (this.activeGroup != item.id) {
         this.activeGroup = item.id;
         //this.center = [item.location[0], item.location[1] + (400 / this.zoom ** 3)];
@@ -541,15 +545,27 @@ export default {
         }
       }
 
-      if (Math.abs(this.zoom - this.last_zoom) > 1.5) {
+      /* if (Math.abs(this.zoom - this.last_zoom) > 1.5) {
         this.last_zoom = this.zoom;
         this.calculateBoundaries();
         this.calculateGroups();
-      }
+      } */
     },
     calculateBoundaries() {
       this.boundaries = farm_functions.renderMapBoundaries(
         this.center,
+        this.zoom
+      );
+    },
+    calculateSubGroups(item) {
+      var farmsInGroup = null;
+      for (var index in this.markerData) {
+        // here check each farm in markerData if its in the group, if yes add it.
+      }
+
+      this.groupData = farm_functions.groupFarms(
+        farmsInGroup,
+        this.boundaries,
         this.zoom
       );
     },

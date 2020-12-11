@@ -1,29 +1,29 @@
-# seeds
+# Farmify - Vue.js Implementation of Australian Farm Database
 
-## Project setup
-```
-npm install
-```
+Full implementation using Vue.js 2 with map functionality powered with Open Street Maps, Database view, filter functionalities.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Also working combination of Google Firebase and Netlify Functions used here.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- All code is provided and free for use, learning and further development.
 
-### Run your tests
-```
-npm run test
-```
+![Front Page](repositoryAssets/front.png)
+- The front page
 
-### Lints and fixes files
-```
-npm run lint
-```
+![Map](repositoryAssets/map.png)
+- Australien map, built with Open Street Maps. Clickable icons loaded from Database via Google Firebase.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Database](repositoryAssets/database.png)
+- Database view. Loads automatically from database entries. Also different filter options and pagination provided.
+
+![Saved Entries](repositoryAssets/savedfarms.png)
+- Saved database entry from the map and database view can be viewed. Saved entries get stored by using cookies.
+
+Used Packages:
+
+- Vue.js
+- Netlify
+- Vuex
+- Vue Router
+- Vue2-Leaflet
+- Tailwindcss
+- Axios
