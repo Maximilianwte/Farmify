@@ -25,7 +25,7 @@ Also working combination of Google Firebase and Netlify Functions used here.
 ![Saved Entries](repositoryAssets/saved.png)
 - Saved database entry from the map and database view can be viewed. Saved entries get stored by using cookies.
 
-##Used Packages:
+## Used Packages:
 
 - Vue.js
 - Netlify
