@@ -1,4 +1,4 @@
-# Farmify - Vue.js Implementation of Australian Farm Database
+# Farmify - Vue.js, OpenStreetMaps with Vue2-Leaflet Implementation of Australian Farm Database
 
 Full implementation using Vue.js 2 with map functionality powered with Open Street Maps, Database view, filter functionalities.
 
